@@ -1,0 +1,120 @@
+
+.onem{
+    color : white;
+}
+#bod{
+    background-color : lightsalmon;
+}
+.rond{
+    background : red;
+    border-radius : 45px;
+    height : 100%
+}
+.he{
+  height : 100vh
+}
+.white{
+    color : white;
+}
+.red{
+    color : red;
+}
+.score{
+    font-size : 60px;
+    color : white
+}
+
+.one{
+    position : absolute;
+    top : 26%;
+    left : 49%
+}
+.two{
+    position : absolute;
+    top : 17%;
+    left : 54%;
+}
+.twob{
+    position : absolute;
+    top : 36%;
+    left : 44%;
+}
+.four{
+    position : absolute;
+    top : 17%;
+    left : 44%;
+}
+.fourt{
+    position : absolute;
+    top : 36%;
+    left : 54%;
+}
+.sixt{
+    position : absolute;
+    top : 26%;
+    left : 44%;
+}
+.six{
+    position : absolute;
+    top : 26%;
+    left : 54%;
+}
+.sized{
+    font-size: 14vh;
+}
+.numCurr{
+    justify-content:  center;
+    color : white;
+    font-size : 7vh;
+    margin-top : 0.5vh
+}
+.butt{
+    font-size : 3vh;
+    
+}
+.boxcurr{
+    margin-left : 10vw
+}
+.svgw{
+    color : white;  
+}
+#hold{
+    background-color:lightgoldenrodyellow;
+    border-radius : 1vh;
+    height : 7vh;
+    width : 30vh;
+    font-size : 5vh
+}
+button{
+    border : none
+}#roll {
+    background-color : rgb(204, 224, 174);
+    border-radius: 2vh;
+    height : 7vh;
+    width : 30vh;
+    font-size : 5vh;
+}
+svg{
+    color : blue;
+}
+
+
+@media screen and (max-width: 1300px) { 
+    #roll{
+        height : 20vw;
+        width : 18vw;
+        font-size : 4vw;
+     }
+     #hold{
+        height : 20vw;
+        width : 18vw;
+        font-size : 4vw;
+     }
+     .de{
+         height : 20vh;
+         width : 20vw;
+    
+     }
+}
+ 
+
