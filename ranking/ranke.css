@@ -1,0 +1,72 @@
+body{
+height : 100%;
+
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+
+padding: 3vh
+  }
+
+ tr:nth-of-type(even) { 
+   background-color: lightcyan;}
+  
+ tr:nth-of-type(odd) { 
+   background-color: rgb(243, 243, 243);}
+  
+  #customers th {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+ 
+  .legend{
+  background-color: rosybrown;
+  }
+  a{
+      text-decoration: none;
+      color : whitesmoke
+  }
+  button{
+      border-radius: 1vh;
+      background-color: black;
+      width: 10vw;
+      height : 7vh;
+      font-size : 2vw;
+  }
+
+  td{
+    border: none;
+    justify-content: center;
+    border-radius: 12px;
+  }
+  th{
+    border-radius: 12px;
+    font-size : 2rem;
+    justify-items: center;
+  }
+  table {
+    border-collapse: collapse;
+    font-weight : 600
+  }
+  th,td {
+    font-size : 1.3rem;
+  }
+  .image{
+    height : 7vh;
+  }
+  form {
+    margin-bottom : 2vh;
+    font-size : 1.2rem;
+  }
+  
+
+  
+  

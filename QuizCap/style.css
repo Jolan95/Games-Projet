@@ -1,0 +1,137 @@
+html{
+    font-size: 1vw;
+}
+body{
+    background-color: rgb(254, 220, 50);
+
+}
+img{
+    height : 10rem;
+    width : 18rem;
+}
+.logo{
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    font-size : 1.3rem;
+    text-shadow: 1px 1px 2px red, 0 0 2em blue, 0 0 0.1em blue;
+
+}
+
+
+.question{
+    display : flex;
+    justify-content: center;
+}
+h2 {
+    text-shadow: 1px 1px 2px red, 0 0 0.2em purple;
+    font-size: 3.4rem;
+}
+h3{
+   align-self: end;
+   font-size : 4rem;
+   position: absolute;
+   right : 3rem;
+   top : 2rem;
+
+}
+#question{
+    justify-self: center;
+}
+.boxs {
+    height: 100%;    
+}
+
+button {
+    border: 1px black solid;
+    border-radius : 6px;
+    box-shadow : 1px 1px;
+    height : 2em;
+    width : 35rem;
+    margin-left : 9.3rem;
+    margin-top: 2rem;
+    font-size : 300%;
+    border : none;
+    
+    
+}
+.button-container{
+    display: flex;
+}
+
+.validation {
+    height : 0.6em;
+    width : 0.4;
+    margin-left : 10rem;
+    margin-top: 5%;
+    font-size : 3rem;
+    color : blue;
+}
+.good{
+    border : 6px solid green;
+}
+.wrong {
+    border : 6px solid red;
+}
+.start-container{
+    display: flex;
+    justify-content: center;
+
+}
+.start{
+    justify-content: center;
+    border-radius: 180px;
+    height : 19rem;
+    width : 19rem;
+    margin : inherit;
+    transition-duration: 0.3s;
+    transition-delay: 0.05s;
+    margin : 3rem;
+}
+.start:hover{
+    height : 20rem;
+    width: 20rem;
+}
+.easy{
+    background: url("mape.jpg");
+    background-size: cover;
+    background-position: 35%;
+    background-size: 200%;
+}
+.med{
+    background : url("medium.jpg");
+    background-size: cover;
+    background-position: 30%;
+    background-size: 200%;
+    color : white
+}
+.hard{
+    background : url("hard.jpg");
+    background-size: cover;
+    background-position: 35%;
+    background-size: 230%;
+
+}
+.flag{
+height : 2.7rem;
+width : 5rem;
+
+}
+.class-wrong{
+    color : red;
+    text-shadow: inherit;
+    font-size: 4rem;
+}
+.class-right{
+   text-shadow: inherit;
+color : rgb(1, 97, 1);
+font-size: 4rem;
+}
+@media (max-width : 650px) {
+    .box{
+        height : 18rem;
+        width : 70vw;
+        margin-top : 3vh;
+
+    }
+}
