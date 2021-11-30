@@ -19,11 +19,11 @@ include 'header.php';
 
   <?php  
 $game = [
-    ["name" => $diceGame, "image" => "photoDé.jpg", "link" => "Projet-Dé/jeu.php", "description" => $D_diceGame],
+    ["name" => $diceGame, "image" => "photoDé.jpg", "link" => "DiceGame/jeu.php", "description" => $D_diceGame],
     ["name" => $capitalesQuiz, "image" => "jeuxCap.jpg", "link" => "QuizCap/capital.php", "description" => $D_capitalesQuiz],
     ["name" => "Guessing Number", "image" => "guess.jpg", "link" => "http://localhost/projet-jeux/jeuNumber.php", "description" => $D_guessingNumber],
     ["name" => "Flappy Bird", "image" => "Flappy.jpg", "link" => "http://localhost/projet-jeux/FlappyBird/", "description" => $D_flappyBird],
-    ["name" => $stoneLeafScissors, "image" => "pfc.jpg", "link" => "http://localhost/projet-jeux/Pierre-Feuille-Ciseau/pfc.php", "description" => $D_stoneLeafScissors],
+    ["name" => $stoneLeafScissors, "image" => "pfc.jpg", "link" => "http://localhost/projet-jeux/PFC/pfc.php", "description" => $D_stoneLeafScissors],
 ];
 
     foreach($game as $value){

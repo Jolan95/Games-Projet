@@ -16,7 +16,7 @@ require_once 'header.php';
 
  
 $game = [
-    ["name" => $diceGame, "image" => "photoDé.jpg", "link" => "http://localhost/projet-jeux/Projet-Dé/jeu.php", "record" => $_SESSION['record_dice']],
+    ["name" => $diceGame, "image" => "photoDé.jpg", "link" => "http://localhost/projet-jeux/DiceGame/jeu.php", "record" => $_SESSION['record_dice']],
     ["name" => $capitalesQuiz." (10)", "image" => "jeuxCap.jpg", "link" => "http://localhost/projet-jeux/QuizCap/capital.php", "record" => $_SESSION['record_Ecap']."/10"],
     ["name" => $capitalesQuiz." (50)", "image" => "jeuxCap.jpg", "link" => "http://localhost/projet-jeux/QuizCap/capital.php", "record" => $_SESSION['record_Mcap']."/50"],
     ["name" => $capitalesQuiz." (".$full.")", "image" => "jeuxCap.jpg", "link" => "http://localhost/projet-jeux/QuizCap/capital.php", "record" => $_SESSION['record_Hcap']."/197"],

@@ -114,7 +114,7 @@ width : 100%
     <div class="row">
       
       <div style="padding-left : 3vh; padding-bottom: 3vh" class="col-12">
-        <a href="Projet-Dé/jeu.php"><img class="une" src="photoDé.jpg" alt="#1 Tendance"></a>
+        <a href="DiceGame/jeu.php"><img class="une" src="photoDé.jpg" alt="#1 Tendance"></a>
         
       </div>
     </div>
