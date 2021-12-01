@@ -46,7 +46,7 @@ if(!empty($_POST) ){
         $firstname = htmlspecialchars($_POST['firstname']);
         /**$email = htmlspecialchars($_POST['email']);*/
         $password = password_hash(htmlspecialchars($_POST['password']), PASSWORD_BCRYPT);
-        $pdo = new PDO('mysql:host=localhost;dbname=projet', 'root', '');
+        $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
         
         $statement = $pdo->prepare('SELECT * FROM Users WHERE pseudo = :pseudo');
         /**$statement2 = $pdo->prepare('SELECT * FROM Users WHERE email = :email');*/

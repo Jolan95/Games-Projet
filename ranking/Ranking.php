@@ -72,7 +72,7 @@ include_once 'C:\xampp\htdocs\projet-jeux\header.php';
     
 function getRecordDesc($game){
     $i=0;
-$pdo = new PDO('mysql:host=localhost;dbname=projet', 'root', '');
+    $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
 $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
 /**$statement->bindValue(':game', $game);*/
 if ($statement->execute()) {
@@ -97,7 +97,7 @@ if ($statement->execute()) {
 }
 function getRecordAsc($game){
     $i=0;
-$pdo = new PDO('mysql:host=localhost;dbname=projet', 'root', '');
+    $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
 $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' ASC  LIMIT 0, 15'); 
 /**$statement->bindValue(':game', $game);*/
 if ($statement->execute()) {

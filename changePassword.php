@@ -47,7 +47,8 @@ include 'sous-header.php';
                 $id=$_SESSION["id"];
                 $password = $_POST["password"];
                
-                $pdo = new PDO('mysql:host=localhost;dbname=projet', "root", "");
+                /*$pdo = new PDO('mysql:host=localhost;dbname=projet', "root", "");*/
+                $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
                 $statement = $pdo->prepare('UPDATE users SET  password = :password WHERE id = :id');
                 $statement->setFetchMode(PDO::FETCH_CLASS, 'User');
                 $statement->bindValue(":password", password_hash(htmlspecialchars($password), PASSWORD_BCRYPT));

@@ -3,7 +3,7 @@
 require_once '../user.php';
 include '../lang.php';
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=projet', "root", "");
+$pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
 $user = $_SESSION['class_user'];
 
 

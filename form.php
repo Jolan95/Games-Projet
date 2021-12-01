@@ -48,7 +48,7 @@ $success = false;
 if (isset($_POST['mdp']) && isset($_POST['user'])) {
   $mdp = $_POST['mdp'];
   $user = $_POST['user'];
-  $pdo = new PDO('mysql:host=localhost;dbname=projet', "root", "");
+  $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
       require_once 'User.php';
 
       $statement = $pdo->prepare('SELECT * FROM users WHERE pseudo = :user');
