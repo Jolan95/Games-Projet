@@ -1,6 +1,6 @@
 <?php
 $style="ranke.css";
-include_once 'C:\xampp\htdocs\projet-jeux\header.php';
+include_once '../header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +16,9 @@ include_once 'C:\xampp\htdocs\projet-jeux\header.php';
 
 </style>
 </head>
-<body>
+<body style='  background-color: #282c34; '>
     <div>	
-        <h1 style="display : flex; justify-content: center; margin-top : 3vh;">
+        <h1 style="display : flex; justify-content: center; margin-top : 3vh; color : white">
             <?php
              if(isset($_GET['record'])){
                 switch($_GET['record']){
@@ -47,7 +47,7 @@ include_once 'C:\xampp\htdocs\projet-jeux\header.php';
        </h1>
         
         <form method="GET">
-            <label style="font-weight: 700;" for="record-select">Classement : </label>
+            <label style="font-weight: 700; color : white" for="record-select">Classement : </label>
 
 <select  style="font-weight: 500;" name="record" id="record-select">
     <option >Selection</option>
@@ -72,19 +72,19 @@ include_once 'C:\xampp\htdocs\projet-jeux\header.php';
     
 function getRecordDesc($game){
     $i=0;
-    $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
-$statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
+    $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
+    $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
 /**$statement->bindValue(':game', $game);*/
 if ($statement->execute()) {
 
     while ($user = $statement->fetch(PDO::FETCH_ASSOC)) {
         $i++;
         if($i === 1){
-            echo '<tr style=" background-color: goldenrod;"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+            echo '<tr style=" background-color: goldenrod; opacity : 0.8;"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
         } else if ($i === 2){
-            echo '<tr style=" background-color: silver;"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+            echo '<tr style=" background-color: silver; opacity : 0.8;"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
         } else if ($i === 3){
-            echo '<tr style=" background-color: burlywood;"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+            echo '<tr style=" background-color: burlywood; opacity : 0.8;"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
         } else {
 
             echo '<tr><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
@@ -97,7 +97,10 @@ if ($statement->execute()) {
 }
 function getRecordAsc($game){
     $i=0;
-    $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
+
+   /* $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");*/
+   $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
+
 $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' ASC  LIMIT 0, 15'); 
 /**$statement->bindValue(':game', $game);*/
 if ($statement->execute()) {

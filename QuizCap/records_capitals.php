@@ -3,7 +3,7 @@
 require_once '../user.php';
 include '../lang.php';
 session_start();
-$pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
+$pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
 $user = $_SESSION['class_user'];
 
 

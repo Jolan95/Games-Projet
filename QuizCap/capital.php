@@ -1,14 +1,14 @@
 <?php
 $style="style.css";
-require_once '../user.php';
-include 'C:\xampp\htdocs\projet-jeux\header.php';
+include_once '../header.php';
+include 'user.php';
 ?>
 <style>
     html{
     font-size: 1vw;
 }
 body{
-    background-color: rgb(254, 220, 50);
+    background-color: #282c34;
 
 }
 img{
@@ -20,7 +20,7 @@ img{
     flex-direction: row;
     align-items: center;
     font-size : 1.3rem;
-    text-shadow: 1px 1px 2px yellow, 0 0 2em blue, 0 0 0.1em blue;
+
 
 }
 
@@ -31,7 +31,7 @@ img{
     
 }
 h2 {
-    text-shadow: 1px 1px 2px red, 0 0 0.2em purple;
+    color: whitesmoke;
     font-size: 3.4rem;
 }
 h3{
@@ -150,6 +150,7 @@ font-size: 3.6rem;
 
 @media (max-width : 650px) {
     .box{
+        background-color : whitesmoke;
         height : 18rem;
         width : 70vw;
         margin-top : 3vh;
@@ -162,7 +163,7 @@ font-size: 3.6rem;
 </style>    
  <div class="logo">
      
- <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['class_user']->getRecordEcap();}?>>
+ <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
  <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
  <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
         
@@ -225,13 +226,12 @@ let picked
 let i =0;
 
 function redirectToMenu(){
-	window.location.replace("http://localhost/projet-jeux/home.php");
+	window.location.replace("https://games-online.herokuapp.com/home.php");
 }
 function restart(){
-	window.location.replace("http://localhost/projet-jeux/QuizCap/capital.php");
+	window.location.replace("https://games-online.herokuapp.com/QuizCap/capital.php");
 
 }
-
 
 
 function hiddingCircles(){
@@ -273,11 +273,11 @@ function removeClasses() {
 
 function verifCompteur(compteur){
     if(compteur < limitQuiz){
-        console.log(limitQuiz)
         setTimeout(function(){choices=[]; selectAnswers();  setted=true; removeClasses();}, 800);
     } else {
         
         setTimeout(function(){
+            if(!!recordE || !!recordM || !!recordH){
             if(point > record && limitQuiz === 10){
                 $.ajax({
                     url : 'records_capitals.php',
@@ -324,6 +324,7 @@ function verifCompteur(compteur){
                     }
                     });
             }
+        }
             counter.textContent = '';
             secondQuiz.hidden = false;
 			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'

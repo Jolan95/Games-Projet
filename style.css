@@ -1,20 +1,18 @@
 
 h1{
-  margin-left : 5vh;
+  margin-left : 2vh;
   font-size : 5vh;
 }
-.item{
-  border-width: 1px solid white;
-}
+
 .navation {
   color : white;
 }
 .asides{
-
+  padding-top : 3vh;
   height : 80vh; 
-  background-color: white;
+  background-color:  #282c34;
   font-size : 2vw;
-  padding-right: 4vw ;
+
   
 
 }
@@ -23,7 +21,11 @@ h1{
 height : 14vh;
 border-bottom-right-radius: 3vh;
 border-top-right-radius: 3vh;
-width : 100%
+width : 100%;
+border : none;
+margin-bottom: 6px;
+background-color :steelblue
+
 
 
 }
@@ -47,9 +49,8 @@ border-bottom-right-radius: 2vh;
 }
 .pfc{
   height: 26vh ;
-  width : 30vw ;
+  width : 28vw ;
   border-radius: 2vh;
-  margin-left : 1.3vh
   
 }
 .login{
@@ -59,10 +60,14 @@ img{
   height : 50px;
   width : 100px;
 }
-@media screen and (max-width : 1000px)  {
-  .div-form {
-  background-color : blue;
-  }
-
-
+.row{
+  padding-left : 0
+}
+.password-link:link {
+text-decoration-line: none;
+font-size:  0.9rem;
+}
+.password-link:hover {
+  text-decoration: underline;
+  color :darkviolet;
 }

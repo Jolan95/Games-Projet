@@ -17,10 +17,10 @@ include_once '../header.php'
     </style>
 </head>
 <input type="text" hidden id="record" value=<?php if(isset($_SESSION['user'])){echo $_SESSION["record_flappy"];} else {echo 0;}?> >
-<body style="background-color : lightcyan">
+<body style=" background-color: #282c34; ">
 
     <div style="text-align:center">
-        <h1 style="user-select:none;"> Flappy Bird</h1>
+        <h1 style="user-select:none; color : white"> Flappy Bird</h1>
     </div>
     <canvas id="bird" width="320" height="480"></canvas>
 
@@ -33,7 +33,7 @@ let record = parseInt(input.value);
 
 const cvs = document.getElementById("bird");
 const ctx = cvs.getContext("2d");
-console.log(record)
+
 
 // GAME VARS AND CONSTS
 let frames = 0;
@@ -342,7 +342,6 @@ const pipes = {
                             });
                 
                 score.best = score.value;
-                console.log(record)
             }}
              
                 

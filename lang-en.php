@@ -44,6 +44,8 @@ $welcome = "Welcome";
 $wrongPairing = "The Username / Password combination is not recognized ";
 $usernameLabel = "Pseudo";
 $passwordLabel = "Password";
+$labelEmail = "E-mail address";
+$forgottenPassword = "Forgot your password ?";
 
 $noAccount = "I dont have an account, register ";
 $targetLink = "here";
@@ -57,7 +59,7 @@ $valid = "Save";
 $mistakeRecordingDB = "An error occured while registring your password.";
 $errorChangePassword = '"The two password are not identical. "';
 $errorChangePassword2 = '"The new password must contain at least 8 characters."';
-$passwordChanged = '"Password modified"';
+$passwordChanged = "Password modified";
 
 //delete.php
 $deleted = "Your account has been deleted";
@@ -82,9 +84,11 @@ $fullFilled = "Please fill all fields !";
 $passwordTooShort = "The password must contain at least 8 characters.";
 $passwordNotPairing = "Please the two password must be identical.";
 $pseudoExist = "This pseudo already exists.";
+$existMail = "this email address is already linked to an existing account.";
 $pseudoTooShort = "Your pseudo must contains at least 3 characters.";
 $passwordLabel2 = "Confirm your password";
 $alreadyConnected = "I am already registered, sign in ";
+$wrongFormatMail = "The email format is invalid.";
 
 
 //JeuNumber .php
@@ -96,8 +100,8 @@ $attempts = "Attempt(s)";
 $errorRecording = "Error while saving your new record ";
 $alertHighScore = "new record !";
 $errorRecordingDB = "An error occured while saving your new record in the database.";
-$higherReveal = "Higher !";
-$lowerReveal = "Lower !";
+$higherReveal = "Too High !";
+$lowerReveal = "Too Low !";
 $numberFound = "You found the good number ";
 $numberFound2 = " with ";
 $numberFound3 = " attempt(s).";
@@ -129,3 +133,11 @@ $rpc = "Rock - Paper - Scissors";
   $hold = "SAVE";
   $throwDice = "ROLL DICE";
   $highScoreWin = "Win record";
+
+ /* formPassword.php */
+
+ $resetPassword = "Reset Password";
+ $EmailnotMatching = "This email doesn't match with any account.";
+$sentenceReset = "An Email with a link to reset your password will be send to you mail box.";
+$sendMail = "Send Password Reset Email";
+$emailReceived = "An email has been sent to your mailbox, do not forget to check your spam.";

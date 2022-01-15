@@ -1,6 +1,6 @@
 body{
     height : 100vh;
-    background-color: lightgray;
+    background-color: #282c34;
 }
 h1{
 
@@ -24,7 +24,7 @@ h2{
 .choices {
 
     height : 28vh;
-
+background-color: lightgray;
     border-radius: 3vh;
     margin-top : 3vh;
     margin-bottom : 3vh;

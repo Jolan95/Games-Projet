@@ -14,6 +14,8 @@ class User
     private string $record_Ecap;
     private string $record_guess;
     private string $record_flappy;
+    private string $email;
+
 
 
 
@@ -25,6 +27,7 @@ class User
     {
         return $this->password;
     }
+
     public function setPassword($password): void
     {
          $this->password = $password;
@@ -96,6 +99,10 @@ class User
     public function getRecordFlappy()
     {
         return $this->record_flappy;
+    }
+    public function getEmail()
+    {
+        return $this->email;
     }
 
 

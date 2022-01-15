@@ -3,9 +3,10 @@ $validate = false;
 require_once 'user.php';
 $style="style.css";
 include 'header.php';
-include 'sous-header.php';
+
 
 ?>
+<body style="background-color: #282c34;">
 <div class="row">
 <div class="col-6">
     
@@ -14,7 +15,7 @@ include 'sous-header.php';
 
 
 </div>
-<div  id="content"style = "border-radius : 20px;border : 3px solid black; margin-left : 3vw; width: 50vw; margin-top : 4vh;padding-top : 3vw; padding-left : 2vw; min-width : 250px">
+<div  id="content"style = "background-color : white; border-radius : 20px;border : 3px solid black; margin-left : 3vw; width: 50vw; margin-top : 4vh;padding-top : 3vw; padding-left : 2vw; min-width : 250px">
     <h2 style="margin-bottom :2vh"><?php echo $changePasswordTitle?></h2>
     <form id="formulaire"  method='post' >
         <div style='font-weight : 500; '>
@@ -38,44 +39,12 @@ include 'sous-header.php';
                 <button type='button' id='newPassword' style='margin : 4vh' class='btn btn-success'><?php echo $valid ?></button>
             </div>
         </form>
-        <?php
-
-        if(isset($_POST['password']) && isset($_POST['password2'])){
-
-            if(strlen($_POST['password']) > 7 && strlen($_POST['password2']) > 7 ){
-                $user = $_SESSION['class_user'];
-                $id=$_SESSION["id"];
-                $password = $_POST["password"];
-               
-                /*$pdo = new PDO('mysql:host=localhost;dbname=projet', "root", "");*/
-                $pdo = new PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_53ae102770f6a82', "ba3595a923b6d7", "75287824");
-                $statement = $pdo->prepare('UPDATE users SET  password = :password WHERE id = :id');
-                $statement->setFetchMode(PDO::FETCH_CLASS, 'User');
-                $statement->bindValue(":password", password_hash(htmlspecialchars($password), PASSWORD_BCRYPT));
-                $statement->bindValue(":id", $id);
-                if($statement->execute()){
-
-                    $users = $statement->fetch();
-                    $user->setPassword($_POST['password']);
-                    $_SESSION['password'] = $user->getPassword();
-                    $validate = true;
-
-
-                    
-                        
-                } else {
-                    echo $mistakeRecordingDB;
-                }
-            } 
-          
-        }
-      
-    ?>
+        
     </div>
-
+    
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-</script>
+    </script>
 
 <script>
     
@@ -85,7 +54,23 @@ include 'sous-header.php';
         let password2 = $("#password2").val()
         if(password.length > 7 && password2.length >7){
             if(password === password2){
-                $("#formulaire").submit()
+                let data = password
+                var request = new XMLHttpRequest();
+                var formData = new FormData();
+               formData.append("password", data);
+        request.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              alert(this.response);
+              window.location.replace("https://games-online.herokuapp.com/");
+              
+          }
+        };
+        request.open("POST", "handleChangePassword.php", true);
+        request.send(formData);
+                    
+           
+
+   
         
     }else{
         alert(<?php echo $errorChangePassword ?>)
@@ -94,10 +79,9 @@ include 'sous-header.php';
     alert(<?php echo $errorChangePassword2 ?>)
 }
 })
-<?php if ($validate === true){ 
-  echo 'setTimeout(function (){window.location = "profile.php" ; alert('.$passwordChanged.')}, 200)';} 
-?>
 
- 
+
+
 
 </script>
+</body>

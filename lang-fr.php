@@ -26,8 +26,8 @@
    $D_diceGame = "Le premier à 100, bloquez au bon moment !";
    $D_capitalesQuiz = "Etes vous incollables sur les capitales?";
    $D_guessingNumber = "Devinez le nombre en 0 et 1000 ! ";
-   $D_flappyBird = "Aidez l'oiseau à traverser les tuyaux.";
-   $D_stoneLeafScissors = "Simulation de Pierre feuille ciseau. Mode infini.";
+   $D_flappyBird = "Flappy Bird l'original.";
+   $D_stoneLeafScissors = "Simulation de Pierre feuille ciseau.";
 
    // HighScore.php
    $highScore = "Record";
@@ -38,11 +38,13 @@
    $capitalesFull = "Toutes les capitales";
 
    //form.php 
-   $successConnexion = "votre connexion a été établie avec succès !";
+   $successConnexion = "Votre connexion a été établie avec succès !";
    $welcome = "Bienvenue";
-   $wrongPairing = "La combinaison Pseudo / Mot de passe n\'est pas reconnue";
+   $wrongPairing = "La combinaison Pseudo / Mot de passe n'est pas reconnue";
    $usernameLabel = "Pseudo";
    $passwordLabel = "Mot de passe";
+   $labelEmail = "Adresse mail";
+   $forgottenPassword = "Mot de passe oublié ?";
    
    $noAccount = "Je n'ai pas de compte, m'inscrire ";
    $targetLink = "ici";
@@ -56,7 +58,7 @@
    $mistakeRecordingDB = "Une erreur s\'est produite lors de la modification de votre mot de passe en base de donnée.";
    $errorChangePassword = '"Les deux mots de passe ne sont pas identiques. "';
    $errorChangePassword2 = '"Le nouveau mot de passe doit contenir au moins 8 caractères."';
-   $passwordChanged = '"Mot de passe modifié"';
+   $passwordChanged = "Mot de passe modifié";
    
    //delete.php
    $deleted = "Votre compte a été supprimé";
@@ -80,9 +82,11 @@
    $passwordTooShort = "Le mot de passe doit comporter au moins 8 caractères.";
    $passwordNotPairing = "Veuillez renseigner deux mot de passes identiques.";
    $pseudoExist = "Ce pseudo est déjà prit.";
+   $existMail = "Cette adresse email est déjà liée à un compte.";
    $pseudoTooShort = "Le pseudo doit comporter au moins 3 caractères.";
    $passwordLabel2 = "Confirmez votre mot de passe";
    $alreadyConnected = "Je suis déjà inscris, me connecter ";
+   $wrongFormatMail = "Le format de l'email n'est pas valide.";
 
    //JeuNumber .php
    $JNrule = "Devinez le nombre entre 0 et 1000."   ;
@@ -114,7 +118,7 @@ $countries = "pays";
 $questionCapitale = "Quelle est la capitale ";
 $capNewRecord = "Bravo ! Nouveau record";
 $revealScoreCap = "Vous avez répondu correctement à ";
-$revealScoreCap2 = " questions sur ";
+$revealScoreCap2 = " question(s) sur ";
 $revealAllGood = "Vous avez répondu correctement à toutes les questions";
 
 //jeu.php
@@ -128,3 +132,9 @@ $current = "CAGNOTTE";
 $hold = "BLOQUER";
 $throwDice = "LANCER";
 $highScoreWin = "Victoire record";
+
+$resetPassword = "Réinitialiser le mot de passe";
+$EmailnotMatching = "Cette adresse mail n'est liée à aucun compte.";
+$sentenceReset = "Un email contenant un lien pour modifier votre mot de passe vous sera envoyé sur votre boîte mail.";
+$sendMail = "Envoi Email";
+$emailReceived = "Un email vous a été envoyé sur votre boite mail, n'oubliez pas de vérifier vos courriers indésirables.";

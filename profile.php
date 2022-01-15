@@ -1,18 +1,18 @@
 <?php
 $style="style.css";
 include 'header.php';
-include 'sous-header.php';
-?>
 
+?>
+<body style="background-color: #282c34;">
 <div class="row">
 <div class="col-12 col-md-7">
     
-    </div>
 </div>
-<div class="profile-box" id="circle-initials" style=" display : flex ; justify-content : center; align-items : center;background-color : black; position: absolute;  left: 46vw;  top: 22vh; width : 8vw; height : 8vw; border : 3px  solid black; border-radius : 90px;">
-<p style="color : white; font-size :4vw"><?php echo substr($_SESSION['firstname'],0,1).'.'.substr($_SESSION['name'],0,1);?></p>
 </div>
-<div  id="content"style = "border-radius : 20px;border : 3px solid black; margin-left : 25vw; width: 50vw; margin-top : 8vh;padding-top : 8vw; padding-left : 2vw">
+<div class="profile-box" id="circle-initials" style=" display : flex ; justify-content : center; align-items : center; background-color : #282c34; position: absolute;  left: 46vw;  top: 22vh; width : 8vw; height : 8vw; border : 3px  solid #282c34 ;border-radius : 90px;">
+<p style="color : white; font-size :4vw"><?php echo strtoupper(substr($_SESSION['firstname'],0,1)).'.'.strtoupper(substr($_SESSION['name'],0,1));?></p>
+</div>
+<div  id="content"style = "background-color : white;border-radius : 20px;border : 3px solid #282c34; margin-left : 25vw; width: 50vw; margin-top : 8vh;padding-top : 8vw; padding-left : 2vw; background-color : white">
 <div id="profile">
 <div style="border-bottom : 2vh" >
     <h2><?php echo $_SESSION['user']?></h2>
@@ -21,10 +21,11 @@ include 'sous-header.php';
     <p style><?php echo $firstnameLabel ?> : <span  style="font-weight : bold"><?php echo $_SESSION['firstname']?></span></p>
     <p><?php echo $lastnameLabel ?> : <span  style="font-weight : bold"><?php echo $_SESSION['name']?></span></p>
     <p><?php echo $creationAccount ?>  : <span  style="font-weight : bold"><?php echo $_SESSION['createdAt']?></span></p>
+    <p>Email : <span  style="font-weight : bold"><?php echo $_SESSION['email']?></span></p>
     <div>
     <button  onclick="deconnexion()" style="width : 120px; margin-bottom : 3vh" type="button" class="btn btn-warning"><?php echo $deconnexion ?></button>
     </div>
-<p><a href="changePassword.php"><button onclick="managingPassword()" type="button" class="btn btn-success"><?php echo $managePassword ?></button></a></p>
+<p><a href="https://games-online.herokuapp.com/changePassword.php"><button onclick="managingPassword()" type="button" class="btn btn-success"><?php echo $managePassword ?></button></a></p>
 </div> 
 <div>
   <button onclick="deletingAccount()" type="button" class="btn btn-danger" style="width : 120px; margin-bottom : 3vh" ><?php echo $deletingAccount ?></button>
@@ -47,7 +48,7 @@ include 'sous-header.php';
           if (this.readyState == 4 && this.status == 200) {
           if(this.responseText === 'ok'){
               alert('<?php echo $deleted ?>');
-              window.location.replace("home.php");
+              window.location.replace("https://games-online.herokuapp.com/home.php");
           }
           }
         };
@@ -61,7 +62,7 @@ include 'sous-header.php';
         request.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
               alert('<?php echo $confirmationDeleted ?>');
-              window.location.replace("home.php");
+              window.location.replace("https://games-online.herokuapp.com/home.php");
           }
         };
         request.open("GET", "deconnexion.php", true);
@@ -69,8 +70,7 @@ include 'sous-header.php';
       }
       }
       let circle = document.getElementById("circle-initials")
-      console.log('Height'+innerHeight)
-      console.log('Width'+innerWidth)
+
       function responsiveWindow(){
     if(window.innerWidth < 1000 ||  window.innerHeight < 500){
       circle.hidden = true
@@ -87,4 +87,5 @@ responsiveWindow();
 
 
     </script>
+    </body>
 

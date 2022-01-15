@@ -1,6 +1,5 @@
 body{
 height : 100%;
-
 }
 #customers {
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +22,8 @@ padding: 3vh
     padding-top: 2vh;
     padding-bottom: 5vh;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: rgba(49, 122, 25, 0.74);
+    opacity : 0.8;
     color: white;
   }
  

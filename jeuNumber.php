@@ -5,9 +5,7 @@ include "header.php";
 <style>
     body{
     
-        background: rgb(38,38,167);
-
-        background: linear-gradient(90deg, rgba(38,38,167,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);
+        background-color: #282c34;
         height : 86vh;
     }
     .box{
@@ -23,6 +21,7 @@ include "header.php";
         border-radius : 12px;
         background-color: white;
         margin-top: 16vh;
+
             
         
     }
@@ -79,8 +78,8 @@ include "header.php";
             <div class="guess">
                 <input type="number"  id="guess">
                 <button id="validate" class="btn btn-primary" style=" margin-top: 16vh;"><?php echo $valid?></button>
-                <a href="http://localhost/projet-jeux/jeuNumber.php"><button style="margin-right : 2vw;margin-top : 5vh;border-radius : 90px; height : 100px; width : 100px"id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
-                <a href="http://localhost/projet-jeux/home.php"><button style="margin-left : 2vw;margin-top : 5vh; border-radius : 90px; height : 100px; width : 100px" id="menu" class="btn btn-danger" hidden><?php echo $redirectToMenu ?></button></a>
+                <a href="https://games-online.herokuapp.com/jeuNumber.php"><button style="margin-right : 2vw;margin-top : 5vh;border-radius : 90px; height : 100px; width : 100px"id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
+                <a href="https://games-online.herokuapp.com/home.php"><button style="margin-left : 2vw;margin-top : 5vh; border-radius : 90px; height : 100px; width : 100px" id="menu" class="btn btn-danger" hidden><?php echo $redirectToMenu ?></button></a>
             </div>
 
         <div style="font-size : 1.3rem; margin-top : 3vw;">
@@ -136,8 +135,6 @@ include "header.php";
         });
     }
 
-    
-    console.log(number);
     function wrong() {
         
         if(parseInt(guess.value) > number){

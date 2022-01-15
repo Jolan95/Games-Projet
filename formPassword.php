@@ -1,11 +1,13 @@
-
 <?php
+
+
 $success = 0;
 $error = 0;
 $style="style.css";
 include 'header.php';
 require 'user.php';
-require 'form-verif.php';
+require 'formPassword-verif.php';
+
 ?>
     <style>
         body {
@@ -42,37 +44,27 @@ require 'form-verif.php';
         </style>
 <body>
     <div class="container ">
-        <div hidden class='div-form' style="color : green; font-size : 1.4rem" id='handleGoodResult'>
-            <?php echo $successConnexion ?>
-            <p><a href="https://games-online.herokuapp.com"><?php echo $redirectToMenu; ?></a></p>
+        <div hidden class='div-form' style="color : green; font-size : 1rem" id='handleGoodResult'>
+            <?php echo $emailReceived ?>
         </div>
-        <form method="post" action="form.php"  class="div-form" id="formulaire">
-            <h2>Identification</h2>
+        <form method="post" action="formPassword.php"  class="div-form" id="formulaire">
+            <h2><?php echo $resetPassword; ?></h2>
             <div class="item-form">
             
-            <div  hidden style="color : red" id="handleWrongResult"><?php echo $wrongPairing; ?></div>
+            <div  hidden style="color : red" id="handleWrongResult"><?php echo $EmailnotMatching; ?></div>
             
             
             <div>    
             <label for="user"><?php echo $labelEmail ?></label>
             </div>
         <div>    
-        <input type="email" id="user" name="user" value="" required/>
+        <input type="email" id="user" name="mail" value="" required/>
     </div>
     </div>
-    <div class="item-form">
-        <div>
-        <label for="mdp"><?php echo $passwordLabel ?> </label>
-        </div>
-        <div>
-        <input type="password" id="mdp" name="mdp" value="" required/>
-        </div>
-        </div>
-        <p style="margin-bottom : 0" id="pd"><?php echo $noAccount ?>
-        <a href="inscription.php"><?php echo $targetLink ?>
-    </a> !</p>
-    <p ><a class="password-link" href="https://games-online.herokuapp.com/formPassword.php"><?php echo $forgottenPassword; ?></a></p>
-        <button type="submit" class="btn btn-primary" >Connexion</button>
+
+        <p style="margin-bottom : 10px, font-size : 0.8rem" id="pd"><?php echo $sentenceReset; ?></p>
+
+        <button type="submit" class="btn btn-primary" ><?php echo $sendMail; ?></button>
 </form>
     
     </body>

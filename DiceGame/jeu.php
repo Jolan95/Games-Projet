@@ -15,14 +15,14 @@ include '../header.php';
 
     <div class="row">
         <div class="col-5 text-center">
-           <h2><?php echo $player1 ?>   
+           <h2 style="color : white"><?php echo $player1 ?>   
                  <svg id="p1"xmlns="http://www.w3.org/2000/svg" width="3vh" fill="currentColor" style="color : red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  >
             <circle cx="8" cy="8" r="8"/>
           </svg></h2>
         </div>
         <div class="col-2"></div>
         <div class="col-5 text-center ">
-          <h2 ><span id="textp"><?php echo $player2 ?> </span>    <svg id="p2"   xmlns="http://www.w3.org/2000/svg" width="3vh" fill="currentColor"  style="color : red" class="bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  >
+          <h2 style="color : white" ><span id="textp"><?php echo $player2 ?> </span>    <svg id="p2"   xmlns="http://www.w3.org/2000/svg" width="3vh" fill="currentColor"  style="color : red" class="bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  >
             <circle cx="8" cy="8" r="8"/>
           </svg></h2>
          </div>

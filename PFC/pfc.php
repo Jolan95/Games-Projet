@@ -14,7 +14,7 @@ include_once '../header.php'
 </head>
 <body>
 <div class="row ">
-            <h1 class="col-12 text-center"><?php echo $rpc ?></h1>
+            <h1 class="col-12 text-center"style="color : white"><?php echo $rpc ?></h1>
         </div>
     
 
@@ -28,7 +28,7 @@ include_once '../header.php'
             </div>
         </div>
         <div style="padding-top : 4vh" class="col-8 text-center align-self-center">
-            <h2 id="sentences"><?php echo $makeYourChoice ?> </h2>
+            <h2 id="sentences" class="color : white"><?php echo $makeYourChoice ?> </h2>
         </div>
         <div class=" col-2 score1 score">
             <div class="row justify-content-center">

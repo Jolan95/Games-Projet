@@ -170,7 +170,7 @@ const countries = [
     "capital": "N'Djamena"
     },
     {
-    "flag": "flags/ch.png",
+    "flag": "flags/cl.png",
     "name": "du Chili",
     "capital": "Santiago"
     },

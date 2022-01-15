@@ -21,10 +21,12 @@ require_once 'header.php';
         .div-form{
         border : 2px solid black;
         width: 35vw;
+        min-width : 250px;
         padding : 3vh;
         margin-top : 3.2vh;
         justify-content:  center;
         border-radius: 12px;
+        background-color: white;
     }
     .item-form{
         margin : 10px;
@@ -50,7 +52,7 @@ require_once 'header.php';
         
         </style>
 </head>
-<body>
+<body style="background-color: #282c34;">
 
     
     <?php  
