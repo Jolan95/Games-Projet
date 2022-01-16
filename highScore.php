@@ -16,12 +16,12 @@ require_once 'header.php';
 
  
 $game = [
-    ["name" => $diceGame, "image" => "photoDé.jpg", "link" => "https://games-online.herokuapp.com/DiceGame/jeu.php", "record" => $_SESSION['record_dice']],
-    ["name" => $capitalesQuiz." (10)", "image" => "jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Ecap']."/10"],
-    ["name" => $capitalesQuiz." (50)", "image" => "jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Mcap']."/50"],
-    ["name" => $capitalesQuiz." (".$full.")", "image" => "jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Hcap']."/197"],
-    ["name" => "Guessing Number", "image" => "guess.jpg", "link" => "https://games-online.herokuapp.com/jeuNumber.php", "record" => $_SESSION['record_guess']],
-    ["name" => "Flappy Bird", "image" => "Flappy.jpg", "link" => "https://games-online.herokuapp.com/FlappyBird", "record" => $_SESSION['record_flappy']],
+    ["name" => $diceGame, "image" => "Img/photoDé.jpg", "link" => "https://games-online.herokuapp.com/DiceGame/jeu.php", "record" => $_SESSION['record_dice']],
+    ["name" => $capitalesQuiz." (10)", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Ecap']."/10"],
+    ["name" => $capitalesQuiz." (50)", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Mcap']."/50"],
+    ["name" => $capitalesQuiz." (".$full.")", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Hcap']."/197"],
+    ["name" => "Guessing Number", "image" => "Img/guess.jpg", "link" => "https://games-online.herokuapp.com/GuessingGame/jeuNumber.php", "record" => $_SESSION['record_guess']],
+    ["name" => "Flappy Bird", "image" => "Img/Flappy.jpg", "link" => "https://games-online.herokuapp.com/FlappyBird", "record" => $_SESSION['record_flappy']],
 ];
 
     foreach($game as $value){

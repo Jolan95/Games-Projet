@@ -1,7 +1,7 @@
 <?php
 $validate = false; 
-require_once 'user.php';
-$style="style.css";
+require_once 'Class/user.php';
+$style="Style/style.css";
 include 'header.php';
 
 
@@ -65,7 +65,7 @@ include 'header.php';
               
           }
         };
-        request.open("POST", "handleChangePassword.php", true);
+        request.open("POST", "handleRequest/ChangePassword-verif.php", true);
         request.send(formData);
                     
            

@@ -1,7 +1,7 @@
 <?php
 
-require_once '../user.php';
-include '../lang.php';
+require_once '../Class/user.php';
+include '../handleLanguage/lang.php';
 session_start();
 $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
 $user = $_SESSION['class_user'];

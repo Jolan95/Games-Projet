@@ -14,7 +14,7 @@ if(isset($_GET['language'])){
 
     
 }
-$style = "style.css";
+$style = "Style/style.css";
 require_once 'header.php';
 ?>
     <style>

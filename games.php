@@ -1,5 +1,5 @@
 <?php
-$style = "games.css";
+$style = "Style/games.css";
 include 'header.php';
 
 ?>
@@ -20,11 +20,11 @@ include 'header.php';
   <?php  
 
 $game = [
-    ["name" => $diceGame , "image" => "photoDé.jpg", "link" => "https://games-online.herokuapp.com/DiceGame/jeu.php", "description" => $D_diceGame],
-    ["name" => $capitalesQuiz, "image" => "jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "description" => $D_capitalesQuiz],
-    ["name" => "Guessing Number", "image" => "guess.jpg", "link" => "https://games-online.herokuapp.com/jeuNumber.php", "description" => $D_guessingNumber],
-    ["name" => "Flappy Bird", "image" => "Flappy.jpg", "link" => "https://games-online.herokuapp.com/FlappyBird/", "description" => $D_flappyBird],
-    ["name" => $stoneLeafScissors, "image" => "pfc.jpg", "link" => "https://games-online.herokuapp.com/PFC/pfc.php", "description" => $D_stoneLeafScissors],
+    ["name" => $diceGame , "image" => "Img/photoDé.jpg", "link" => "https://games-online.herokuapp.com/DiceGame/jeu.php", "description" => $D_diceGame],
+    ["name" => $capitalesQuiz, "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "description" => $D_capitalesQuiz],
+    ["name" => "Guessing Number", "image" => "Img/guess.jpg", "link" => "https://games-online.herokuapp.com/GuessingGame/jeuNumber.php", "description" => $D_guessingNumber],
+    ["name" => "Flappy Bird", "image" => "Img/Flappy.jpg", "link" => "https://games-online.herokuapp.com/FlappyBird/", "description" => $D_flappyBird],
+    ["name" => $stoneLeafScissors, "image" => "Img/pfc.jpg", "link" => "https://games-online.herokuapp.com/PFC/pfc.php", "description" => $D_stoneLeafScissors],
 ];
 
     foreach($game as $value){

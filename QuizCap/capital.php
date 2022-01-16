@@ -1,7 +1,7 @@
 <?php
 $style="style.css";
 include_once '../header.php';
-include 'user.php';
+include 'Class/user.php';
 ?>
 <style>
     html{

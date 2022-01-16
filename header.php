@@ -15,11 +15,11 @@ if(isset($_SESSION['id'])){
   }
 }
 
-include "lang.php";
+include "handleLanguage/lang.php";
 ?> 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="Img/favicon.png">
 <style>
     .logo{
   height : 80px;
@@ -75,7 +75,7 @@ $login = false;
 <div class="container-fluid" style="width : 100%; display:inline-block; min-width : 300px">
 <nav style="color : white;  height : 100px; font-size: 2vh;" class="row navbar navbar-dark ">
     <h1 class="col-2 col-sm-2">
-      <a href="https://games-online.herokuapp.com/home.php"><img  src="https://games-online.herokuapp.com/logoPerso.png" class="logo"></img></a>
+      <a href="https://games-online.herokuapp.com/index.php"><img  src="https://games-online.herokuapp.com/Img/logoPerso.png" class="logo"></img></a>
     
 </h1>
   <div class="col-2  item" >

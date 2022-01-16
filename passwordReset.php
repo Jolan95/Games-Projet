@@ -1,7 +1,7 @@
 <?php
 
-require_once 'user.php';
-$style="style.css";
+require_once 'Class/user.php';
+$style="Style/style.css";
 include 'header.php';
 $successRequest = 0;
 

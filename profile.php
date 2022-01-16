@@ -1,5 +1,5 @@
 <?php
-$style="style.css";
+$style="Style/style.css";
 include 'header.php';
 
 ?>
@@ -48,11 +48,11 @@ include 'header.php';
           if (this.readyState == 4 && this.status == 200) {
           if(this.responseText === 'ok'){
               alert('<?php echo $deleted ?>');
-              window.location.replace("https://games-online.herokuapp.com/home.php");
+              window.location.replace("https://games-online.herokuapp.com/index.php");
           }
           }
         };
-        request.open("GET", "delete.php", true);
+        request.open("GET", "handleRequest/delete.php", true);
         request.send();
       }
       }
@@ -62,10 +62,10 @@ include 'header.php';
         request.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
               alert('<?php echo $confirmationDeleted ?>');
-              window.location.replace("https://games-online.herokuapp.com/home.php");
+              window.location.replace("https://games-online.herokuapp.com/index.php");
           }
         };
-        request.open("GET", "deconnexion.php", true);
+        request.open("GET", "handleRequest/deconnexion.php", true);
         request.send();
       }
       }

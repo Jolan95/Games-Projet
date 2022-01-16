@@ -1,5 +1,5 @@
 <?php
-require_once '../user.php';
+require_once '../Class/user.php';
 session_start();
 $newRecord = $_POST['new_record'] ;
 $user = $_SESSION['class_user'];

@@ -1,6 +1,6 @@
 <?php
-include  'lang.php';
-require_once 'user.php';
+include  '../handleLanguage/lang.php';
+require_once '../Class/user.php';
 session_start();
 $password = $_POST["password"];
 

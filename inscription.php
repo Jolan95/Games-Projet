@@ -1,8 +1,7 @@
 <?php
 
-$style="style.css";
+$style="Style/style.css";
 include 'header.php';
-require_once "env.php";
 require_once 'sendgrid-php.php';
 
 use SendGrid\Mail\Mail;
@@ -65,11 +64,11 @@ if(!empty($_POST) ){
                     if($statement->execute() && $statement2->execute()) {
                         /** verifie le pseudo n'est pas déja utilisé */
                         if($statement->fetch(PDO::FETCH_ASSOC) || $statement2->fetch(PDO::FETCH_ASSOC)){
-                            if($statement->fetch(PDO::FETCH_ASSOC)){
-                                $error = 3;
-                            }
+
                             if($statement2->fetch(PDO::FETCH_ASSOC)){
                                 $error = 6;
+                            } else {
+                                $error = 3;
                             }
                         } else{
                             $adding = $pdo->prepare("INSERT INTO users VALUES (UUID(), :pseudo, :name, :firstname, :password, NOW(), 0, 0, 0, 0, 0, 0, :email, NULL)");
@@ -216,6 +215,7 @@ if(!empty($_POST) ){
   </body>
   <script>
 let success = <?php echo $success; ?>;
+let error = <?php echo $error; ?>;
       
 
        if(success === 1){
@@ -225,6 +225,7 @@ let success = <?php echo $success; ?>;
           },400)
           
       }
+      console.log('ERROR / '+error)
       
   </script>
 </html>

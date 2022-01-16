@@ -2,10 +2,10 @@
 <?php
 $success = 0;
 $error = 0;
-$style="style.css";
+$style="Style/style.css";
 include 'header.php';
-require 'user.php';
-require 'form-verif.php';
+require 'Class/user.php';
+require 'handleRequest/form-verif.php';
 ?>
     <style>
         body {
