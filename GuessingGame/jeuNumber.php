@@ -79,7 +79,7 @@ include "../header.php";
                 <input type="number"  id="guess">
                 <button id="validate" class="btn btn-primary" style=" margin-top: 16vh;"><?php echo $valid?></button>
                 <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button style="margin-right : 2vw;margin-top : 5vh;border-radius : 90px; height : 100px; width : 100px"id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
-                <a href="https://games-online.herokuapp.com/home.php"><button style="margin-left : 2vw;margin-top : 5vh; border-radius : 90px; height : 100px; width : 100px" id="menu" class="btn btn-danger" hidden><?php echo $redirectToMenu ?></button></a>
+                <a href="https://games-online.herokuapp.com/index.php"><button style="margin-left : 2vw;margin-top : 5vh; border-radius : 90px; height : 100px; width : 100px" id="menu" class="btn btn-danger" hidden><?php echo $redirectToMenu ?></button></a>
             </div>
 
         <div style="font-size : 1.3rem; margin-top : 3vw;">

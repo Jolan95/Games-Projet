@@ -226,7 +226,7 @@ let picked
 let i =0;
 
 function redirectToMenu(){
-	window.location.replace("https://games-online.herokuapp.com/home.php");
+	window.location.replace("https://games-online.herokuapp.com/index.php");
 }
 function restart(){
 	window.location.replace("https://games-online.herokuapp.com/QuizCap/capital.php");
