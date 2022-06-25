@@ -1,0 +1,16 @@
+{
+     "fr" : [
+        {"name": "Jeu dé", "image" : "Img/photoDé.jpg", "link" : "https://games-online.herokuapp.com/DiceGame/jeu.php", "description" : "Le premier à 100, bloquez au bon moment !"},
+        {"name": "Quiz sur les capitales", "image" : "Img/jeuxCap.jpg", "link" : "https://games-online.herokuapp.com/QuizCap/capital.php", "description" : "Etes vous incollables sur les capitales?"},
+        {"name": "Guessing Number", "image" : "Img/guess.jpg", "link" : "https://games-online.herokuapp.com/GuessingGame/jeuNumber.php", "description" : "Devinez le nombre entre 0 et 100 !"},
+        {"name": "Flappy Bird", "image" : "Img/Flappy.jpg", "link" : "https://games-online.herokuapp.com/FlappyBird/", "description" : "Flappy Bird l'original."},
+        {"name": "Pierre Feuilles Ciseaux", "image" : "Img/pfc.jpg", "link" : "https://games-online.herokuapp.com/PFC/pfc.php", "description" : "Simulation de Pierre feuille ciseau."}
+    ],
+    "en" : [
+        {"name": "First one to reach 100, save at the right time !", "image" : "Img/photoDé.jpg", "link" : "https://games-online.herokuapp.com/DiceGame/jeu.php", "description" : "First one to reach 100, save at the right time !"},
+        {"name": "World capitals quiz", "image" : "Img/jeuxCap.jpg", "link" : "https://games-online.herokuapp.com/QuizCap/capital.php", "description" : "Are you expert in world capitals?"},
+        {"name": "Guessing Number", "image" : "Img/guess.jpg", "link" : "https://games-online.herokuapp.com/GuessingGame/jeuNumber.php", "description" : "Guess the number between 0 and 1000 ! "},
+        {"name": "Flappy Bird", "image" : "Img/Flappy.jpg", "link" : "https://games-online.herokuapp.com/FlappyBird/", "description" : "Help the bird to avoid the pipes."},
+        {"name": "Rock Paper Scissors", "image" : "Img/pfc.jpg", "link" : "https://games-online.herokuapp.com/PFC/pfc.php", "description" : "Rock Paper Scissors. infinite mode."}
+    ]
+}

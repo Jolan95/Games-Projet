@@ -1,73 +1,174 @@
-
-h1{
-  margin-left : 2vh;
-  font-size : 5vh;
+/***Style base***/
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
 }
-
-.navation {
-  color : white;
+body {
+  background-color: #282c34;
 }
-.asides{
-  padding-top : 3vh;
-  height : 80vh; 
-  background-color:  #282c34;
-  font-size : 2vw;
-
-  
-
+.full-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.aside {
-height : 14vh;
-border-bottom-right-radius: 3vh;
-border-top-right-radius: 3vh;
-width : 100%;
-border : none;
-margin-bottom: 6px;
-background-color :steelblue
-
-
-
+.border10 {
+  border-radius: 10px;
 }
-.une{
-width : 60vw;
-height : 40vh;
-border-bottom-left-radius: 2vh;
-border-bottom-right-radius: 2vh;
+.s-bold {
+  font-weight: 500;
 }
-.tit{
-  color : white; 
-  height : 6vh; 
-  font-size : 4vh ;
-  padding-left : 2vh;
-  border-top-left-radius: 2vh;
-  border-top-right-radius: 2vh;
+.bold {
+  font-weight: 700;
 }
-.asides svg{
-  margin-right : 4vh;
-  color : black
+/***header***/
+header .logo {
+  height: 100px;
+  width: auto;
+  filter: invert(8%) sepia(100%) saturate(74%) hue-rotate(100deg) brightness(80%) contrast(100%);
+  -webkit-filter: invert(100%) sepia(80%) saturate(64%) hue-rotate(320deg) brightness(100%) contrast(90%);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
-.pfc{
-  height: 26vh ;
-  width : 28vw ;
-  border-radius: 2vh;
-  
+header a:link,
+header a:visited {
+  color: white;
+  font-size: 1.125rem;
 }
-.login{
-  background-color: rgb(88, 212, 88);
+header a:hover {
+  color: #81d3ba;
 }
-img{
-  height : 50px;
-  width : 100px;
+header .dropdown button,
+header .dropdown button:hover {
+  color: white;
+  font-size: 1.125rem;
 }
-.row{
-  padding-left : 0
+header .dropdown ul {
+  background-color: #282c34;
 }
-.password-link:link {
-text-decoration-line: none;
-font-size:  0.9rem;
+@media all and (min-width: 991px) {
+  header .logo {
+    height: 120px;
+    width: auto;
+  }
 }
-.password-link:hover {
-  text-decoration: underline;
-  color :darkviolet;
+/***Index***/
+.home .owl-carousel .section-carousel {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.home .owl-carousel .section-carousel .carousel-content {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home .owl-carousel .section-carousel .carousel-content h2 {
+  font-weight: 700;
+  text-align: center;
+}
+.home .owl-carousel .section-carousel .carousel-content button {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.home .owl-carousel .section-carousel .carousel-content button:hover {
+  background-color: #058f05;
+  border: 1px solid #058f05;
+  color: white;
+}
+.home .first-carousel {
+  background-image: url("../quiz-cap/medium.jpg");
+}
+.home .second-carousel {
+  background-image: url("../Img/flappy-bird.png");
+}
+.home .third-carousel {
+  background-image: url("../Img/numbers.png");
+}
+.home .box-left,
+.home .box-right {
+  height: 350px;
+  width: 100%;
+  border-radius: 10px;
+}
+.home .box-left button,
+.home .box-right button {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.home .box-left button:hover,
+.home .box-right button:hover {
+  background-color: #058f05;
+  border: 1px solid #058f05;
+  color: white;
+}
+.home .box-left .box-content,
+.home .box-right .box-content {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home .box-left {
+  background: url("../Img/game-pfc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.home .box-right {
+  color: black;
+  background: url("../Img/dé.jpg");
+}
+@media all and (min-width: 991px) {
+  .home .owl-carousel .carousel-content h2.title-game {
+    text-align: left;
+  }
+}
+/*********Games********/
+.games .box-game {
+  padding: 15px;
+  margin-top: 30px;
+  color: #282c34;
+}
+.games .box-game a:link,
+.games .box-game a:visited,
+.games .box-game a:hover {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+.games .box-game .box-content {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+}
+.games .box-game .games-image {
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+.games .box-content:hover {
+  background-color: blanchedalmond;
 }

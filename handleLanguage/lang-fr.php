@@ -33,7 +33,7 @@
    $highScore = "Record";
    $full = "Complet";
 
-   // Ranking.php
+   // ranking.php
    $capitales = "Capitales";
    $capitalesFull = "Toutes les capitales";
 

@@ -1,9 +1,9 @@
 
 <?php
+session_start();
 $success = 0;
 $error = 0;
 $style="Style/style.css";
-include 'header.php';
 require 'Class/user.php';
 require 'handleRequest/form-verif.php';
 ?>

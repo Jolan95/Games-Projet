@@ -34,7 +34,7 @@ $D_stoneLeafScissors = "Rock Paper Scissors. infinite mode.";
 $highScore = "Record";
 $full = "Full";
 
-// Ranking.php
+// ranking.php
 $capitales = "Capitals";
 $capitalesFull = "All capitals";
 

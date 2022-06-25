@@ -1,8 +1,8 @@
 <?php
-$validate = false; 
 require_once 'Class/user.php';
-$style="Style/style.css";
 include 'header.php';
+$validate = false; 
+$style="Style/style.css";
 
 
 ?>
