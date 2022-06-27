@@ -196,7 +196,6 @@ header .dropdown ul {
 }
 .ranking tr.legend {
   background-color: white;
-  border-radius: 10px 10px 0 0;
 }
 .ranking tr.gold {
   background-color: #ffe400;
@@ -212,4 +211,8 @@ header .dropdown ul {
 }
 .ranking td {
   width: calc(100% / 3);
+}
+.ranking table {
+  width: 100%;
+  border-radius: 10px;
 }
