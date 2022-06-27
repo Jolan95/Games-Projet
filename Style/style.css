@@ -210,3 +210,6 @@ header .dropdown ul {
   background-color: burlywood;
   opacity: 0.7;
 }
+.ranking td {
+  width: calc(100% / 3);
+}
