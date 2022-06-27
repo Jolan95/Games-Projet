@@ -72,10 +72,10 @@ function getRecordDesc($game){
                     $i++;
                     if($i === 1){
                         echo '<tr class="gold"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
-                    } else if ($i === 2){
-                        echo '<tr class="silver"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
-                    } else if ($i === 3){
-                        echo '<tr class="bronze"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+                    // } else if ($i === 2){
+                    //     echo '<tr class="silver"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+                    // } else if ($i === 3){
+                    //     echo '<tr class="bronze"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
                     } else {
                         echo '<tr><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
                     }
@@ -96,10 +96,10 @@ function getRecordDesc($game){
                     $i++;
                     if($i === 1){
                         echo '<tr class="gold"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
-                    } else if ($i === 2){
-                        echo '<tr class="silver"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
-                    } else if ($i === 3){
-                        echo '<tr class="bronze"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+                    // } else if ($i === 2){
+                    //     echo '<tr class="silver"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
+                    // } else if ($i === 3){
+                    //     echo '<tr class="bronze"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
                     } else {
                     
                         echo '<tr><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
