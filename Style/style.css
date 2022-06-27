@@ -197,16 +197,15 @@ header .dropdown ul {
 .ranking .legend {
   background-color: aliceblue;
 }
-.ranking .gold {
-  background-color: inherit;
+.ranking tr.gold {
   background-color: #f2d725;
   opacity: 0.7;
 }
-.ranking .silver {
+.ranking tr.silver {
   background-color: silver;
   opacity: 0.7;
 }
-.ranking .bronze {
+.ranking tr.bronze {
   background-color: burlywood;
   opacity: 0.7;
 }
