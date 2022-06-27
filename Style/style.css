@@ -195,7 +195,8 @@ header .dropdown ul {
   background-color: #f3f3f3;
 }
 .ranking tr.legend {
-  background-color: white;
+  background-color: #282c34;
+  color: white;
 }
 .ranking tr.gold {
   background-color: #ffe400;

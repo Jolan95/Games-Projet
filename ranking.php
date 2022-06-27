@@ -43,9 +43,8 @@ include "handleLanguage/lang.php";
                 }
                 ?>
             </h1>   
-            <form method="GET">
-                <label for="record-select">Classement : </label>
-                <select   name="record" id="record-select">
+            <form method="GET" class="my-3">
+                <select  name="record" id="record-select">
                     <option >Selection</option>
                     <option value="record_dice"><?php echo $diceGame; ?></option>
                     <option value="record_Ecap"><?php echo $capitales."/10"; ?> </option>
