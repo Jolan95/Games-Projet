@@ -43,7 +43,7 @@ include "handleLanguage/lang.php";
                 }
                 ?>
             </h1>   
-            <form method="GET" class="my-3">
+            <form method="GET" class="mt-3 text-center">
                 <select  name="record" id="record-select">
                     <option >Selection</option>
                     <option value="record_dice"><?php echo $diceGame; ?></option>
