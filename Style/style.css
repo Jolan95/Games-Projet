@@ -1,4 +1,7 @@
 /***Style base***/
+* {
+  user-select: none;
+}
 a:link,
 a:hover,
 a:visited {
