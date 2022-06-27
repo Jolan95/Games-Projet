@@ -198,6 +198,7 @@ header .dropdown ul {
   background-color: aliceblue;
 }
 .ranking .gold {
+  background-color: inherit;
   background-color: #f2d725;
   opacity: 0.7;
 }
