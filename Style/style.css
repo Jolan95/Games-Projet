@@ -180,8 +180,11 @@ header .dropdown ul {
   background-color: blanchedalmond;
 }
 /***Rnaking***/
+.ranking {
+  color: white;
+}
 .ranking .gold {
-  background-color: goldenrod;
+  background-color: #f2d725;
   opacity: 0.7;
 }
 .ranking .silver {
@@ -191,4 +194,18 @@ header .dropdown ul {
 .ranking .bronze {
   background-color: burlywood;
   opacity: 0.7;
+}
+.ranking tr {
+  height: 30px;
+  padding: 3px;
+}
+.ranking tr:nth-of-type(even) {
+  background-color: lightcyan;
+}
+.ranking tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+.ranking .legend {
+  color: black;
+  background-color: aliceblue;
 }

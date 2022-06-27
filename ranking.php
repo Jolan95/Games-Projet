@@ -15,7 +15,7 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div class="ranking">
+        <div class="ranking" class="container">
             <h1 class="text-center">
                 <?php
                  if(isset($_GET['record'])){
@@ -55,7 +55,7 @@ include "handleLanguage/lang.php";
                     <option value="record_flappy">Flappy Bird</option>
                 </select>  
             </form> 
-            <table class="container"  id="customers">
+            <table   id="customers">
                 <tr class="legend">
                     <th><?php echo $rank ?></th>
                     <th>Pseudo</th>
@@ -78,7 +78,6 @@ function getRecordDesc($game){
                     } else if ($i === 3){
                         echo '<tr class="bronze"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
                     } else {
-                    
                         echo '<tr><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
                     }
                 }
