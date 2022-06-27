@@ -24,6 +24,10 @@ body {
 .bold {
   font-weight: 700;
 }
+h1 {
+  color: white;
+  font-size: 2rem;
+}
 /***header***/
 header .logo {
   height: 100px;

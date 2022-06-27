@@ -19,7 +19,7 @@ $notConnected = "Log in to have access to your records.";
 
 // Games.php
 
-
+$titleGames = "Games";
 $diceGame = "Dice Game";
 $capitalesQuiz = "World capitals quiz";
 $stoneLeafScissors = "Rock Paper Scissors";

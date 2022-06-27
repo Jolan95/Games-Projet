@@ -55,22 +55,21 @@ include "handleLanguage/lang.php";
                     <option value="record_flappy">Flappy Bird</option>
                 </select>  
             </form> 
-        </div>
-        <table class="container"  id="customers">
-            <tr class="legend">
-                <th><?php echo $rank ?></th>
-                <th>Pseudo</th>
-                <th><?php echo $highScore ?></th> 
-            </tr>
-        <?php
+            <table class="container"  id="customers">
+                <tr class="legend">
+                    <th><?php echo $rank ?></th>
+                    <th>Pseudo</th>
+                    <th><?php echo $highScore ?></th> 
+                </tr>
+                <?php
 
-        // function to fetch desc records
-        function getRecordDesc($game){
-            $i=0;
-            $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
-            $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
-            if ($statement->execute()) {
-                while ($user = $statement->fetch(PDO::FETCH_ASSOC)) {
+// function to fetch desc records
+function getRecordDesc($game){
+    $i=0;
+    $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
+    $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
+    if ($statement->execute()) {
+        while ($user = $statement->fetch(PDO::FETCH_ASSOC)) {
                     $i++;
                     if($i === 1){
                         echo '<tr class="gold"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
@@ -120,15 +119,16 @@ include "handleLanguage/lang.php";
         } else {
             if($_GET['record'] === 'record_Guess'){
             getRecordAsc($_GET['record']);
-            }else{
+        }else{
             getRecordDesc($_GET['record']);
             }
         }
 
 
-    
+        
         ?>
         </table>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){  

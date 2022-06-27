@@ -18,6 +18,7 @@ include "handleLanguage/lang.php";
 	<body>
 		<?php require_once 'header.php'; ?>
 		<main class="container home pt-3">
+			<h1 hidden>JGames-Online</h1>
 			<div class="owl-carousel ">
   				<div class="first-carousel section-carousel ">
 					<div class="carousel-content p-5">

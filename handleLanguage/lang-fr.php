@@ -18,7 +18,7 @@
    
    // Games.php
 
-
+   $titleGames = "Tous les jeux"; 
    $diceGame = "Jeu dé";
    $capitalesQuiz = "Quiz des Capitales";
    $stoneLeafScissors = "Pierre Feuille Ciseaux";
