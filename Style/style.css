@@ -191,10 +191,10 @@ header .dropdown ul {
   text-align: center;
 }
 .ranking tr:nth-of-type(even) {
-  background-color: lightcyan;
+  background-color: #f5ffff;
 }
 .ranking tr:nth-of-type(odd) {
-  background-color: #f3f3f3;
+  background-color: rgba(243, 243, 243, 0.815);
 }
 .ranking tr.legend {
   background-color: #282c34;
