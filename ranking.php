@@ -50,6 +50,7 @@ include "handleLanguage/lang.php";
         <form method="GET">
             <label style="font-weight: 700; color : white" for="record-select">Classement : </label>
             <select   name="record" id="record-select">
+                <option >Selection</option>
                 <option value="record_dice"><?php echo $diceGame; ?></option>
                 <option value="record_Ecap"><?php echo $capitales."/10"; ?> </option>
                 <option value="record_Mcap"><?php echo $capitales." /50 "; ?></option>
@@ -90,9 +91,10 @@ if ($statement->execute()) {
     }
     
 }else {
-    echo "erreur fatale";
+    echo "Aucun record trouvé";
 }
 }
+// Function fetch asc record
 function getRecordAsc($game){
     $i=0;
 
@@ -138,11 +140,8 @@ if(!isset($_GET['record'])){
     </table>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-        console.log("Hello World")
-         $(document).ready(function(){  
+        $(document).ready(function(){  
         $("#record-select").change(()=>{
-        
-        let record = $('#record-select').val()
         $("form").submit();
         })
          })
