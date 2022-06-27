@@ -50,7 +50,6 @@ include "handleLanguage/lang.php";
         <form method="GET">
             <label style="font-weight: 700; color : white" for="record-select">Classement : </label>
             <select   name="record" id="record-select">
-                <option >Selection</option>
                 <option value="record_dice"><?php echo $diceGame; ?></option>
                 <option value="record_Ecap"><?php echo $capitales."/10"; ?> </option>
                 <option value="record_Mcap"><?php echo $capitales." /50 "; ?></option>

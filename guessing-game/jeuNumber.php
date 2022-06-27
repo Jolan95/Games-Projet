@@ -1,5 +1,5 @@
 <?php
-$style = "../style.css";
+$style = "..Style/style.css";
 include "../header.php";
 ?>
 <style>
