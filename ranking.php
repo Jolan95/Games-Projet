@@ -15,7 +15,7 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div class="ranking container">
+        <div class="ranking">
             <h1 class="text-center">
                 <?php
                  if(isset($_GET['record'])){
@@ -54,7 +54,7 @@ include "handleLanguage/lang.php";
                     <option value="record_flappy">Flappy Bird</option>
                 </select>  
             </form> 
-            <table   id="customers">
+            <table class="container-fluid"   id="customers">
                 <tr class="legend">
                     <th><?php echo $rank ?></th>
                     <th>Pseudo</th>
@@ -62,13 +62,13 @@ include "handleLanguage/lang.php";
                 </tr>
                 <?php
 
-// function to fetch desc records
-function getRecordDesc($game){
-    $i=0;
-    $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
-    $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
-    if ($statement->execute()) {
-        while ($user = $statement->fetch(PDO::FETCH_ASSOC)) {
+        // function to fetch desc records
+        function getRecordDesc($game){
+            $i=0;
+            $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
+            $statement = $pdo->prepare('SELECT pseudo, '.$game.' FROM users WHERE '.$game.' > 0 ORDER BY '.$game.' DESC  LIMIT 0, 15'); 
+            if ($statement->execute()) {
+                while ($user = $statement->fetch(PDO::FETCH_ASSOC)) {
                     $i++;
                     if($i === 1){
                         echo '<tr class="gold"><td>'.$i.'</td><td>'.$user['pseudo'].'</td><td>'.$user[$game].'</td></tr>';
@@ -77,7 +77,7 @@ function getRecordDesc($game){
                     }
                 }
             }else {
-                echo "Aucun record trouvé";
+                    echo "Aucun record trouvé";
             }
         }
 
