@@ -187,6 +187,8 @@ header .dropdown ul {
   height: 50px;
   padding: 3px;
   color: black;
+  opacity: 0.5;
+  text-align: center;
 }
 .ranking tr:nth-of-type(even) {
   background-color: lightcyan;
