@@ -15,7 +15,7 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div class="ranking" class="container">
+        <div class="ranking container">
             <h1 class="text-center">
                 <?php
                  if(isset($_GET['record'])){

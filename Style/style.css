@@ -194,11 +194,12 @@ header .dropdown ul {
 .ranking tr:nth-of-type(odd) {
   background-color: #f3f3f3;
 }
-.ranking .legend {
-  background-color: aliceblue;
+.ranking tr.legend {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
 }
 .ranking tr.gold {
-  background-color: #f2d725;
+  background-color: #ffe400;
   opacity: 0.7;
 }
 .ranking tr.silver {
