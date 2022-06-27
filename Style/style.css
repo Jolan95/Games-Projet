@@ -175,3 +175,16 @@ header .dropdown ul {
 .games .box-content:hover {
   background-color: blanchedalmond;
 }
+/***Rnaking***/
+.ranking .gold {
+  background-color: goldenrod;
+  opacity: 0.7;
+}
+.ranking .silver {
+  background-color: silver;
+  opacity: 0.7;
+}
+.ranking .bronze {
+  background-color: burlywood;
+  opacity: 0.7;
+}
