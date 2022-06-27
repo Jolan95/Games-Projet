@@ -184,7 +184,7 @@ header .dropdown ul {
   color: white;
 }
 .ranking tr {
-  height: 30px;
+  height: 50px;
   padding: 3px;
   color: black;
 }
@@ -212,6 +212,7 @@ header .dropdown ul {
 }
 .ranking td {
   width: calc(100% / 3);
+  padding: 3px;
 }
 .ranking table {
   width: 100%;
