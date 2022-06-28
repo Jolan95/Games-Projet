@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <?php 
 session_start();
-include "handleLanguage/lang.php";     
+include "handleLanguage/lang.php"; 
+if(isset($_GET['language'])){
+    if($_GET["language"] === "english"){
+        $_COOKIE['lang'] = "en";
+        
+    }else{
+        $_COOKIE['lang'] = "fr";
+    }
+}     
 ?>
 <html lang="fr">
     <head>
@@ -39,16 +47,7 @@ include "handleLanguage/lang.php";
             if($_COOKIE["lang"] === $value){
                 echo "checked";
             }
-            if(isset($_GET['language'])){
-                if($_GET["language"] === "english"){
-            
-                    $_COOKIE['lang'] = "en";
-                    
-                }else{
-                    $_COOKIE['lang'] = "fr";
         }
-    } 
-}
         ?>
         <script>
             console.log(document.cookie)
