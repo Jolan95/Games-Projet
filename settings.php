@@ -17,26 +17,21 @@ include "handleLanguage/lang.php";
         <?php require_once 'header.php'; ?>
         <div class="container settings">
             <div class="box-settings">
-
                 <form method="get" action="settings.php" class="div-form">
                     <h2>Settings</h2> 
-                <label for="language">Language :</label>
-                <div>
-                    <input type="radio" id="language" name="language" value="english" <?php isGoodLanguage("en") ?> />
-                    <label >Anglais</label>
-
-                </div>
-
-                <input type="radio" id="language" name="language" value="french" <?php isGoodLanguage("fr") ?> />
-                <label >Français</label>
-                
-                <div>
+                    <label for="language">Language :</label>
+                    <div>
+                        <input type="radio" id="language" name="language" value="english" <?php isGoodLanguage("en") ?> />
+                        <label >Anglais</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="language" name="language" value="french" <?php isGoodLanguage("fr") ?> />
+                        <label >Français</label>
+                    </div>
                     <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
-                </div>
-            </div>
-            
-        </form>
-    </div>
+                </form>
+            </div>       
+        </div>
 
             
 
