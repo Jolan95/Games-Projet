@@ -8,8 +8,13 @@ if(isset($_GET['language'])){
     }else{
         $_COOKIE['lang'] = "fr";
     }
-}     
-var_dump($_GET);
+}   
+function isGoodLanguage($value){
+    if($_COOKIE["lang"] === $value){
+        echo "checked";
+    }
+}  
+
 include "handleLanguage/lang.php"; 
 ?>
 <html lang="fr">
@@ -23,7 +28,8 @@ include "handleLanguage/lang.php";
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
 	</head>
 	<body>
-        <?php require_once 'header.php';
+        <?php
+        require_once 'header.php';
         var_dump($_COOKIE["lang"]);
         ?>
         <div class="container settings">
@@ -42,16 +48,6 @@ include "handleLanguage/lang.php";
                     <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
                 </form>
             </div>       
-        </div>  
-        <?php
-        function isGoodLanguage($value){
-            if($_COOKIE["lang"] === $value){
-                echo "checked";
-            }
-        }
-        ?>
-        <script>
-            console.log(document.cookie)
-        </script>       
+        </div>      
     </body>
 </html>
