@@ -6,7 +6,6 @@ if(isset($_GET['language'])){
         setcookie('lang',"en"); 
     }else{
         setcookie('lang',"fr");
-        var_dump($_ENV);
     }
 }     
 include "handleLanguage/lang.php"; 
