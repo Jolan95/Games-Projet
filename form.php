@@ -2,8 +2,8 @@
 <?php
 session_start(); 
 include "handleLanguage/lang.php"; 
-$success = false;
-$error = false;
+$success = 0;
+$error = 0;
 require 'Class/user.php';
 require 'handleRequest/form-verif.php';
 ?>
@@ -53,18 +53,18 @@ require 'handleRequest/form-verif.php';
                 </form>
             </div>    
         </div>
-            
+
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script>
             let success = <?php echo $success; ?>     
             let error = <?php echo $error; ?>
-            if(success){
+            if(success === 1 ){
             let form = document.getElementById('formulaire')
             form.hidden = true;
             let displaySuccessConnexion = document.getElementById('handleGoodResult');
             displaySuccessConnexion.hidden = false
             }
-            if(error){
+            if(error === 1){
             let displayWrongResult = document.getElementById('handleWrongResult')
             displayWrongResult.hidden = false;   
             }
