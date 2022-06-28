@@ -8,6 +8,7 @@ if(isset($_GET['language'])){
         setcookie('lang',"fr");
     }
 }     
+var_dump($_GET);
 include "handleLanguage/lang.php"; 
 ?>
 <html lang="fr">
