@@ -43,7 +43,7 @@ include "handleLanguage/lang.php";
                         <input type="radio" id="language" name="language" value="french" <?php isGoodLanguage("fr") ?> />
                         <label >Français</label>
                     </div>
-                    <button type="submit" id='submit' class="btn btn-primary pt-5">Enregister </button>
+                    <button type="submit" id='submit' class="btn btn-primary mt-5">Enregister </button>
                 </form>
             </div>       
         </div>      
