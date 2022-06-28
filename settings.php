@@ -15,6 +15,21 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
         <?php require_once 'header.php';
+        $expire = 365*24*3600;
+        if(isset($_GET['language'])){
+            if($_GET["language"] === "english"){
+        
+                $_COOKIE['lang'] = "en";
+         
+                
+            }else{
+        
+                $_COOKIE['lang'] = "fr";
+        
+            } 
+        
+            
+        }
         function isGoodLanguage($value){
             if($_COOKIE["lang"] === $value){
                 echo "checked";
@@ -38,27 +53,5 @@ include "handleLanguage/lang.php";
                 </form>
             </div>       
         </div>         
-<?php
-$expire = 365*24*3600;
-if(isset($_GET['language'])){
-    if($_GET["language"] === "english"){
-
-        $_COOKIE['lang'] = "en";
- 
-        
-    }else{
-
-        $_COOKIE['lang'] = "fr";
-
-    } 
-
-    
-}
-
-?>
-
-
-
-
-  </body>
+    </body>
 </html>
