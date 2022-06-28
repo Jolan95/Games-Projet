@@ -14,7 +14,13 @@ include "handleLanguage/lang.php";
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
 	</head>
 	<body>
-        <?php require_once 'header.php'; ?>
+        <?php require_once 'header.php';
+        function isGoodLanguage($value){
+            if($_COOKIE["lang"] === $value){
+                echo "checked";
+            }
+        }
+        ?>
         <div class="container settings">
             <div class="box-settings mt-5">
                 <form method="get" action="settings.php" class="div-form">
@@ -50,49 +56,8 @@ if(isset($_GET['language'])){
 }
 
 ?>
-    <!-- <style>
-        .div-form{
-        border : 2px solid black;
-        width: 35vw;
-        min-width : 250px;
-        padding : 3vh;
-        margin-top : 3.2vh;
-        justify-content:  center;
-        border-radius: 12px;
-        background-color: white;
-    }
-    .item-form{
-        margin : 10px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size : 17px;
-        }
-        p{
-            font-size : 17px;
-        }
-        .error{
-            color : red;
-            font-size : 15px;
-        }
-        .success{
-            background-color: lightgreen;
-            text-align: center;
-        }
-        input[type=checkbox] {
-  visibility: hidden;
-}
-</style> -->
 
-        
-        
 
-    
-    <?php  
-    function isGoodLanguage($value){
-    if($_COOKIE["lang"] === $value){
-        echo "checked";
-    }
-    }
-    ?>
 
 
   </body>
