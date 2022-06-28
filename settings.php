@@ -14,7 +14,6 @@ function isGoodLanguage($value){
         echo "checked";
     }
 }  
-
 include "handleLanguage/lang.php"; 
 ?>
 <html lang="fr">
@@ -30,13 +29,12 @@ include "handleLanguage/lang.php";
 	<body>
         <?php
         require_once 'header.php';
-        var_dump($_COOKIE["lang"]);
         ?>
         <div class="container settings">
             <div class="box-settings mt-5">
                 <form method="get" action="settings.php" class="div-form">
                     <h2>Settings</h2> 
-                    <label for="language">Language :</label>
+                    <label for="language" class="mt-3">Language :</label>
                     <div>
                         <input type="radio" id="language" name="language" value="english" <?php isGoodLanguage("en") ?> />
                         <label >Anglais</label>
@@ -45,7 +43,7 @@ include "handleLanguage/lang.php";
                         <input type="radio" id="language" name="language" value="french" <?php isGoodLanguage("fr") ?> />
                         <label >Français</label>
                     </div>
-                    <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
+                    <button type="submit" id='submit' class="btn btn-primary pt-5">Enregister </button>
                 </form>
             </div>       
         </div>      
