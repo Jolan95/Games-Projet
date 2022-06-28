@@ -16,8 +16,10 @@ include "handleLanguage/lang.php";
 	<body>
         <?php require_once 'header.php'; ?>
         <div class="container settings">
-            <form method="get" action="settings.php" class="div-form">
-                <h2>Settings</h2> 
+            <div class="box-settings">
+
+                <form method="get" action="settings.php" class="div-form">
+                    <h2>Settings</h2> 
                 <label for="language">Language :</label>
                 <div>
                     <input type="radio" id="language" name="language" value="english" <?php isGoodLanguage("en") ?> />
@@ -32,8 +34,9 @@ include "handleLanguage/lang.php";
                     <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
                 </div>
             </div>
- 
-            </form>
+            
+        </form>
+    </div>
 
             
 
