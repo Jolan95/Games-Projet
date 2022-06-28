@@ -31,8 +31,8 @@ include "handleLanguage/lang.php";
         require_once 'header.php';
         ?>
         <div class="container settings">
-            <div class="box-settings mt-3">
-                <form method="get" action="settings.php" class="div-form">
+            <div class="box-settings mt-2">
+                <form method="get" action="settings.php">
                     <h2>Settings</h2> 
                     <label for="language" class="mt-4">Language :</label>
                     <div>

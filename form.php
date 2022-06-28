@@ -1,48 +1,29 @@
 
 <?php
-session_start();
-$success = 0;
-$error = 0;
-$style="Style/style.css";
+session_start(); 
+include "handleLanguage/lang.php"; 
+$success = false;
+$error = false;
 require 'Class/user.php';
 require 'handleRequest/form-verif.php';
 ?>
-    <style>
-        body {
-            background-color: #282c34 ;
-        }
-        .div-form{
-            background-color: white;
-        border : 2px solid black;
-        width: 35vw;
-        min-width : 350px;
-        padding : 3vh;
-        margin-top : 3.2vh;
-        justify-content:  center;
-        border-radius: 12px;
-        min-width : 300px;
-    }
-    .item-form{
-        margin : 10px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size : 17px;
-        }
-        p{
-            font-size : 17px;
-        }
-        .error{
-            color : red;
-            font-size : 15px;
-        }
-        .success{
-            background-color: lightgreen;
-            text-align: center;
-        }
-        
-        </style>
-<body>
-    <div class="container ">
-        <div hidden class='div-form' style="color : green; font-size : 1.4rem" id='handleGoodResult'>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<link rel="icon" type="image/png" href="Img/favicon.png">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>J-Games Online</title>
+		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,..." />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+        <?php
+        require_once 'header.php';
+        ?>
+    <div class="container">
+        <div hidden id='handleGoodResult'>
             <?php echo $successConnexion ?>
             <p><a href="https://games-online.herokuapp.com"><?php echo $redirectToMenu; ?></a></p>
         </div>
@@ -72,17 +53,25 @@ require 'handleRequest/form-verif.php';
         <a href="inscription.php"><?php echo $targetLink ?>
     </a> !</p>
     <p ><a class="password-link" href="https://games-online.herokuapp.com/formPassword.php"><?php echo $forgottenPassword; ?></a></p>
-        <button type="submit" class="btn btn-primary" >Connexion</button>
+        <button type="submit" class="btn btn-primary" id="submit" >Connexion</button>
 </form>
     
     </body>
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-    <script >
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
     let success = <?php echo $success; ?>     
     let error = <?php echo $error; ?>
+        $("#submit").click(()=>{
+            $.ajax({
+                type: "POST",
+                url: "handleRequest/handleConnexion.php",
+                data: [$("#mdp").val(), $("#user").val()], // serializes the form's elements.
+                success: function(data)
+                {
+                  alert(data); // show response from the php script.
+                }
+            });
+        })
 
     
         if(success === 1){
