@@ -31,7 +31,7 @@ include "handleLanguage/lang.php";
         require_once 'header.php';
         ?>
         <div class="container settings">
-            <div class="box-settings mt-5">
+            <div class="box-settings mt-3">
                 <form method="get" action="settings.php" class="div-form">
                     <h2>Settings</h2> 
                     <label for="language" class="mt-3">Language :</label>
@@ -43,7 +43,7 @@ include "handleLanguage/lang.php";
                         <input type="radio" id="language" name="language" value="french" <?php isGoodLanguage("fr") ?> />
                         <label >Français</label>
                     </div>
-                    <button type="submit" id='submit' class="btn btn-primary mt-5">Enregister </button>
+                    <button type="submit" id='submit' class="btn btn-primary mt-2">Enregister </button>
                 </form>
             </div>       
         </div>      
