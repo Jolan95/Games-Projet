@@ -22,56 +22,52 @@ require 'handleRequest/form-verif.php';
         <?php
         require_once 'header.php';
         ?>
-    <div class="container">
-        <div hidden id='handleGoodResult'>
-            <?php echo $successConnexion ?>
-            <p><a href="https://games-online.herokuapp.com"><?php echo $redirectToMenu; ?></a></p>
+        <div class="container">
+            <div class="box-white">
+                <div hidden id='handleGoodResult'>
+                    <?php echo $successConnexion ?>
+                    <p><a href="https://games-online.herokuapp.com"><?php echo $redirectToMenu; ?></a></p>
+                </div>
+                <form method="post" action="form.php" id="formulaire">
+                    <h2>Identification</h2>
+                    <div>
+                        <div  hidden style="color : red" id="handleWrongResult"><?php echo $wrongPairing; ?></div>
+                        <div>    
+                            <label for="user"><?php echo $labelEmail ?></label>
+                        </div>
+                        <div>    
+                            <input type="email" id="user" name="user" value="" required/>
+                        </div>
+                    </div>
+                    <div class="item-form">
+                        <div>
+                            <label for="mdp"><?php echo $passwordLabel ?> </label>
+                        </div>
+                        <div>
+                            <input type="password" id="mdp" name="mdp" value="" required/>
+                        </div>
+                    </div>
+                    <p style="margin-bottom : 0" id="pd"><?php echo $noAccount ?><a href="inscription.php"><?php echo $targetLink ?></a>!</p>
+                    <p ><a class="password-link" href="https://games-online.herokuapp.com/formPassword.php"><?php echo $forgottenPassword; ?></a></p>
+                    <button type="submit" class="btn btn-primary" id="submit" >Connexion</button>
+                </form>
+            </div>    
         </div>
-        <form method="post" action="form.php" id="formulaire">
-            <h2>Identification</h2>
-            <div class="item-form">
             
-            <div  hidden style="color : red" id="handleWrongResult"><?php echo $wrongPairing; ?></div>
-            
-            
-            <div>    
-            <label for="user"><?php echo $labelEmail ?></label>
-            </div>
-        <div>    
-        <input type="email" id="user" name="user" value="" required/>
-    </div>
-    </div>
-    <div class="item-form">
-        <div>
-        <label for="mdp"><?php echo $passwordLabel ?> </label>
-        </div>
-        <div>
-        <input type="password" id="mdp" name="mdp" value="" required/>
-        </div>
-        </div>
-        <p style="margin-bottom : 0" id="pd"><?php echo $noAccount ?>
-        <a href="inscription.php"><?php echo $targetLink ?>
-    </a> !</p>
-    <p ><a class="password-link" href="https://games-online.herokuapp.com/formPassword.php"><?php echo $forgottenPassword; ?></a></p>
-        <button type="submit" class="btn btn-primary" id="submit" >Connexion</button>
-</form>
-    
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            let success = <?php echo $success; ?>     
+            let error = <?php echo $error; ?>
+            if(success){
+            let form = document.getElementById('formulaire')
+            form.hidden = true;
+            let displaySuccessConnexion = document.getElementById('handleGoodResult');
+            displaySuccessConnexion.hidden = false
+            }
+            if(error){
+            let displayWrongResult = document.getElementById('handleWrongResult')
+            displayWrongResult.hidden = false;   
+            }
+        </script>
     </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script>
-    let success = <?php echo $success; ?>     
-    let error = <?php echo $error; ?>
-    
-        if(success){
-        let form = document.getElementById('formulaire')
-        form.hidden = true;
-        let displaySuccessConnexion = document.getElementById('handleGoodResult');
-        displaySuccessConnexion.hidden = false
-            
-        }
-        if(error){
-        let displayWrongResult = document.getElementById('handleWrongResult')
-        displayWrongResult.hidden = false;   
-        }
-    </script>
-    </html>
+</html>
