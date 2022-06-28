@@ -28,16 +28,12 @@ include "handleLanguage/lang.php";
                 <input type="radio" id="language" name="language" value="french" <?php isGoodLanguage("fr") ?> />
                 <label >Français</label>
 
+                <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
             </div>
-
-            <div class='item-form'>
-
-              <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
-
-
+ 
             </form>
 
-                </div>
+            
 
        
 <?php
@@ -57,9 +53,8 @@ if(isset($_GET['language'])){
     
 }
 
-
 ?>
-    <style>
+    <!-- <style>
         .div-form{
         border : 2px solid black;
         width: 35vw;
@@ -89,7 +84,7 @@ if(isset($_GET['language'])){
         input[type=checkbox] {
   visibility: hidden;
 }
-</style>
+</style> -->
 
         
         
