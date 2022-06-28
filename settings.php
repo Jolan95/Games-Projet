@@ -26,15 +26,14 @@ include "handleLanguage/lang.php";
         
                 $_COOKIE['lang'] = "fr";
         
-            } 
-        
-            
+            }        
         }
         function isGoodLanguage($value){
             if($_COOKIE["lang"] === $value){
                 echo "checked";
             }
         }
+        var_dump($_COOKIE);
         ?>
         <div class="container settings">
             <div class="box-settings mt-5">
