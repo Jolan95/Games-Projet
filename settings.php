@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <?php 
 session_start();
+$expire = 365*24*3600;
 if(isset($_GET['language'])){
     if($_GET["language"] == "english"){
-        setcookie('lang',"en"); 
+        setcookie('lang',"en", $expire); 
     }else{
-        setcookie('lang',"fr");
+        setcookie('lang',"fr", $expire);
     }
 }     
 var_dump($_GET);
