@@ -16,7 +16,7 @@ include "handleLanguage/lang.php";
 	<body>
         <?php require_once 'header.php'; ?>
         <div class="container settings">
-            <div class="box-settings">
+            <div class="box-settings mt-5">
                 <form method="get" action="settings.php" class="div-form">
                     <h2>Settings</h2> 
                     <label for="language">Language :</label>
@@ -31,11 +31,7 @@ include "handleLanguage/lang.php";
                     <button type="submit" id='submit' class="btn btn-primary">Enregister </button>
                 </form>
             </div>       
-        </div>
-
-            
-
-       
+        </div>         
 <?php
 $expire = 365*24*3600;
 if(isset($_GET['language'])){
