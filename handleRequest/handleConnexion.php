@@ -1,2 +1,2 @@
 <?php 
-return $_POST;
+return 1;
