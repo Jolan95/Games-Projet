@@ -4,9 +4,9 @@ session_start();
 $expire = 365*24*3600;
 if(isset($_GET['language'])){
     if($_GET["language"] == "english"){
-        setcookie('lang',"en", $expire); 
+        $_COOKIE['lang'] = "en"; 
     }else{
-        setcookie('lang',"fr", $expire);
+        $_COOKIE['lang'] = "fr";
     }
 }     
 var_dump($_GET);
@@ -24,7 +24,7 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
         <?php require_once 'header.php';
-        var_dump($_COOKIE);
+        var_dump($_COOKIE["lang"]);
         ?>
         <div class="container settings">
             <div class="box-settings mt-5">
