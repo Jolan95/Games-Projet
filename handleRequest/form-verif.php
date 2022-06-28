@@ -10,7 +10,7 @@ if (isset($_POST['user']) && isset($_POST['mdp'])){
      if($statement->execute()) {
          $users = $statement->fetch();
          if($users !== false && password_verify($mdp, $users->getPassword())) {
-             $success = 1;
+             $success = true;
 
             $_SESSION['user'] = $users->getPseudo();
             $_SESSION['firstname'] = $users->getFirstname();
@@ -28,10 +28,10 @@ if (isset($_POST['user']) && isset($_POST['mdp'])){
 
             
             } else {
-                $error = 1;
+                $error = true;
             }
          }else{
-             $error = 1;
+             $error = true;
          };
 
      }
