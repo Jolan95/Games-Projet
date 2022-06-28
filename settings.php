@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php 
 session_start();
-include "handleLanguage/lang.php"; 
 if(isset($_GET['language'])){
     if($_GET["language"] == "english"){
         setcookie('lang',"en");
@@ -10,6 +9,7 @@ if(isset($_GET['language'])){
         setcookie('lang',"fr");
     }
 }     
+include "handleLanguage/lang.php"; 
 ?>
 <html lang="fr">
     <head>
