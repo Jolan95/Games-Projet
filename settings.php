@@ -3,11 +3,11 @@
 session_start();
 include "handleLanguage/lang.php"; 
 if(isset($_GET['language'])){
-    if($_GET["language"] === "english"){
-        $_COOKIE['lang'] = "en";
+    if($_GET["language"] == "english"){
+        setcookie('lang',"en");
         
     }else{
-        $_COOKIE['lang'] = "fr";
+        setcookie('lang',"fr");
     }
 }     
 ?>
