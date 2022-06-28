@@ -34,7 +34,7 @@ include "handleLanguage/lang.php";
             <div class="box-settings mt-3">
                 <form method="get" action="settings.php" class="div-form">
                     <h2>Settings</h2> 
-                    <label for="language" class="mt-3">Language :</label>
+                    <label for="language" class="mt-4">Language :</label>
                     <div>
                         <input type="radio" id="language" name="language" value="english" <?php isGoodLanguage("en") ?> />
                         <label >Anglais</label>

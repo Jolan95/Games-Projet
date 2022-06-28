@@ -151,6 +151,9 @@ header .dropdown ul {
   }
 }
 /*********Games********/
+.games h1 {
+  font-size: 1.8rem;
+}
 .games .box-game {
   padding: 15px;
   margin-top: 30px;
