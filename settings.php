@@ -34,7 +34,8 @@ include "handleLanguage/lang.php";
                 </form>
             </div>       
         </div>  
-        <?php function isGoodLanguage($value){
+        <?php
+        function isGoodLanguage($value){
             if($_COOKIE["lang"] === $value){
                 echo "checked";
             }
@@ -45,9 +46,10 @@ include "handleLanguage/lang.php";
                     
                 }else{
                     $_COOKIE['lang'] = "fr";
-            
-              
-        } ?>
+        }
+    } 
+}
+        ?>
         <script>
             console.log(document.cookie)
         </script>       
