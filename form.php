@@ -27,7 +27,7 @@ require 'handleRequest/form-verif.php';
             <?php echo $successConnexion ?>
             <p><a href="https://games-online.herokuapp.com"><?php echo $redirectToMenu; ?></a></p>
         </div>
-        <form method="post" action="form.php"  class="div-form" id="formulaire">
+        <form method="post" action="form.php" id="formulaire">
             <h2>Identification</h2>
             <div class="item-form">
             
@@ -61,31 +61,17 @@ require 'handleRequest/form-verif.php';
     <script>
     let success = <?php echo $success; ?>     
     let error = <?php echo $error; ?>
-        $("#submit").click(()=>{
-            $.ajax({
-                type: "POST",
-                url: "handleRequest/handleConnexion.php",
-                data: [$("#mdp").val(), $("#user").val()], // serializes the form's elements.
-                success: function(data)
-                {
-                  alert(data); // show response from the php script.
-                }
-            });
-        })
-
     
-        if(success === 1){
+        if(success){
         let form = document.getElementById('formulaire')
         form.hidden = true;
         let displaySuccessConnexion = document.getElementById('handleGoodResult');
         displaySuccessConnexion.hidden = false
-
             
         }
-        if(error === 1){
+        if(error){
         let displayWrongResult = document.getElementById('handleWrongResult')
-        displayWrongResult.hidden = false;
-        
-    }
+        displayWrongResult.hidden = false;   
+        }
     </script>
     </html>
