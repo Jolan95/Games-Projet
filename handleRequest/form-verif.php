@@ -28,10 +28,10 @@ if (isset($_POST['user']) && isset($_POST['mdp'])){
 
             
             } else {
-                $error = 0;
+                $error = 1;
             }
          }else{
-             $error = 0;
+             $error = 1;
          };
 
      }

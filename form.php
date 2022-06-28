@@ -56,7 +56,7 @@ require 'handleRequest/form-verif.php';
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script>
-            let success = <?php echo $success; ?>     
+            let success = <?php echo $success; ?>;    
             let error = <?php echo $error; ?>;
             if(success === 1 ){
             let form = document.getElementById('formulaire')
