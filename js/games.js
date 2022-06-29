@@ -8,7 +8,7 @@ function getCookie(name) {
 lang = getCookie("lang") == "fr" ? "fr" : "en";
              
 // Reqest Ajax for game list
-fetch('./games.json').then((response) => {
+fetch('./js/games.json').then((response) => {
     if(!response.ok){
         throw new Error("Impossible de récupérer la liste de jeux.")
     }

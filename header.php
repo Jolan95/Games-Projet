@@ -43,12 +43,12 @@ if(isset($_SESSION['id'])){
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
-                    <a class="dropdown-item" href="https://games-online.herokuapp.com/ranking/highscore.php">
+                    <a class="dropdown-item" href="https://games-online.herokuapp.com/highScore.php">
                         Mes records
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item" href="https://games-online.herokuapp.com/ranking/ranking.php">
+                    <a class="dropdown-item" href="https://games-online.herokuapp.com/ranking.php">
                         Classement
                     </a>
                 </li>
