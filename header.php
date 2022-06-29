@@ -1,4 +1,4 @@
-<?php
+<?php 
 if(isset($_SESSION['id'])){
   if($_SERVER['PHP_SELF'] === "/form.php" || $_SERVER['PHP_SELF'] === "/inscription.php" || $_SERVER['PHP_SELF']=== "/passwordModify.php" ||  $_SERVER['PHP_SELF']=== "passwordReset.php"){
     var_dump($_SESSION);

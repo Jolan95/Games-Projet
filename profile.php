@@ -1,5 +1,5 @@
 <?php
-$style="Style/style.css";
+session_start();
 include 'header.php';
 
 ?>
