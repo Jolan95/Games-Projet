@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION['id'])){
   if($_SERVER['PHP_SELF'] === "/form.php" || $_SERVER['PHP_SELF'] === "/inscription.php" || $_SERVER['PHP_SELF']=== "/passwordModify.php" ||  $_SERVER['PHP_SELF']=== "passwordReset.php"){
-    echo "<h2><i>Impossible d'accéder à cette page, une erreur est apparue!</i></h2>";
+    throw new Exception("Impossible d'accéder à cette page, une erreur est apparue!", 403);
     die();
   } 
 }else{
