@@ -1,9 +1,8 @@
 <?php
+session_start();
 require_once 'Class/user.php';
 include 'header.php';
 $validate = false; 
-$style="Style/style.css";
-
 
 ?>
 <body style="background-color: #282c34;">
