@@ -17,30 +17,30 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php include "header.php"; ?>
-		<div class="container">
+		<div class="container profile">
 			<div class="box-white">
 				<h1><?php echo $_SESSION['user']?></h1>
-				<div>
-					<?php echo $firstnameLabel ?> : <?php echo $_SESSION['firstname']?>
+				<div class="mt-2">
+					<?php echo $firstnameLabel ?> : <span class="bold"><?php echo $_SESSION['firstname']?></span>
+				</div>
+				<div class="my-1">
+					<?php echo $lastnameLabel ?> : <span class="bold"><?php echo $_SESSION['name']?></span>
 				</div>
 				<div>
-					<?php echo $lastnameLabel ?> : <?php echo $_SESSION['name']?>
+					<?php echo $creationAccount ?> : <span class="bold"><?php echo $_SESSION['createdAt']?></span>
 				</div>
-				<div>
-					<?php echo $creationAccount ?> : <?php echo $_SESSION['createdAt']?>
+				<div class="my-1">
+				    Email : <span class="bold"><?php echo $_SESSION['email']?></span>
 				</div>
-				<div>
-				<p>Email : <?php echo $_SESSION['email']?>
-				</div>
-				<div>
+				<div class="mt-3">
 					<div>
 						<button  onclick="deconnexion()"  type="button" class="btn btn-warning"><?php echo $deconnexion ?></button>
 					</div>
-					<div>
-					<a href="https://games-online.herokuapp.com/changePassword.php"><button oncl class="btn btn-success"><?php echo $managePassword ?></button></a>
+					<div class="my-3">
+						<a href="https://games-online.herokuapp.com/changePassword.php"><button oncl class="btn btn-success"><?php echo $managePassword ?></button></a>
 					</div>
 					<div>
-					<button onclick="deletingAccount()" type="button" class="btn btn-danger"  ><?php echo $deletingAccount ?></button>
+						<button onclick="deletingAccount()" type="button" class="btn btn-danger"  ><?php echo $deletingAccount ?></button>
 					</div>
 				</div>
 			</div>
