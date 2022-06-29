@@ -1,10 +1,10 @@
 
 <?php
 session_start(); 
+require 'Class/user.php';
 include "handleLanguage/lang.php"; 
 $success = 0;
 $error = 0;
-require 'Class/user.php';
 require 'handleRequest/form-verif.php';
 ?>
 <!DOCTYPE html>
