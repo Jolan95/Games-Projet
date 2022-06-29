@@ -48,7 +48,7 @@ include "handleLanguage/lang.php";
 										  <span>&times;</span>
 										</button>            
 								  	</div>
-									<form id="formulaire"  method='post' >	  
+									<form id="formulaire">	  
 								  		<div class="modal-body">
 									  		<div>
             								    <label><?php echo $labelNewPassword; ?> : </label>
@@ -64,7 +64,7 @@ include "handleLanguage/lang.php";
 											</div>
 										</div>	
 								  		<div class="modal-footer">
-											<button type="button" id='newPassword' class="btn btn-success" data-dismiss="modal"><?php echo $valid ?></button>
+											<button type="button" id='newPassword' class="btn btn-success"><?php echo $valid ?></button>
 										</div>
 									</form>	
 								</div>
@@ -109,7 +109,31 @@ include "handleLanguage/lang.php";
     		    	request.open("GET", "handleRequest/deconnexion.php", true);
     		    	request.send();
     		  	}
-    		  }
+    		}
+			$("#newPassword").click(()=>{
+        		let password = $("#password").val()
+        		let password2 = $("#password2").val()
+        		if(password.length > 7 && password2.length >7){
+        		    if(password === password2){
+        		        let data = password
+        		        var request = new XMLHttpRequest();
+        		        var formData = new FormData();
+						formData.append("password", data);
+        				request.onreadystatechange = function() {
+        		  			if (this.readyState == 4 && this.status == 200) {
+								alert(this.response);
+        			    	  	window.location.replace("https://games-online.herokuapp.com/");
+        					}
+        				};
+        				request.open("POST", "handleRequest/ChangePassword-verif.php", true);
+        				request.send(formData);
+				    }else{
+				        alert(<?php echo $errorChangePassword ?>)
+				    }
+				} else {
+				    alert(<?php echo $errorChangePassword2 ?>)
+				}
+			})
     	</script>
     </body>
 </html>

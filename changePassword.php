@@ -20,7 +20,7 @@ $validate = false;
 
             
             <div>
-                <button type='button' id='newPassword' style='margin : 4vh' class='btn btn-success'><?php echo $valid ?></button>
+
             </div>
         </form>
         
