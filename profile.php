@@ -121,15 +121,14 @@ include "handleLanguage/lang.php";
 						formData.append("password", data);
         				request.onreadystatechange = function() {
         		  			if (this.readyState == 4 && this.status == 200) {
+								  $("#infos").hide
 								alert(this.response);
-        			    	  	window.location.replace("https://games-online.herokuapp.com/");
         					}
         				};
         				request.open("POST", "handleRequest/ChangePassword-verif.php", true);
         				request.send(formData);
 				    }else{
 				        alert(<?php echo $errorChangePassword ?>)
-						$("#infos").hide
 				    }
 				} else {
 				    alert(<?php echo $errorChangePassword2 ?>)
