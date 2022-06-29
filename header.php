@@ -1,12 +1,12 @@
 <?php
 if(isset($_SESSION['id'])){
   if($_SERVER['PHP_SELF'] === "/form.php" || $_SERVER['PHP_SELF'] === "/inscription.php" || $_SERVER['PHP_SELF']=== "/passwordModify.php" ||  $_SERVER['PHP_SELF']=== "passwordReset.php"){
-    throw new Exception("Impossible d'accéder à cette page, une erreur est apparue!", 403);
+    echo "Impossible d'accéder à cette page, une erreur est apparue!";
     die();
   } 
 }else{
     if($_SERVER['PHP_SELF'] === "/profile.php" ||  $_SERVER['PHP_SELF']=== "/changePassword.php" ){
-      throw new exception("Impossible d'accéder à cette page, vous devez être connecté!</i></h2>", 403);
+      echo "Impossible d'accéder à cette page, vous devez être connecté!</i></h2>";
       die();
 
   }
