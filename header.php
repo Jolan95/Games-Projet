@@ -2,7 +2,7 @@
 if(isset($_SESSION['id'])){
   if($_SERVER['PHP_SELF'] === "/form.php" || $_SERVER['PHP_SELF'] === "/inscription.php" || $_SERVER['PHP_SELF']=== "/passwordModify.php" ||  $_SERVER['PHP_SELF']=== "passwordReset.php"){
     echo "Impossible d'accéder à cette page, une erreur est apparue!";
-    die();
+    
   } 
 }else{
     if($_SERVER['PHP_SELF'] === "/profile.php" ||  $_SERVER['PHP_SELF']=== "/changePassword.php" ){
