@@ -240,7 +240,11 @@ header .dropdown ul {
 .profile h1 {
   color: black;
 }
+.profile h2 {
+  font-size: 1.6rem;
+}
 .profile .close {
   border: none;
   background-color: transparent;
+  color: red;
 }

@@ -54,13 +54,13 @@ include "handleLanguage/lang.php";
             								    <label><?php echo $labelNewPassword; ?> : </label>
 											</div>
 											<div>
-												<input id='password'type='text' name='password'>
+												<input id='password' type='password' name='password'>
 											</div>
 											<div>
             									<label><?php echo $labelNewPassword2; ?> : </label>
 											</div>    
 											<div>
-												<input id='password2'type='text' name='password2'></input>
+												<input id='password2' type='password' name='password2'></input>
 											</div>
 										</div>	
 								  		<div class="modal-footer">
@@ -72,7 +72,7 @@ include "handleLanguage/lang.php";
 						</div>
 					</div>
 					<div>
-						<button onclick="deletingAccount()" type="button" class="btn btn-danger"  ><?php echo $deletingAccount ?></button>
+						<button onclick="deletingAccount()" type="button" class="btn btn-danger"><?php echo $deletingAccount ?></button>
 					</div>
 				</div>
 			</div>
