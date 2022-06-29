@@ -8,7 +8,8 @@ if(isset($_GET['language'])){
     }else{
         $_COOKIE['lang'] = "fr";
     }
-}   
+}  
+ 
 function isGoodLanguage($value){
     if($_COOKIE["lang"] === $value){
         echo "checked";
@@ -34,7 +35,7 @@ include "handleLanguage/lang.php";
             <div class="box-white mt-5">
                 <form method="get" action="settings.php">
                     <h2>Settings</h2> 
-                    <label for="language" class="mt-4">Language :</label>
+                    <label for="language" class="mt-2">Language :</label>
                     <div>
                         <input type="radio" id="language" name="language" value="english" <?php isGoodLanguage("en") ?> />
                         <label >Anglais</label>
@@ -46,6 +47,10 @@ include "handleLanguage/lang.php";
                     <button type="submit" id='submit' class="btn btn-primary mt-2">Enregister </button>
                 </form>
             </div>       
-        </div>      
+        </div> 
+        <div class="background-color : white;"> 
+            <?php var_dump( $_SESSION ); ?>
+
+        </div>     
     </body>
 </html>
