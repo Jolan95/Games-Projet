@@ -1,6 +1,5 @@
 <?php
-
-$style="Style/style.css";
+session_start();
 include 'header.php';
 require_once 'sendgrid-php.php';
 

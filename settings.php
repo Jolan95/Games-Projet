@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php 
+session_start();
 $expire = 365*24*3600;
 if(isset($_GET['language'])){
     if($_GET["language"] == "english"){

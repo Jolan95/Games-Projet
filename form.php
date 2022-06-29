@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'Class/user.php';
 include "handleLanguage/lang.php"; 
 $success = 0;
