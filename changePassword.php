@@ -17,23 +17,8 @@ $validate = false;
 <div  id="content"style = "background-color : white; border-radius : 20px;border : 3px solid black; margin-left : 3vw; width: 50vw; margin-top : 4vh;padding-top : 3vw; padding-left : 2vw; min-width : 250px">
     <h2 style="margin-bottom :2vh"><?php echo $changePasswordTitle?></h2>
     <form id="formulaire"  method='post' >
-        <div style='font-weight : 500; '>
-            <div>
-                <label><?php echo $labelNewPassword; ?> : </label>
-            </div>
-            <div>
-                <input id='password'type='text' name='password'>
-            </div>
-        </div>
-        <div>
-            <div>
-                <label style='margin-top : 2vh; font-weight : 500;'><?php echo $labelNewPassword2; ?> : </label>
-            </div>
-            <div>
-                <div>
-                    <input id='password2'type='text' name='password2'></input>
-                </div>
-            </div>
+
+            
             <div>
                 <button type='button' id='newPassword' style='margin : 4vh' class='btn btn-success'><?php echo $valid ?></button>
             </div>

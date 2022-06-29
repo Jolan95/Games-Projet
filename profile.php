@@ -37,31 +37,44 @@ include "handleLanguage/lang.php";
 						<button  onclick="deconnexion()"  type="button" class="btn btn-warning"><?php echo $deconnexion ?></button>
 					</div>
 					<div class="my-3">
-						<a href="https://games-online.herokuapp.com/changePassword.php"><button oncl class="btn btn-success"><?php echo $managePassword ?></button></a>
+						<!-- <a href="https://games-online.herokuapp.com/changePassword.php"><button oncl class="btn btn-success"><?php echo $managePassword ?></button></a> -->
+						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-success"><?php echo $managePassword ?></button>
+						<div class="modal" id="infos">
+						  	<div class="modal-dialog">
+								<div class="modal-content">
+								  	<div class="modal-header">
+										<h4 class="modal-title">Modifier le mot de passe</h4>
+										<button type="button" class="close" data-dismiss="modal">
+										  <span>&times;</span>
+										</button>            
+								  	</div>
+									<form id="formulaire"  method='post' >	  
+								  		<div class="modal-body">
+									  		<div>
+            								    <label><?php echo $labelNewPassword; ?> : </label>
+											</div>
+											<div>
+												<input id='password'type='text' name='password'>
+											</div>
+											<div>
+            									<label><?php echo $labelNewPassword2; ?> : </label>
+											</div>    
+											<div>
+												<input id='password2'type='text' name='password2'></input>
+											</div>
+										</div>	
+								  		<div class="modal-footer">
+											<button type="button" id='newPassword' class="btn btn-success" data-dismiss="modal"><?php echo $valid ?></button>
+										</div>
+									</form>	
+								</div>
+						  	</div>
+						</div>
 					</div>
 					<div>
 						<button onclick="deletingAccount()" type="button" class="btn btn-danger"  ><?php echo $deletingAccount ?></button>
 					</div>
 				</div>
-				<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-primary">Informations</button>
-<div class="modal" id="infos">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Plus d'informations</h4>
-        <button type="button" class="close" data-dismiss="modal">
-          <span>&times;</span>
-        </button>            
-      </div>
-      <div class="modal-body">
-        Le Tigre (Panthera tigris) est un mammifère carnivore de la famille des félidés...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
 			</div>
 		</div>	
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
