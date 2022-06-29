@@ -48,9 +48,5 @@ include "handleLanguage/lang.php";
                 </form>
             </div>       
         </div> 
-        <div style="background-color : white;"> 
-            <?php echo $_SESSION["user"] ?>
-
-        </div>     
     </body>
 </html>
