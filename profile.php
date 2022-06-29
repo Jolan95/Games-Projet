@@ -45,7 +45,7 @@ include "handleLanguage/lang.php";
 								  	<div class="modal-header">
 										<h2 class="modal-title">Modifier le mot de passe</h2>
 										<button type="button" class="close" data-dismiss="modal">
-										  <span>&times;</span>
+										  X
 										</button>            
 								  	</div>
 									<form id="formulaire">	  

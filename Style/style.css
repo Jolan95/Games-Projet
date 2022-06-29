@@ -240,3 +240,7 @@ header .dropdown ul {
 .profile h1 {
   color: black;
 }
+.profile .close {
+  border: none;
+  background-color: transparent;
+}
