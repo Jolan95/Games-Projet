@@ -63,7 +63,8 @@ require 'handleRequest/form-verif.php';
             // form.hidden = true;
             // let displaySuccessConnexion = document.getElementById('handleGoodResult');
             // displaySuccessConnexion.hidden = false
-            document.location.href="https://games-online.herokuapp.com/";
+            console.log("success");
+            // document.location.href="https://games-online.herokuapp.com/";
             }
             if(error === 1){
             let displayWrongResult = document.getElementById('handleWrongResult')

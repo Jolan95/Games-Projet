@@ -6,7 +6,7 @@ if(isset($_SESSION['id'])){
   } 
 }else{
     if($_SERVER['PHP_SELF'] === "/profile.php" ||  $_SERVER['PHP_SELF']=== "/changePassword.php" ){
-      echo "<h2><i>Impossible d'accéder à cette page, vous devez être connecté!</i></h2>";
+      throw new exception("Impossible d'accéder à cette page, vous devez être connecté!</i></h2>", 403);
       die();
 
   }
