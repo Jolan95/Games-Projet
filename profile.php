@@ -43,26 +43,26 @@ include "handleLanguage/lang.php";
 						<button onclick="deletingAccount()" type="button" class="btn btn-danger"  ><?php echo $deletingAccount ?></button>
 					</div>
 				</div>
-			</div>
-			<div class="modal" id="myModal">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <!-- Modal Header -->
-               <div class="modal-header">
-                  <h4 class="modal-title">Modal Heading</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-               </div>
-               <!-- Modal body -->
-               <div class="modal-body">
-                  Modal body..
-               </div>
-               <!-- Modal footer -->
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-               </div>
-            </div>
-         </div>
+				<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-primary">Informations</button>
+<div class="modal" id="infos">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Plus d'informations</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>            
       </div>
+      <div class="modal-body">
+        Le Tigre (Panthera tigris) est un mammifère carnivore de la famille des félidés...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
 		</div>	
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -97,7 +97,6 @@ include "handleLanguage/lang.php";
     		    	request.send();
     		  	}
     		  }
-			  $('#myModal').modal('show');
     	</script>
     </body>
 </html>
