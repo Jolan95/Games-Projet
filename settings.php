@@ -48,8 +48,8 @@ include "handleLanguage/lang.php";
                 </form>
             </div>       
         </div> 
-        <div class="background-color : white;"> 
-            <?php var_dump( $_SESSION ); ?>
+        <div style="background-color : white;"> 
+            <?php echo $_SESSION["user"] ?>
 
         </div>     
     </body>
