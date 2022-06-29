@@ -18,7 +18,7 @@ include "handleLanguage/lang.php";
 	<body>
 		<?php include "header.php"; ?>
 		<div class="container profile">
-			<div class="box-white">
+			<div class="box-white mt-5">
 				<h1><?php echo $_SESSION['user']?></h1>
 				<div class="mt-2">
 					<?php echo $firstnameLabel ?> : <span class="bold"><?php echo $_SESSION['firstname']?></span>

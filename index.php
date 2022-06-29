@@ -24,7 +24,7 @@ include "handleLanguage/lang.php";
 					<div class="carousel-content p-5">
 						<h2 class="title-game">Quiz Capitales</h2>
 						<div class="d-lg-block d-none">
-							Venez testez votre connaissance des capitales du monde, 3 niveau différents :
+							Venez tester votre connaissance des capitales du monde, 3 niveau différents :
 							<ul >
 								<li>Facile (10 capitales)</li>
 								<li>Moyen (50 capitales)</li>
