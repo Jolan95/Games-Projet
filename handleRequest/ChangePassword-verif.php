@@ -18,16 +18,11 @@ if(isset($_POST['password'])){
         $statement->bindValue(":password", password_hash(htmlspecialchars($password), PASSWORD_BCRYPT));
         $statement->bindValue(":id", $id);
         if($statement->execute()){
-        echo $passwordChanged;
-          /*  $users = $statement->fetch();
-            $user->setPassword($_POST['password']);
-            $_SESSION['password'] = $user->getPassword(); */           
-                
+            echo $passwordChanged;                
         } else {
             echo $mistakeRecordingDB;
         }
     } 
-  
 }
     
   
