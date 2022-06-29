@@ -43,7 +43,7 @@ include "handleLanguage/lang.php";
 						  	<div class="modal-dialog">
 								<div class="modal-content">
 								  	<div class="modal-header">
-										<h4 class="modal-title">Modifier le mot de passe</h4>
+										<h2 class="modal-title">Modifier le mot de passe</h2>
 										<button type="button" class="close" data-dismiss="modal">
 										  <span>&times;</span>
 										</button>            
@@ -129,6 +129,7 @@ include "handleLanguage/lang.php";
         				request.send(formData);
 				    }else{
 				        alert(<?php echo $errorChangePassword ?>)
+						$("#infos").hide
 				    }
 				} else {
 				    alert(<?php echo $errorChangePassword2 ?>)
