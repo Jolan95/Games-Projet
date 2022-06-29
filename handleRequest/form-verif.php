@@ -24,9 +24,7 @@ if (isset($_POST['user']) && isset($_POST['mdp'])){
             $_SESSION['record_guess'] = $users->getRecordGuess();
             $_SESSION['record_flappy'] = $users->getRecordFlappy();
             $_SESSION['email'] = $users->getEmail();
-            $_SESSION['class_user'] = $users;
-
-            
+            $_SESSION['class_user'] = $users;         
             } else {
                 $error = 1;
             }

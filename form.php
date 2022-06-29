@@ -59,10 +59,11 @@ require 'handleRequest/form-verif.php';
             let success = <?php echo $success; ?>;    
             let error = <?php echo $error; ?>;
             if(success === 1 ){
-            let form = document.getElementById('formulaire')
-            form.hidden = true;
-            let displaySuccessConnexion = document.getElementById('handleGoodResult');
-            displaySuccessConnexion.hidden = false
+            // let form = document.getElementById('formulaire')
+            // form.hidden = true;
+            // let displaySuccessConnexion = document.getElementById('handleGoodResult');
+            // displaySuccessConnexion.hidden = false
+            document.location.href="https://games-online.herokuapp.com/";
             }
             if(error === 1){
             let displayWrongResult = document.getElementById('handleWrongResult')
