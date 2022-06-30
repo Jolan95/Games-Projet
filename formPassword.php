@@ -27,7 +27,7 @@ require 'handleRequest/formPassword-verif.php';
                 </div>
                 <form method="post" action="formPassword.php"  class="div-form" id="formulaire">
                     <h1><?php echo $resetPassword; ?></h1>
-                    <div  hidden  id="handleWrongResult">
+                    <div  hidden class="red" id="handleWrongResult">
                         <?php echo $EmailnotMatching; ?>
                     </div>
                     <div class="pt-1">    
@@ -36,7 +36,7 @@ require 'handleRequest/formPassword-verif.php';
                     <div>    
                         <input type="email" id="user" name="mail" value="" required/>
                     </div>
-                    <div class="small-text pt-2 pb-1">
+                    <div class="small-text pt-2 pb-1 green">
                         <?php echo $sentenceReset; ?>
                     </div>
                     <button type="submit" class="btn btn-primary" ><?php echo $sendMail; ?></button>
