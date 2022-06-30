@@ -190,7 +190,7 @@ header .dropdown ul {
 .games .box-content:hover {
   background-color: blanchedalmond;
 }
-/***Rnaking***/
+/***Ranking***/
 .ranking {
   color: white;
 }
@@ -237,6 +237,7 @@ header .dropdown ul {
   text-align: center;
   border-radius: 5px;
 }
+/***Profile***/
 .profile h1 {
   color: black;
 }
@@ -247,4 +248,12 @@ header .dropdown ul {
   border: none;
   background-color: transparent;
   color: red;
+}
+/***Form***/
+.form #handleWrongResult {
+  color: red;
+  font-size: 1.125rem;
+}
+.form .links {
+  font-size: 1.125rem;
 }

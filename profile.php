@@ -37,8 +37,8 @@ include "handleLanguage/lang.php";
 						<button  onclick="deconnexion()"  type="button" class="btn btn-warning"><?php echo $deconnexion ?></button>
 					</div>
 					<div class="my-3">
-						<!-- <a href="https://games-online.herokuapp.com/changePassword.php"><button oncl class="btn btn-success"><?php echo $managePassword ?></button></a> -->
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-success"><?php echo $managePassword ?></button>
+						<!-- Modal to modify password -->
 						<div class="modal" id="infos">
 						  	<div class="modal-dialog">
 								<div class="modal-content">
