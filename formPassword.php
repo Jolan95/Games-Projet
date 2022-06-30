@@ -30,13 +30,13 @@ $error = 0;
                     <div  hidden  id="handleWrongResult">
                         <?php echo $EmailnotMatching; ?>
                     </div>
-                    <div>    
+                    <div class="pt-1">    
                         <label for="user"><?php echo $labelEmail ?></label>
                     </div>
                     <div>    
                         <input type="email" id="user" name="mail" value="" required/>
                     </div>
-                    <div class="small-text pt-3 pb-1">
+                    <div class="small-text pt-2 pb-1">
                         <?php echo $sentenceReset; ?>
                     </div>
                     <button type="submit" class="btn btn-primary" ><?php echo $sendMail; ?></button>
