@@ -252,8 +252,8 @@ header .dropdown ul {
 /***Form***/
 .form #handleWrongResult {
   color: red;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
 }
 .form .links {
-  font-size: 1.125rem;
+  font-size: 0.925rem;
 }
