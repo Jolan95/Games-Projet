@@ -28,6 +28,9 @@ h1 {
   color: white;
   font-size: 2rem;
 }
+.small-text {
+  font-size: 0.85rem;
+}
 .box-white {
   width: 100%;
   max-width: 400px;
@@ -35,6 +38,9 @@ h1 {
   border-radius: 7px;
   border: none;
   background-color: white;
+}
+.box-white h1 {
+  color: black;
 }
 /***header***/
 header .logo {
@@ -238,9 +244,6 @@ header .dropdown ul {
   border-radius: 5px;
 }
 /***Profile***/
-.profile h1 {
-  color: black;
-}
 .profile h2 {
   font-size: 1.6rem;
 }

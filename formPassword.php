@@ -20,7 +20,7 @@ $error = 0;
         <?php
         require_once 'header.php';
         ?>
-        <div class="container ">
+        <div class="container">
             <div class="box-white">
                 <div hidden id='handleGoodResult'>
                     <?php echo $emailReceived ?>
@@ -36,7 +36,9 @@ $error = 0;
                     <div>    
                         <input type="email" id="user" name="mail" value="" required/>
                     </div>
-                    <?php echo $sentenceReset; ?>
+                    <div class="small-text pt-3 pb-1">
+                        <?php echo $sentenceReset; ?>
+                    </div>
                     <button type="submit" class="btn btn-primary" ><?php echo $sendMail; ?></button>
                 </form>
             </div>
