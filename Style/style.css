@@ -176,7 +176,6 @@ header .dropdown ul {
   font-size: 1.8rem;
 }
 .games .box-game {
-  padding: 15px;
   margin-top: 30px;
   color: #282c34;
 }
@@ -202,6 +201,11 @@ header .dropdown ul {
 }
 .games .box-content:hover {
   background-color: blanchedalmond;
+}
+@media all and (min-width: 991px) {
+  .games .box-games {
+    padding: 15px;
+  }
 }
 /***Ranking***/
 .ranking {
