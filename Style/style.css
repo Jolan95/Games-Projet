@@ -203,7 +203,7 @@ header .dropdown ul {
   background-color: blanchedalmond;
 }
 @media all and (min-width: 991px) {
-  .games .box-games {
+  .games .box-game {
     padding: 15px;
   }
 }
