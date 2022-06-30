@@ -41,6 +41,7 @@ h1 {
 }
 .box-white h1 {
   color: black;
+  font-size: 1.625rem;
 }
 /***header***/
 header .logo {
