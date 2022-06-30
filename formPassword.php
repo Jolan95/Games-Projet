@@ -21,7 +21,7 @@ $error = 0;
         require_once 'header.php';
         ?>
         <div class="container">
-            <div class="box-white">
+            <div class="box-white mt-4">
                 <div hidden id='handleGoodResult'>
                     <?php echo $emailReceived ?>
                 </div>
