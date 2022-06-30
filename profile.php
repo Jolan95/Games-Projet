@@ -29,7 +29,7 @@ include "handleLanguage/lang.php";
 				<div>
 					<?php echo $creationAccount ?> : <span class="bold"><?php echo $_SESSION['createdAt']?></span>
 				</div>
-				<div class="my-1">
+				<div class="mt-1 mb-2">
 				    Email : <span class="bold"><?php echo $_SESSION['email']?></span>
 				</div>
 				<div class="mt-3">
