@@ -1,5 +1,6 @@
 <?php
 require 'Class/user.php';
+include "handleLanguage/lang.php"; 
 require 'handleRequest/formPassword-verif.php';
 $success = 0;
 $error = 0;
