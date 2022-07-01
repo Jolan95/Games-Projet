@@ -3,10 +3,10 @@ session_start();
 include "handleLanguage/lang.php";
 require_once 'Class/user.php';
 $successRequest = 0;
-require_once "passwordReset-verif.php";
+require_once "handleRequest/passwordReset-verif.php";
 $token = $_GET['token'] ;
 // if(!$token){
-//     echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
+//     echo "Impossible d'accéder à cette page, une erreur est survenu!";
 //     die();
 // }
 ?>
