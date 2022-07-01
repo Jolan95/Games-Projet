@@ -5,10 +5,10 @@ require_once 'Class/user.php';
 $successRequest = 0;
 include "passwordReset-verif.php";
 $token = $_GET['token'] ;
-if(!$token){
-    echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
-    die();
-}
+// if(!$token){
+//     echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
+//     die();
+// }
 ?>
 <html lang="fr">
     <head>
