@@ -2,7 +2,6 @@
 session_start();
 include "handleLanguage/lang.php";
 require_once 'Class/user.php';
-include 'header.php';
 $successRequest = 0;
 include "passwordReset-verif.php";
 $token = $_GET['token'] ;
