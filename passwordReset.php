@@ -5,10 +5,10 @@ require_once 'Class/user.php';
 $successRequest = 0;
 include "passwordReset-verif.php";
 $token = $_GET['token'] ;
-// if(!$token){
-//     echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
-//     die();
-// }
+if(!$token){
+    echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
+    die();
+}
 ?>
 <html lang="fr">
     <head>
@@ -18,8 +18,6 @@ $token = $_GET['token'] ;
 		<title>J-Games Online</title>
 		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,... Venez découvrir nos différents jeux et venez défier les autres utilisateurs !" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/carousel/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/carousel/owl.theme.default.min.css">
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
 	</head>
 	<body>
