@@ -7,8 +7,8 @@ if($statement->execute()) {
     if($users !== false ) {
         $email = $users["email"];
     } else {
-        // echo "<h2><i>Impossible d'accéder à cette page, la session a expiré!</i></h2>";
-        // die();
+        echo "<h2><i>Impossible d'accéder à cette page, la session a expiré!</i></h2>";
+        die();
     };
 } 
 if(isset($_POST['password']) && isset($_POST['password2'])){
