@@ -5,10 +5,10 @@ require_once 'Class/user.php';
 $successRequest = 0;
 $token = $_GET['token'] ;
 require_once "handleRequest/passwordReset-verif.php";
-if(!$token){
-    echo "Impossible d'accéder à cette page, une erreur est survenu!";
-    die();
-}
+// if(!$token){
+//     echo "Impossible d'accéder à cette page, une erreur est survenu!";
+//     die();
+// }
 ?>
 <html lang="fr">
     <head>
@@ -33,12 +33,12 @@ if(!$token){
                         <input id='password'type='password' name='password'>
                     </div>
                     <div>
-                        <label style='margin-top : 2vh; font-weight : 500;'><?php echo $labelNewPassword2; ?> : </label>
+                        <label ><?php echo $labelNewPassword2; ?> : </label>
                     </div>
                     <div>
                         <input id='password2'type='password' name='password2'></input>
                     </div>
-                    <button type='button' id='newPassword' style='margin : 4vh' class='btn btn-success'><?php echo $valid ?></button>
+                    <button type='button' id='newPassword' class='btn btn-success'><?php echo $valid ?></button>
                 </form>
             </div>
         </div>    
