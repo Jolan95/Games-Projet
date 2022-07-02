@@ -23,7 +23,7 @@ require_once "handleRequest/passwordReset-verif.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div id="container">
+        <div class="container">
             <div class="box-white">
                 <h2><?php echo $changePasswordTitle?></h2>
                 <form id="formulaire"  method='post'>
