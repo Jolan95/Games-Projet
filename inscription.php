@@ -97,7 +97,7 @@ if(!empty($_POST) ){
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-		<div class="container pt-3">
+		<div class="container mt-4">
             <div class="box-white">
 
                 <form method="post">
@@ -165,8 +165,10 @@ if(!empty($_POST) ){
                 <div>
                     <input type="password" id="passwordBis" name="passwordBis" value="" required/>
                 </div>
-                <p><?php echo $alreadyConnected ?><a href="https://games-online.herokuapp.com/form.php"><?php echo $targetLink ?></a> !</p>
-                  <button type="submit" id='submit' class="btn btn-primary"><?php echo LOGIN ?></button>
+                <div class="pt-2">
+                    <?php echo $alreadyConnected ?><a href="https://games-online.herokuapp.com/form.php"><?php echo $targetLink ?></a> !
+                </div>
+                <button type="submit" id='submit' class="btn btn-primary"><?php echo LOGIN ?></button>
             </form>    
         </div>
         <script>
