@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'sendgrid-php.php';
+include "handleLanguage/lang.php";
 use SendGrid\Mail\Mail;
 $success = 0;
 $error = 0;
