@@ -97,8 +97,10 @@ if(!empty($_POST) ){
 	<body>
 		<?php require_once 'header.php'; ?>
 		<main class="container pt-3">
-            <form method="post">
-                <h2>Inscription</h2>
+            <div class="box-white">
+
+                <form method="post">
+                    <h2>Inscription</h2>
                  <?php
                   switch ($error) {
                     case 1:
@@ -162,29 +164,24 @@ if(!empty($_POST) ){
                 <div>
                     <input type="password" id="passwordBis" name="passwordBis" value="" required/>
                 </div>
-
-    </div>
- 
-
-
-    <p><?php echo $alreadyConnected ?><a href="https://games-online.herokuapp.com/form.php"><?php echo $targetLink ?></a> !</p>
-      <button type="submit" id='submit' class="btn btn-primary"><?php echo LOGIN ?></button>
-
-    </form>
-  </body>
-  <script>
-let success = <?php echo $success; ?>;
-let error = <?php echo $error; ?>;
-      
-
-       if(success === 1){
-           setTimeout(()=> {
-              alert("<?php echo $successCreationAccount ?>");
-              window.location.replace("https://games-online.herokuapp.com/form.php");
-          },400)
-          
-      }
-      console.log('ERROR / '+error)
-      
-  </script>
+                <p><?php echo $alreadyConnected ?><a href="https://games-online.herokuapp.com/form.php"><?php echo $targetLink ?></a> !</p>
+                  <button type="submit" id='submit' class="btn btn-primary"><?php echo LOGIN ?></button>
+            </form>    
+        </div>
+        <script>
+            let success = <?php echo $success; ?>;
+            let error = <?php echo $error; ?>;
+            
+            
+            if(success === 1){
+                setTimeout(()=> {
+                    alert("<?php echo $successCreationAccount ?>");
+                    window.location.replace("https://games-online.herokuapp.com/form.php");
+                },400)
+                
+            }
+            console.log('ERROR / '+error)
+            
+        </script>
+    </body>
 </html>
