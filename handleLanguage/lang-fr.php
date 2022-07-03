@@ -42,7 +42,7 @@
    $welcome = "Bienvenue";
    $wrongPairing = "La combinaison Pseudo / Mot de passe n'est pas reconnue";
    $usernameLabel = "Pseudo";
-   $passwordLabel = "Mot de passe";
+   $passwordLabel = "Mot de passe (au moins 8 caractères)";
    $labelEmail = "Adresse mail";
    $forgottenPassword = "Mot de passe oublié ?";
    

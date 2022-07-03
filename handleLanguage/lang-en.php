@@ -43,7 +43,7 @@ $successConnexion = "Your connection has been etablished successfully !";
 $welcome = "Welcome";
 $wrongPairing = "The Username / Password combination is not recognized ";
 $usernameLabel = "Pseudo";
-$passwordLabel = "Password";
+$passwordLabel = "Password (at least 8 characters)";
 $labelEmail = "E-mail address";
 $forgottenPassword = "Forgot your password ?";
 
