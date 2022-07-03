@@ -141,7 +141,7 @@ if(!empty($_POST) ){
                     <input type="email" id="email" name="email" value="" required/>
                 </div>
                 <div> 
-                    <p class="error" id="firstnameVerif"></p>   
+                    <div hidden class="red" id="firstnameVerif"></div>   
                     <label for="firstname"><?php echo $firstnameLabel ?> :</label>
                 </div>
                 <div>    
