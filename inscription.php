@@ -23,7 +23,7 @@ if(!empty($_POST) ){
                     $email = htmlspecialchars($_POST['email']);
                     $password = password_hash(htmlspecialchars($_POST['password']), PASSWORD_BCRYPT);
                     $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
-                    
+
                     $statement = $pdo->prepare('SELECT * FROM Users WHERE pseudo = :pseudo');
                     $statement2 = $pdo->prepare('SELECT * FROM Users WHERE email = :email');
                     $statement->bindValue(':pseudo', $pseudo);
@@ -108,7 +108,7 @@ if(!empty($_POST) ){
                  <?php
                   switch ($error) {
                     case 1:
-                        echo '<div class="red">'.$fullFilled.'</p>';
+                        echo '<div class="red">'.$fullFilled.'</div>';
                         break;
                     case 2:
                         echo '<div class="red">'.$passwordNotPairing.'</div>';
@@ -174,6 +174,7 @@ if(!empty($_POST) ){
             </form>    
         </div>
         <script>
+
             let success = <?php echo $success; ?>;
             let error = <?php echo $error; ?>;
             
