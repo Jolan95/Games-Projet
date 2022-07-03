@@ -96,7 +96,7 @@ if(!empty($_POST) ){
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-		<main class="container pt-3">
+		<div class="container pt-3">
             <div class="box-white">
 
                 <form method="post">
