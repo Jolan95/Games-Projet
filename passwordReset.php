@@ -37,7 +37,7 @@ require_once "handleRequest/passwordReset-verif.php";
                         <label ><?php echo $labelNewPassword2; ?> : </label>
                     </div>
                     <div>
-                        <input id='password2'type='password' name='password2'></input>
+                        <input id='password2' type='password' name='password2'></input>
                     </div>
                     <button type='button' id='newPassword' class='btn btn-success'><?php echo $valid ?></button>
                 </form>

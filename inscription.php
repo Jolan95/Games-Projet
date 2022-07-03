@@ -1,46 +1,12 @@
 <?php
 session_start();
-include 'header.php';
 require_once 'sendgrid-php.php';
-
 use SendGrid\Mail\Mail;
-
-?>
-    <style>
-        .div-form{
-        background-color : white;
-        border : 2px solid black;
-        width: 35vw;
-        min-width : 350px;
-        padding : 3vh;
-        margin-top : 3.2vh;
-        justify-content:  center;
-        border-radius: 12px;
-        min-width : 300px;
-    }
-    .item-form{
-        margin : 10px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size : 17px;
-        }
-        p{
-            font-size : 17px;
-        }
-        .error{
-            color : red;
-            font-size : 15px;
-        }
-        .success{
-            background-color: lightgreen;
-            text-align: center;
-        }
-        
-        </style>
-</head>
-<body style="background-color : #282c34">
-<?php
 $success = 0;
 $error = 0;
+?>
+
+<?php
 if(!empty($_POST) ){
 
     if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -116,92 +82,86 @@ if(!empty($_POST) ){
 }
 
 ?>
-    
-
-<div class="container ">
-
-    <form method="post" class="div-form">
-        <h2>Inscription</h2>
-    <div class='item-form'>
-        <?php
-
-        switch ($error) {
-            case 1:
-                echo '<p class="error">'.$fullFilled.'</p>';
-                break;
-            case 2:
-                echo '<p class="error">'.$passwordNotPairing.'</p>';
-                echo '<p class="error">'.$passwordTooShort.'</p>';
-                break;
-            case 3:
-                echo '<p class="error">'.$pseudoExist.'</p>'; 
-                break;
-            case 4:
-                echo '<p class="error">'.$pseudoTooShort.'</p>';   
-                break;
-            case 5:
-                echo '<p class="error">'.$wrongFormatMail.'</p>';   
-                break;
-            case 6:
-                echo '<p class="error">'.$existMail.'</p>';   
-                break;
-            default : 
-            echo '';
-            break;
-        }
-        ?>
-    <div>  
-
-        <label for="pseudo">Pseudo :</label>
-    </div>
-    <div> 
-    <input type="text" id="pseudo" name="pseudo" value="" required/>
-</div>
-    </div>
-    <div class='item-form'>
-        <div>
-        <label for="email">E-mail :</label>
-    </div>
-    <div>
-    <input type="email" id="email" name="email" value="" required/>
-    </div>
-    </div> 
-    <div class='item-form'>
-    <div> 
-    <p class="error" id="firstnameVerif"></p>   
-        <label for="firstname"><?php echo $firstnameLabel ?> :</label>
-    </div>
-    <div>    
-    <input type="text" id="firstname" name="firstname" value="" required/>
-</div>
-    </div>
-<div class='item-form'>
-    <div>
-    <label for="name"><?php echo $lastnameLabel ?> : </label>
-</div>
-<div>
-<input type="text" id="name" name="name" value="" required/>
-</div>
-</div>
-
-<div class='item-form'>
-
-    <div>
-    <label for="password"><?php echo $passwordLabel ?> : </label>
-</div>
-<div>
-<input type="password" id="password" name="password" value="" required/>
-</div>
-
-    </div>
-<div class='item-form'>
-
-    <div>
-    <label for="passwordBis"><?php echo $passwordLabel2 ?>: </label>
-</div>
-<div>
-<input type="password" id="passwordBis" name="passwordBis" value="" required/>
-</div>
+<html lang="fr">
+    <head>
+		<link rel="icon" type="image/png" href="Img/favicon.png">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>J-Games Online</title>
+		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,... Venez découvrir nos différents jeux et venez défier les autres utilisateurs !" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/carousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/carousel/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+		<?php require_once 'header.php'; ?>
+		<main class="container pt-3">
+            <form method="post">
+                <h2>Inscription</h2>
+                 <?php
+                  switch ($error) {
+                    case 1:
+                        echo '<p class="error">'.$fullFilled.'</p>';
+                        break;
+                    case 2:
+                        echo '<p class="error">'.$passwordNotPairing.'</p>';
+                        echo '<p class="error">'.$passwordTooShort.'</p>';
+                        break;
+                    case 3:
+                        echo '<p class="error">'.$pseudoExist.'</p>'; 
+                        break;
+                    case 4:
+                        echo '<p class="error">'.$pseudoTooShort.'</p>';   
+                        break;
+                    case 5:
+                        echo '<p class="error">'.$wrongFormatMail.'</p>';   
+                        break;
+                    case 6:
+                        echo '<p class="error">'.$existMail.'</p>';   
+                        break;
+                    default : 
+                    echo '';
+                    break;
+                }
+                ?>
+                <div>  
+                    <label for="pseudo">Pseudo :</label>
+                </div>
+                <div> 
+                    <input type="text" id="pseudo" name="pseudo" value="" required/>
+                </div>
+                <div>
+                    <label for="email">E-mail :</label>
+                 </div>
+                <div>
+                    <input type="email" id="email" name="email" value="" required/>
+                </div>
+                <div> 
+                    <p class="error" id="firstnameVerif"></p>   
+                    <label for="firstname"><?php echo $firstnameLabel ?> :</label>
+                </div>
+                <div>    
+                    <input type="text" id="firstname" name="firstname" value="" required/>
+                </div>
+                <div>
+                    <label for="name"><?php echo $lastnameLabel ?> : </label>
+                </div>
+                <div>
+                    <input type="text" id="name" name="name" value="" required/>
+                </div>
+                <div>
+                    <label for="password"><?php echo $passwordLabel ?> : </label>
+                </div>
+                <div>
+                <input type="password" id="password" name="password" value="" required/>
+                </div>
+                <div>
+                    <label for="passwordBis"><?php echo $passwordLabel2 ?>: </label>
+                </div>
+                <div>
+                    <input type="password" id="passwordBis" name="passwordBis" value="" required/>
+                </div>
 
     </div>
  
