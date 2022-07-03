@@ -339,7 +339,7 @@ const pipes = {
                             error : function(resultat, statut, erreur){
                                 
                             }
-                            });
+                        });
                 
                 score.best = score.value;
             }}

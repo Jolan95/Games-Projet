@@ -180,7 +180,20 @@ if(!empty($_POST) ){
             let error = <?php echo $error; ?>;
             
             $("#pseudo").change(()=>{
-                console.log('changed')
+                $.ajax({
+                    url : 'pseudoUsed.php',
+                    type : 'POST',
+                    data:{
+                        pseudo : $("pseudo").val,
+                      },
+                    success : function(response, code_html, statut){
+                    console.log(response);
+                    
+                    },
+                    error : function(resultat, statut, erreur){
+                        
+                    }
+                });
             })
             if(success === 1){
                 setTimeout(()=> {
