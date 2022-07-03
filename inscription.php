@@ -173,12 +173,15 @@ if(!empty($_POST) ){
                 <button type="submit" id='submit' class="btn btn-primary"><?php echo LOGIN ?></button>
             </form>    
         </div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
 
             let success = <?php echo $success; ?>;
             let error = <?php echo $error; ?>;
             
-            
+            $("#pseudo").change(()=>{
+                console.log('changed')
+            })
             if(success === 1){
                 setTimeout(()=> {
                     alert("<?php echo $successCreationAccount ?>");
