@@ -34,10 +34,10 @@ if(!empty($_POST) ){
                         if($statement->fetch(PDO::FETCH_ASSOC) || $statement2->fetch(PDO::FETCH_ASSOC)){
                             /** email is used */        
                             if($statement2->fetch(PDO::FETCH_ASSOC)){
-                                $error = 6;
-                            /** pseudo is already used */    
-                            } else {
                                 $error = 3;
+                                /** pseudo is already used */    
+                            } else {
+                                $error = 6;
                             }
                         } else{
                             $adding = $pdo->prepare("INSERT INTO users VALUES (UUID(), :pseudo, :name, :firstname, :password, NOW(), 0, 0, 0, 0, 0, 0, :email, NULL)");
@@ -67,7 +67,7 @@ if(!empty($_POST) ){
                             }    
                         } 
                     } else {
-                        
+                        $error = 3;
                     }
                 
                 } else {
