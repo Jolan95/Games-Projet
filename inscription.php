@@ -33,7 +33,7 @@ if(!empty($_POST) ){
                         /** if the pseudo or the pseudo are not already used */
                         if($statement->fetch(PDO::FETCH_ASSOC) || $statement2->fetch(PDO::FETCH_ASSOC)){
                             /** email is used */        
-                            if($statement2->fetch(PDO::FETCH_ASSOC)){
+                            if($statement->fetch()){
                                 $error = 3;
                                 /** pseudo is already used */    
                             } else {
