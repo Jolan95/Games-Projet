@@ -67,7 +67,7 @@ if(!empty($_POST) ){
                             }    
                         } 
                     } else {
-                        $error = 3;
+                        
                     }
                 
                 } else {
