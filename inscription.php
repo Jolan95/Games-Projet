@@ -105,23 +105,23 @@ if(!empty($_POST) ){
                  <?php
                   switch ($error) {
                     case 1:
-                        echo '<p class="error">'.$fullFilled.'</p>';
+                        echo '<p class="red">'.$fullFilled.'</p>';
                         break;
                     case 2:
-                        echo '<p class="error">'.$passwordNotPairing.'</p>';
-                        echo '<p class="error">'.$passwordTooShort.'</p>';
+                        echo '<p class="red">'.$passwordNotPairing.'</p>';
+                        echo '<p class="red">'.$passwordTooShort.'</p>';
                         break;
                     case 3:
-                        echo '<p class="error">'.$pseudoExist.'</p>'; 
+                        echo '<p class="red">'.$pseudoExist.'</p>'; 
                         break;
                     case 4:
-                        echo '<p class="error">'.$pseudoTooShort.'</p>';   
+                        echo '<p class="red">'.$pseudoTooShort.'</p>';   
                         break;
                     case 5:
-                        echo '<p class="error">'.$wrongFormatMail.'</p>';   
+                        echo '<p class="red">'.$wrongFormatMail.'</p>';   
                         break;
                     case 6:
-                        echo '<p class="error">'.$existMail.'</p>';   
+                        echo '<p class="red">'.$existMail.'</p>';   
                         break;
                     default : 
                     echo '';
@@ -141,7 +141,6 @@ if(!empty($_POST) ){
                     <input type="email" id="email" name="email" value="" required/>
                 </div>
                 <div> 
-                    <div hidden class="red" id="firstnameVerif"></div>   
                     <label for="firstname"><?php echo $firstnameLabel ?> :</label>
                 </div>
                 <div>    
