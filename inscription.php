@@ -184,7 +184,7 @@ if(!empty($_POST) ){
                     url : 'handleRequest/PseudoUsed.php',
                     type : 'POST',
                     data:{
-                        pseudo : $("pseudo").val(),
+                        pseudo : $("#pseudo").val(),
                       },
                     success : function(response, code_html, statut){
                     alert(response);
