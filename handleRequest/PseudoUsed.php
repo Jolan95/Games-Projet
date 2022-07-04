@@ -1,4 +1,4 @@
 <?php
-// return $_POST["pseudo"];
-return "hello";
+return $_POST["pseudo"];
+
 ?>
