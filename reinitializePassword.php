@@ -1,4 +1,4 @@
-<?php
+
 // session_start();
 // include "handleLanguage/lang.php";
 // include "Class/user";
@@ -9,8 +9,7 @@
 //     echo "Impossible d'accéder à cette page, une erreur est survenu!";
 //     die();
 // }
-?>
-<!DOCTYPE html>
+
 <html lang="fr">
     <head>
 		<link rel="icon" type="image/png" href="Img/favicon.png">
