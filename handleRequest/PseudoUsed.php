@@ -1,4 +1,4 @@
 <?php
-echo "HERRRRRRRRRRRE";
+echo $_POST["pseudo"];
 
 ?>
