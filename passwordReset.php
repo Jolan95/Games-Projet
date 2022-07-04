@@ -3,7 +3,10 @@ require_once "handleLanguage/lang.php";
 $successRequest = 0;
 $token = $_GET['token'] ;
 require_once "handleRequest/passwordReset-verif.php";
-var_dump($token)
+if(!$token){
+    echo "Impossible d'accéder à cette page, une erreur est survenu!";
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
