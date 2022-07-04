@@ -25,7 +25,7 @@ if(!$token){
         <div class="container d-flex justify-content-center mt-4">
             <div>
                 <h2><?php echo $changePasswordTitle?></h2>
-                <form id="formulaire"  method='post' class="d-flex justify-content-center mb-4">
+                <form id="formulaire"  method='post' class="d-flex justify-content-center">
                     <div>
                         <div>
                             <label><?php echo $labelNewPassword; ?> : </label>
@@ -39,7 +39,7 @@ if(!$token){
                         <div>
                             <input id='password2' type='password' name='password2'></input>
                         </div>
-                        <button type='button' id='newPassword' class='btn btn-success'><?php echo $valid ?></button>
+                        <button type='button' id='newPassword' class='btn btn-success mt-3'><?php echo $valid ?></button>
                     </div>
                 </form>
             </div>
