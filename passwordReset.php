@@ -1,7 +1,6 @@
 <?php
-
+include "handleLanguage/lang.php";  
 require_once 'Class/user.php';
-$style="Style/style.css";
 $successRequest = 0;
 $token = $_GET['token'] ;
 if(!$token){
