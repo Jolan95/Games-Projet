@@ -1,8 +1,8 @@
-<!DOCTYPE html>
 <?php 
 session_start();
-include "handleLanguage/lang.php";     
+include "../handleLanguage/lang.php";     
 ?>
+<!DOCTYPE html>
 <html lang="fr">
     <head>
 		<link rel="icon" type="image/png" href="Img/favicon.png">
@@ -15,7 +15,7 @@ include "handleLanguage/lang.php";
         <link rel="stylesheet" type="text/css" href="jeuDice.css">
 	</head>
 	<body>
-        <?php require_once 'header.php'; ?>
+        <?php require_once '../header.php'; ?>
 <body id="bod">
 <input type=hidden id="record" value=<?php if(isset($_SESSION['record_dice'])){ echo $_SESSION['record_dice']; }?>>
 <!--<div class="container-fluid bk">-->
