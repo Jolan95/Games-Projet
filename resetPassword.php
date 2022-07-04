@@ -31,7 +31,7 @@ if(!$token){
                             <label><?php echo $labelNewPassword; ?> : </label>
                         </div>
                         <div>
-                            <input id='password'type='password' name='password'>
+                            <input id='password' type='password' name='password'>
                         </div>
                         <div>
                             <label ><?php echo $labelNewPassword2; ?> : </label>
