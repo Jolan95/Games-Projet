@@ -19,6 +19,6 @@ fetch('./js/games.json').then((response) => {
     gamesList = list[lang]
     // Render game list
     for (let i = 0; i < gamesList.length; i++){
-        games.innerHTML += '<div class="box-game col-8 offset-2 offset-lg-0 col-lg-6"><a href='+gamesList[i].link+'><div class="box-content"><img class="games-image" src='+gamesList[i].image+'><div class="text-center"><h2>'+gamesList[i].name+'</h2><p class="text-center">'+gamesList[i].description+'</p></div></div></a></div>'                                
+        games.innerHTML += '<div class="box-game col-12 col-lg-6"><a href='+gamesList[i].link+'><div class="box-content"><img class="games-image" src='+gamesList[i].image+'><div class="text-center"><h2>'+gamesList[i].name+'</h2><p class="text-center">'+gamesList[i].description+'</p></div></div></a></div>'                                
     }          
 })
