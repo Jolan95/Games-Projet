@@ -181,7 +181,7 @@ if(!empty($_POST) ){
             
             $("#pseudo").change(()=>{
                 $.ajax({
-                    url : 'pseudoUsed.php',
+                    url : 'handleRequest/PseudoUsed.php',
                     type : 'POST',
                     data:{
                         pseudo : $("pseudo").val(),
