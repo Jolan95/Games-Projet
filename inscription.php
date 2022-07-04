@@ -187,7 +187,7 @@ if(!empty($_POST) ){
                         pseudo : $("pseudo").val(),
                       },
                     success : function(response, code_html, statut){
-                    console.log(response);
+                    alert(response);
                     
                     },
                     error : function(resultat, statut, erreur){
