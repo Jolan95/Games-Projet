@@ -26,19 +26,21 @@ if(!$token){
             <div>
                 <h2><?php echo $changePasswordTitle?></h2>
                 <form id="formulaire"  method='post'>
-                    <div>
-                        <label><?php echo $labelNewPassword; ?> : </label>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div>
+                            <label><?php echo $labelNewPassword; ?> : </label>
+                        </div>
+                        <div>
+                            <input id='password'type='password' name='password'>
+                        </div>
+                        <div>
+                            <label ><?php echo $labelNewPassword2; ?> : </label>
+                        </div>
+                        <div>
+                            <input id='password2' type='password' name='password2'></input>
+                        </div>
                     </div>
-                    <div>
-                        <input id='password'type='password' name='password'>
-                    </div>
-                    <div>
-                        <label ><?php echo $labelNewPassword2; ?> : </label>
-                    </div>
-                    <div>
-                        <input id='password2' type='password' name='password2'></input>
-                    </div>
-                    <button type='button' id='newPassword' class='btn btn-success'><?php echo $valid ?></button>
+                        <button type='button' id='newPassword' class='btn btn-success'><?php echo $valid ?></button>
                 </form>
             </div>
         </div>    

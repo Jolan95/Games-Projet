@@ -52,7 +52,7 @@ $targetLink = "here";
 
 
 //changePassword.php
-$changePasswordTitle = 'Reset your J-games password';
+$changePasswordTitle = 'Reset your password';
 $labelNewPassword =  'Your new password';
 $labelNewPassword2 =  'Confirm your password';
 $valid = "Save";
