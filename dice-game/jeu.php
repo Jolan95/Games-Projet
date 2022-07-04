@@ -12,13 +12,12 @@ include "../handleLanguage/lang.php";
 		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,... Venez découvrir notre liste de jeux !" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
-        <link rel="stylesheet" type="text/css" href="jeuDice.css">
+        <!-- <link rel="stylesheet" type="text/css" href="jeuDice.css"> -->
 	</head>
 	<body>
         <?php require_once '../header.php'; ?>
-<body id="bod">
-<input type=hidden id="record" value=<?php if(isset($_SESSION['record_dice'])){ echo $_SESSION['record_dice']; }?>>
-<!--<div class="container-fluid bk">-->
+        <input type=hidden id="record" value=<?php if(isset($_SESSION['record_dice'])){ echo $_SESSION['record_dice']; }?>>
+        <!--<div class="container-fluid bk">-->
 
     <div class="row justify-content-center">
     <h4 class="col-2 justify-self-center"  style="color : green"> <em><?php if(isset($_SESSION['record_dice'])){ echo $highScoreWin.' : +'.$_SESSION['record_dice']; }?></em></h4>
