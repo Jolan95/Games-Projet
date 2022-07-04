@@ -7,7 +7,18 @@ if(!$token){
     echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
     die();
 }
-include "handleRequest/passwordReset-verif.php";
+$pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
+$statement = $pdo->prepare('SELECT email FROM users WHERE token = :token');
+$statement->bindValue(':token', $_GET['token']);
+if($statement->execute()) {
+    $users = $statement->fetch();
+    if($users !== false ) {
+        $email = $users["email"];
+    } else {
+        echo "<h2><i>Impossible d'accéder à cette page, la session a expiré!</i></h2>";
+        die();
+    };
+} 
 ?>
 <html lang="fr">
     <head>
