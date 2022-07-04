@@ -1,14 +1,14 @@
 <?php
 session_start();
 include "handleLanguage/lang.php";
-include "Class/user";
-$successRequest = 0;
-$token = $_GET['token'] ;
-include "handleRequest/passwordReset-verif.php";
-// if(!$token){
-//     echo "Impossible d'accéder à cette page, une erreur est survenu!";
-//     die();
-// }
+// include "Class/user";
+// $successRequest = 0;
+// $token = $_GET['token'] ;
+// include "handleRequest/passwordReset-verif.php";
+// // if(!$token){
+// //     echo "Impossible d'accéder à cette page, une erreur est survenu!";
+// //     die();
+// // }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
