@@ -2,16 +2,12 @@
 
 require_once 'Class/user.php';
 $style="Style/style.css";
-include 'header.php';
 $successRequest = 0;
-
 $token = $_GET['token'] ;
-
 if(!$token){
     echo "<h2><i>Impossible d'accéder à cette page, une erreur est survenu!</i></h2>";
     die();
 }
-
 $pdo = new PDO($_ENV["CLEARDB_DATABASE_DSN"], $_ENV["CLEARDB_DATABASE_USERNAME"], $_ENV["CLEARDB_DATABASE_PASSWORD"]);
 $statement = $pdo->prepare('SELECT email FROM users WHERE token = :token');
 $statement->bindValue(':token', $_GET['token']);
@@ -24,24 +20,21 @@ if($statement->execute()) {
         die();
     };
 } 
-
-    
-
-
 ?>
-<body style="background-color: #282c34;">
-<div class="row">
-<div class="col-6">
-    
-    </div>
-</div>
-
-
-</div>
-<div  id="content"style = "background-color : white; border-radius : 20px;border : 3px solid black; margin-left : 3vw; width: 50vw; margin-top : 4vh;padding-top : 3vw; padding-left : 2vw; min-width : 250px">
-    <h2 style="margin-bottom :2vh"><?php echo $changePasswordTitle?></h2>
+<html lang="fr">
+    <head>
+		<link rel="icon" type="image/png" href="Img/favicon.png">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>J-Games Online</title>
+		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,... Venez découvrir notre liste de jeux !" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Style/style.css">
+	</head>
+	<body>
+    <h2 ><?php echo $changePasswordTitle?></h2>
     <form id="formulaire"  method='post' >
-        <div style='font-weight : 500; '>
+        <div >
             <div>
                 <label><?php echo $labelNewPassword; ?> : </label>
             </div>
