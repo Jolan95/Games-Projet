@@ -40,23 +40,7 @@
         </div>    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
-            $("#newPassword").click(()=>{
-                let password = $("#password").val()
-                let password2 = $("#password2").val()
-                if(password.length > 7 && password2.length >7){
-                    if(password === password2){
-                        $("#formulaire").submit()
-                    }else{
-                        alert(<?php echo $errorChangePassword ?>)
-                    }
-                } else {
-                    alert(<?php echo $errorChangePassword2 ?>)
-                }
-            })
-            let success = <?php echo $successRequest; ?>;
-            if (success == 1){ 
-               setTimeout(function (){window.location = "https://games-online.herokuapp.com/form.php" ; alert('<?php echo $passwordChanged?>')}, 200)
-            } 
+
         </script>
     </body>
 </html>    
