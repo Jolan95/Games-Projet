@@ -9,8 +9,6 @@ if(isset($_SESSION['id'])){
         die();
   }
 }
-
-// $login = false;
 ?>
 <header class="container-fluid">
     <!-- Header big screen -->
