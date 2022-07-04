@@ -51,7 +51,7 @@
    
 
    //changePassword.php
-   $changePasswordTitle = 'Modifiez votre mot de passe';
+   $changePasswordTitle = 'Réinitialisez votre mot de passe';
    $labelNewPassword =  'Votre nouveau mot de passe';
    $labelNewPassword2 =  'Confirmez le nouveau mot de passe';
    $valid = "Valider";

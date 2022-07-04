@@ -22,8 +22,8 @@ if(!$token){
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
 	</head>
 	<body>
-        <div class="container">
-            <div class="box-white">
+        <div class="container d-flex justify-content-center mt-4">
+            <div>
                 <h2><?php echo $changePasswordTitle?></h2>
                 <form id="formulaire"  method='post'>
                     <div>
