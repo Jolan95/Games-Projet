@@ -22,7 +22,6 @@ if(!$token){
 		<link rel="stylesheet" type="text/css" href="Style/style.css">
 	</head>
 	<body>
-		<?php require_once 'header.php'; ?>
         <div class="container">
             <div class="box-white">
                 <h2><?php echo $changePasswordTitle?></h2>
