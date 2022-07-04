@@ -39,8 +39,8 @@ if(!$token){
                         <div>
                             <input id='password2' type='password' name='password2'></input>
                         </div>
-                    </div>
                         <button type='button' id='newPassword' class='btn btn-success'><?php echo $valid ?></button>
+                    </div>
                 </form>
             </div>
         </div>    
