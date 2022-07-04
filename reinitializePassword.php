@@ -25,8 +25,8 @@ if(!$token){
         <div class="container d-flex justify-content-center mt-4">
             <div>
                 <h2><?php echo $changePasswordTitle?></h2>
-                <form id="formulaire"  method='post'>
-                    <div class="d-flex justify-content-center mb-4">
+                <form id="formulaire"  method='post' class="d-flex justify-content-center mb-4">
+                    <div>
                         <div>
                             <label><?php echo $labelNewPassword; ?> : </label>
                         </div>
