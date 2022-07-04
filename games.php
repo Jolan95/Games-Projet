@@ -17,7 +17,7 @@ include "handleLanguage/lang.php";
 		<?php require_once 'header.php'; ?>
         <div class="games">
             <h1 class="text-center"><?php $titleGames ?></h1>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row" id="games">
                 </div>
             </div>    
