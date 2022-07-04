@@ -38,20 +38,20 @@ if($statement->execute()) {
 	<body class="container text-center">
         <h1><?php echo $changePasswordTitle?></h1>
         <form id="formulaire"  method='post'>
-            <div>
+            <div class="my-3">
                 <label><?php echo $labelNewPassword; ?> : </label>
             </div>
             <div>
                 <input id='password'type='password' name='password'>
             </div>
-            <div>
+            <div class="mt-2">
                 <label><?php echo $labelNewPassword2; ?> : </label>
             </div>
             <div>
                 <input id='password2'type='password' name='password2'></input>
             </div>
             <div>
-                <button type='button' id='newPassword'  class='btn btn-success'><?php echo $valid ?></button>
+                <button type='button' id='newPassword' class='btn btn-success mt-3'><?php echo $valid ?></button>
             </div>   
         </form>
         <?php
