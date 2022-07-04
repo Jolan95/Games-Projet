@@ -178,23 +178,7 @@ if(!empty($_POST) ){
 
             let success = <?php echo $success; ?>;
             let error = <?php echo $error; ?>;
-            
-            $("#pseudo").change(()=>{
-                $.ajax({
-                    url : 'handleRequest/PseudoUsed.php',
-                    type : 'POST',
-                    data:{
-                        pseudo : $("#pseudo").val(),
-                      },
-                    success : function(response, code_html, statut){
-                    alert(response);
-                    
-                    },
-                    error : function(resultat, statut, erreur){
-                        
-                    }
-                });
-            })
+
             if(success === 1){
                 setTimeout(()=> {
                     alert("<?php echo $successCreationAccount ?>");

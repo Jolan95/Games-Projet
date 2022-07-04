@@ -82,7 +82,7 @@
    $passwordTooShort = "Le mot de passe doit comporter au moins 8 caractères.";
    $passwordNotPairing = "Veuillez renseigner deux mot de passes identiques.";
    $pseudoExist = "Ce pseudo est déjà prit.";
-   $existMail = "Cette adresse email est déjà liée à un compte.";
+   $existMail = "Cette adresse email ou ce pseudo est déjà liée à un compte.";
    $pseudoTooShort = "Le pseudo doit comporter au moins 3 caractères.";
    $passwordLabel2 = "Confirmez votre mot de passe";
    $alreadyConnected = "Je suis déjà inscris, me connecter ";
