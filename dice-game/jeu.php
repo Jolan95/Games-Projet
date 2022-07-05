@@ -46,7 +46,7 @@ include "../handleLanguage/lang.php";
         
             <div class="row mt-4">
                 <div id="current1" class="col-2 offset-1 white text-center align-self-center ">
-                    <div class="text-center box-current">
+                    <div class="text-center box-current p-3">
                         <div>
                             <?php echo $current ?>
                         </div>
@@ -75,8 +75,8 @@ include "../handleLanguage/lang.php";
                     </div>
                 </div>
                 <div id="current2" class="col-2 offset-2 white just align-self-center">
-                    <div  class="text-center  box-current">
-                        <div>
+                    <div class="text-center  box-current p-3">
+                        <div >
                             <?php echo $current ?>
                         </div>
                         <div id="scoreCurr2" class="score-current" class="white">
