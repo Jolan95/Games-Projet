@@ -30,16 +30,16 @@ include 'Class/user.php';
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
             <div class="row" hidden id="container-boxes">
-                <div class="p-5 col-6 full-center container-box">
+                <div class="p-5 col-md-6 col-12 full-center ">
                     <button type="button" class="box" id="box1"></button>
                 </div>
-                <div class="p-5 col-6 full-center">
+                <div class="p-5 col-md-6 col-12 full-center">
                     <button type="button" class="box" id="box2"></button>
                 </div>
-                <div class="p-5 col-6 full-center">
+                <div class="p-5 col-md-6 col-12 full-center">
                     <button type="button" class="box" id="box3"></button>
                 </div>
-                <div class="p-5 col-6 full-center">
+                <div class="p-5 col-md-6 col-12 full-center">
                     <button type="button" class="box" id="box4"></button>
                 </div>
             </div>
