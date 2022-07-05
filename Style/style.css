@@ -277,8 +277,12 @@ header .dropdown ul {
 .form .links {
   font-size: 0.925rem;
 }
-/***Gem-dice***/
+/***Game-dice***/
 .game-dice .score {
   font-size: 60px;
   color: white;
+}
+.game-dice #score1,
+.game-dice #score2 {
+  font-size: 4rem;
 }
