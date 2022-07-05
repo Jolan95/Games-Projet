@@ -24,12 +24,12 @@ include "../handleLanguage/lang.php";
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-3 col-md-2 offset-md-1 offset-1 text-center">
+            <div class="col-3 col-sm-2 offset-sm-1 offset-1 text-center">
                <h2 class="white"><?php echo $player1 ?>   
                <svg id="p1" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="currentColor" class="red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  ><circle cx="8" cy="8" r="8"/></svg></h2>
             </div>
             
-            <div class="offset-4 col-3 offset-md-6 col-md-2 text-center">
+            <div class="offset-4 col-3 offset-sm-6 col-sm-2 text-center">
                 <h2 class="white">
                     <span id="textp"><?php echo $player2 ?> </span>
                     <svg id="p2"   xmlns="http://www.w3.org/2000/svg"  height="16px" width="16px" fill="currentColor"  class="red" class="bi bi-circle-fill align-self-center" viewBox="0 0 16 16" ><circle cx="8" cy="8" r="8"/></svg>
