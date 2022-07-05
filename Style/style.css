@@ -327,14 +327,12 @@ header .dropdown ul {
   display: block;
   margin: 0 auto;
 }
+/****Capitals****/
 .capitals img {
   height: 10rem;
   width: 18rem;
 }
 .capitals .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   font-size: 1.3rem;
 }
 .capitals .question {

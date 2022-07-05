@@ -29,11 +29,11 @@ include 'Class/user.php';
             <div class="question">
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
-            <div class="boxs" hidden id="container-boxes">
-                <button type="button" class="box" id="box1"></button>
-                <button type="button" class="box" id="box2"></button>
-                <button type="button" class="box" id="box3"></button>
-                <button type="button" class="box" id="box4"></button>
+            <div class="boxs row" hidden id="container-boxes">
+                <button type="button" class="box col-6" id="box1"></button>
+                <button type="button" class="box col-6" id="box2"></button>
+                <button type="button" class="box col-6" id="box3"></button>
+                <button type="button" class="box col-6" id="box4"></button>
             </div>
             <div class="start-container">
                 <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
