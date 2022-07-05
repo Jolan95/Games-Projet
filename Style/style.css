@@ -299,11 +299,17 @@ header .dropdown ul {
 .game-dice .role {
   font-size: 1rem;
 }
+.game-dice .current-text {
+  font-size: 1rem;
+}
 @media all and (min-width: 600px) {
   .game-dice .role {
     font-size: 1.7rem;
   }
   .game-dice button {
     padding: 10px 20px;
+  }
+  .game-dice .current-text {
+    font-size: 1.5rem;
   }
 }

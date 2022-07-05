@@ -50,7 +50,7 @@ include "../handleLanguage/lang.php";
             <div class="row mt-4">
                 <div id="current1" class="col-4  white text-center align-self-center ">
                     <div class="text-center box-current p-3">
-                        <div>
+                        <div class="current-text">
                             <?php echo $current ?>
                         </div>
                         <div id="scoreCurr1" class="score-current" class="white">
@@ -79,7 +79,7 @@ include "../handleLanguage/lang.php";
                 </div>
                 <div id="current2" class="col-4 col white just align-self-center">
                     <div class="text-center  box-current p-3">
-                        <div >
+                        <div class="current-text">
                             <?php echo $current ?>
                         </div>
                         <div id="scoreCurr2" class="score-current" class="white">
