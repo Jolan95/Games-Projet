@@ -317,7 +317,7 @@ header .dropdown ul {
   }
 }
 @media all and (min-width: 1200px) {
-  .game-dice .dice {
+  .game-dice svg.dice {
     width: 50%;
   }
 }
