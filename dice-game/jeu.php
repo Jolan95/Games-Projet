@@ -13,7 +13,7 @@ include "../handleLanguage/lang.php";
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	</head>
-	<body class="game-dice">
+	<body class="game-dice container-fluid">
         <?php require_once '../header.php'; ?>
         <h1 hidden>Jeux Dé</h1>
         <input type=hidden id="record" value=<?php if(isset($_SESSION['record_dice'])){ echo $_SESSION['record_dice']; }?>>
@@ -39,7 +39,8 @@ include "../handleLanguage/lang.php";
         <div class="row white">
             <div id="score1" class="col-4  text-center align-self-center ">
             </div>
-            <div class="col-4 light full-center text-center" id='dice'>  
+            <div class="col-4 light full-center text-center" id='dice'> 
+
             </div>       
             <div id="score2" class="col-4 text-center align-self-center">
                 0
