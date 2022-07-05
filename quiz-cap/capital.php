@@ -12,190 +12,36 @@ include 'Class/user.php';
 		<title>J-Games Online - Quiz Capitales</title>
 		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,..." />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../Style/style.css">
-        <style>
-            html{
-            font-size: 1vw;
-        }
-        body{
-            background-color: #282c34;
-        
-        }
-        img{
-            height : 10rem;
-            width : 18rem;
-        }
-        .logo{
-            display : flex;
-            flex-direction: row;
-            align-items: center;
-            font-size : 1.3rem;
-        
-        
-        }
-        
-        
-        .question{
-            display : flex;
-            justify-content: center;
-            
-        }
-        h2 {
-            color: whitesmoke;
-            font-size: 3.4rem;
-        }
-        h3{
-            margin-top : 13vh;
-           align-self: end;
-           font-size : 4rem;
-           position: absolute;
-           right : 2rem;
-           top : 1rem;
-           text-shadow: none;
-        
-        }
-        #question{
-            justify-self: center;
-        }
-        .boxs {
-            height: 100%;    
-        }
-        
-        button {
-            border: 1px black solid;
-            border-radius : 6px;
-            box-shadow : 1px 1px;
-            height : 2em;
-            width : 35rem;
-            margin-left : 9.3rem;
-            margin-top: 2rem;
-            font-size : 300%;
-            border : none;
-            
-            
-        }
-        .button-container{
-            display: flex;
-        }
-        
-        .validation {
-            height : 0.6em;
-            width : 0.4;
-            margin-left : 10rem;
-            margin-top: 5%;
-            font-size : 3rem;
-            color : blue;
-        }
-        .good{
-            border : 6px solid green;
-        }
-        .wrong {
-            border : 6px solid red;
-        }
-        .start-container{
-            display: flex;
-            justify-content: center;
-        
-        }
-        .start{
-            justify-content: center;
-            border-radius: 180px;
-            height : 19rem;
-            width : 19rem;
-            margin : inherit;
-            transition-duration: 0.3s;
-            transition-delay: 0.05s;
-            margin : 3rem;
-        }
-        .start:hover{
-            height : 20rem;
-            width: 20rem;
-        }
-        .easy{
-            background: url("mape.jpg");
-            background-size: cover;
-            background-position: 35%;
-            background-size: 200%;
-        }
-        .med{
-            background : url("medium.jpg");
-            background-size: cover;
-            background-position: 30%;
-            background-size: 200%;
-            color : white
-        }
-        .hard{
-            background : url("hard.jpg");
-            background-size: cover;
-            background-position: 35%;
-            background-size: 230%;
-        
-        }
-        .flag{
-        height : 2.7rem;
-        width : 5rem;
-        
-        }
-        .class-wrong{
-            color : rgb(97, 1, 1);
-            text-shadow: inherit;
-            font-size: 3.6rem;
-        }
-        .class-right{
-           text-shadow: inherit;
-        color : rgb(1, 97, 1);
-        font-size: 3.6rem;
-        }
-        .class-right{
-           text-shadow: inherit;
-        color : rgb(1, 97, 1);
-        font-size: 3.6rem;
-        }
-        .recording{
-            text-shadow: none;
-            color : rgb(1, 97, 1);
-            font-size : 1.5rem;
-            font-weight: 800;
-        }
-        
-        @media (max-width : 650px) {
-            .box{
-                background-color : whitesmoke;
-                height : 18rem;
-                width : 70vw;
-                margin-top : 3vh;
-        
-            }
-        }
-
-        </style>    
+		<link rel="stylesheet" type="text/css" href="../Style/style.css">   
 	</head>
 	<body>
         <?php
         require_once '../header.php';
         ?>
-        <div class="logo">
-            <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
-            <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
-            <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
-            <!--<img src="R.jpg" alt="logoQuiz"></img>-->
-            <em id="record" class="recording"></em>
-        </div>
-        <div class="question">
-            <h2 id="question"><?php echo $worldCapitals ?></h2>
-        </div>
-        <div class="boxs" id="container-boxes">
-            <button type="button" class="box" id="box1"></button>
-            <button type="button" class="box" id="box2"></button>
-            <button type="button" class="box" id="box3"></button>
-            <button type="button" class="box" id="box4"></button>
-        </div>
-        <div class="start-container">
-            <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
-            <button type="button"class="start med" id="second">50  <?php echo $countries ?></button>
-            <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
-            <h3 id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></h3>
-        </div>
+        <div class="capitals">
+            <div class="logo">
+                <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
+                <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
+                <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
+                <!--<img src="R.jpg" alt="logoQuiz"></img>-->
+                <em id="record" class="recording"></em>
+            </div>
+            <div class="question">
+                <h2 id="question"><?php echo $worldCapitals ?></h2>
+            </div>
+            <div class="boxs" id="container-boxes">
+                <button type="button" class="box" id="box1"></button>
+                <button type="button" class="box" id="box2"></button>
+                <button type="button" class="box" id="box3"></button>
+                <button type="button" class="box" id="box4"></button>
+            </div>
+            <div class="start-container">
+                <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
+                <button type="button"class="start med" id="second">50  <?php echo $countries ?></button>
+                <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
+                <h3 id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></h3>
+            </div>
+        </div>    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript" src="countries.js"></script>
@@ -240,7 +86,7 @@ include 'Class/user.php';
             	window.location.replace("https://games-online.herokuapp.com/index.php");
             }
             function restart(){
-            	window.location.replace("https://games-online.herokuapp.com/QuizCap/capital.php");
+            	window.location.replace("https://games-online.herokuapp.com/quiz-cap/capital.php");
             }
 
             function hiddingCircles(){

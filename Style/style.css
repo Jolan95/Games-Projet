@@ -327,3 +327,134 @@ header .dropdown ul {
   display: block;
   margin: 0 auto;
 }
+.capitals img {
+  height: 10rem;
+  width: 18rem;
+}
+.capitals .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.capitals .question {
+  display: flex;
+  justify-content: center;
+}
+.capitals h2 {
+  color: whitesmoke;
+  font-size: 3.4rem;
+}
+.capitals h3 {
+  margin-top: 13vh;
+  align-self: end;
+  font-size: 4rem;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  text-shadow: none;
+}
+.capitals #question {
+  justify-self: center;
+}
+.capitals .boxs {
+  height: 100%;
+}
+.capitals button {
+  border: 1px black solid;
+  border-radius: 6px;
+  box-shadow: 1px 1px;
+  height: 2em;
+  width: 35rem;
+  margin-left: 9.3rem;
+  margin-top: 2rem;
+  font-size: 300%;
+  border: none;
+}
+.capitals .button-container {
+  display: flex;
+}
+.capitals .validation {
+  height: 0.6em;
+  width: 0.4;
+  margin-left: 10rem;
+  margin-top: 5%;
+  font-size: 3rem;
+  color: blue;
+}
+.capitals .good {
+  border: 6px solid green;
+}
+.capitals .wrong {
+  border: 6px solid red;
+}
+.capitals .start-container {
+  display: flex;
+  justify-content: center;
+}
+.capitals .start {
+  justify-content: center;
+  border-radius: 180px;
+  height: 19rem;
+  width: 19rem;
+  margin: inherit;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+  margin: 3rem;
+}
+.capitals .start:hover {
+  height: 20rem;
+  width: 20rem;
+}
+.capitals .easy {
+  background: url("mape.jpg");
+  background-size: cover;
+  background-position: 35%;
+  background-size: 200%;
+}
+.capitals .med {
+  background: url("medium.jpg");
+  background-size: cover;
+  background-position: 30%;
+  background-size: 200%;
+  color: white;
+}
+.capitals .hard {
+  background: url("hard.jpg");
+  background-size: cover;
+  background-position: 35%;
+  background-size: 230%;
+}
+.capitals .flag {
+  height: 2.7rem;
+  width: 5rem;
+}
+.capitals .class-wrong {
+  color: #610101;
+  text-shadow: inherit;
+  font-size: 3.6rem;
+}
+.capitals .class-right {
+  text-shadow: inherit;
+  color: #016101;
+  font-size: 3.6rem;
+}
+.capitals .class-right {
+  text-shadow: inherit;
+  color: #016101;
+  font-size: 3.6rem;
+}
+.capitals .recording {
+  text-shadow: none;
+  color: #016101;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+@media (max-width: 650px) {
+  .capitals .box {
+    background-color: whitesmoke;
+    height: 18rem;
+    width: 70vw;
+    margin-top: 3vh;
+  }
+}
