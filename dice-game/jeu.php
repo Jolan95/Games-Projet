@@ -39,7 +39,7 @@ include "../handleLanguage/lang.php";
         <div class="row white">
             <div id="score1" class="col-2 offset-1 text-center align-self-center ">
             </div>
-            <div class="offset-2 col-2 light full-center text-center" id='dice'>  
+            <div class="col-4 col-sm-2 offset-sm-2 offset-1 light full-center text-center" id='dice'>  
             </div>       
             <div id="score2" class="col-2 offset-2 text-center align-self-center">0</div>
             </div>
