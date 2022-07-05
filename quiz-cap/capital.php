@@ -1,4 +1,6 @@
 <?php
+session_start();
+include "../handleLanguage/lang.php";
 include 'Class/user.php';
 ?>
 <!DOCTYPE html>
