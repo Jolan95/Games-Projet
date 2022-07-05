@@ -302,3 +302,6 @@ header .dropdown ul {
 .game-dice svg {
   font-size: 20px;
 }
+.game-dice #dice {
+  width: 50%;
+}
