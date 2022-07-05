@@ -56,7 +56,7 @@ include "../handleLanguage/lang.php";
                     </div>
                 </div>
             
-                <div class="col-2 col-offset-2  text-center align-self-center">
+                <div class="col-2 offset-2  text-center align-self-center">
                     <div>
                         <button id="roll">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="currentColor" class="svgw bi bi-arrow-repeat" viewBox="0 0 16 16">
