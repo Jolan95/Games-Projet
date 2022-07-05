@@ -29,7 +29,7 @@ include 'Class/user.php';
             <div class="question">
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
-            <div class="boxs row" hidden id="container-boxes">
+            <div class="row" hidden id="container-boxes">
                 <button type="button" class="box col-6" id="box1"></button>
                 <button type="button" class="box col-6" id="box2"></button>
                 <button type="button" class="box col-6" id="box3"></button>

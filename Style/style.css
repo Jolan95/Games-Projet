@@ -357,10 +357,9 @@ header .dropdown ul {
 }
 .capitals button {
   border: 1px black solid;
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 1px 1px;
   height: 2em;
-  width: 35rem;
   margin-top: 2rem;
   font-size: 300%;
   border: none;
