@@ -123,7 +123,7 @@ $rpc = "Rock - Paper - Scissors";
   $revealAllGood = "You answered all the questions correctly";
 
   //jeu.php
-  $iaIsPlaying = "Computer is playing...";
+  $iaIsPlaying = "Computer";
   $player2 = "Computer";
   $player1 = "Me";
   $win = "Win";

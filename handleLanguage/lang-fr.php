@@ -122,8 +122,8 @@ $revealScoreCap2 = " question(s) sur ";
 $revealAllGood = "Vous avez répondu correctement à toutes les questions";
 
 //jeu.php
-$iaIsPlaying = "Au tour de l\'ordinateur...";
-$player2 = "Ordinateur";
+$iaIsPlaying = "Ordi";
+$player2 = "Ordi";
 $player1 = "Moi";
 $win = "Victoire";
 $lose = "Défaite";
