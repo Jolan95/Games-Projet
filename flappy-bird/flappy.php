@@ -22,7 +22,6 @@ include "../handleLanguage/lang.php";
             </div>
             <canvas id="bird" width="320" height="480"></canvas>
         </div>
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script >
         // SELECT CVS
