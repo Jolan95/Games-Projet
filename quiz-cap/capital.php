@@ -19,7 +19,7 @@ include 'Class/user.php';
         require_once '../header.php';
         ?>
         <div class="capitals">
-            <div class="logo">
+            <div class="logo d-flex align-items-center">
                 <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
                 <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
                 <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
@@ -39,7 +39,7 @@ include 'Class/user.php';
                 <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                 <button type="button"class="start med" id="second">50  <?php echo $countries ?></button>
                 <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
-                <h3 id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></h3>
+                <div id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></div>
             </div>
         </div>    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

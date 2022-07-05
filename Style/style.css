@@ -345,7 +345,7 @@ header .dropdown ul {
   color: whitesmoke;
   font-size: 3.4rem;
 }
-.capitals h3 {
+.capitals #counter {
   margin-top: 13vh;
   align-self: end;
   font-size: 4rem;
