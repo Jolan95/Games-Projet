@@ -26,8 +26,8 @@ include "../handleLanguage/lang.php";
         </div>
         <div class="row">
             <div class="col-2 offset-1 text-center">
-               <h2><?php echo $player1 ?>   
-               <svg id="p1"xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="currentColor" class="red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  ><circle cx="8" cy="8" r="8"/></svg></h2>
+               <h2 class="white"><?php echo $player1 ?>   
+               <svg id="p1" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="currentColor" class="red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  ><circle cx="8" cy="8" r="8"/></svg></h2>
             </div>
             
             <div class=" offset-6 col-2 text-center">
@@ -37,14 +37,14 @@ include "../handleLanguage/lang.php";
                 </h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row white">
             <div id="score1" class="col-2 offset-1 text-center align-self-center ">
             </div>
 
-            <div class="offset-2 col-2 light text-center dice" id='dice'>  
+            <div class="offset-2 col-2 light text-center" id='dice'>  
             </div>
                         
-            <div id="score2" class="col-5  col-ms-4 text-center align-self-center">0</div>
+            <div id="score2" class="col-2 offset-2 text-center align-self-center">0</div>
             </div>
         
             <div class="row ">
