@@ -26,9 +26,9 @@ include "../handleLanguage/lang.php";
         <div class="row mt-4">
             <div class="col-3 col-sm-2 offset-sm-1 offset-1 text-center">
                <h2 class="white"><?php echo $player1 ?>   
-               <svg id="p1" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="currentColor" class="red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  ><circle cx="8" cy="8" r="8"/></svg></h2>
+                    <svg id="p1" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="currentColor" class="red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  ><circle cx="8" cy="8" r="8"/></svg>
+                </h2>
             </div>
-            
             <div class="offset-4 col-3 offset-sm-6 col-sm-2 text-center">
                 <h2 class="white">
                     <span id="textp"><?php echo $player2 ?> </span>
@@ -52,10 +52,10 @@ include "../handleLanguage/lang.php";
                         <?php echo $current ?>
                     </div>
                     <div id="scoreCurr1" class="score-current" class="white">
-                        </div>    
-                    </div>
+                    </div>    
+                </div>
             </div>
-            <div class="col-4  text-center align-self-center">
+            <div class="col-4 text-center align-self-center">
                 <div>
                     <button id="roll" class="btn btn-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" class="svgw bi bi-arrow-repeat" viewBox="0 0 16 16">
