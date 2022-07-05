@@ -74,17 +74,18 @@ include "../handleLanguage/lang.php";
                         <?php echo $hold ?>
                     </button>
                 </div>
-                <div id="current2" class="col-4 col white just align-self-center">
-                    <div class="text-center  box-current p-3">
-                        <div >
-                            <?php echo $current ?>
-                        </div>
-                        <div id="scoreCurr2" class="score-current" class="white">
-                        </div>
-                    </div>
-                </div>                    
             </div>
+            <div id="current2" class="col-4 col white just align-self-center">
+                <div class="text-center  box-current p-3">
+                    <div >
+                        <?php echo $current ?>
+                    </div>
+                    <div id="scoreCurr2" class="score-current" class="white">
+                    </div>
+                </div>
+            </div>                     
         </div>               
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script >
 
