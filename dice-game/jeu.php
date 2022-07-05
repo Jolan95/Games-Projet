@@ -52,6 +52,7 @@ include "../handleLanguage/lang.php";
                             <?php echo $current ?>
                         </div>
                         <div id="scoreCurr1" class="score-current" class="white">
+                        </div>    
                     </div>
                 </div>
             
