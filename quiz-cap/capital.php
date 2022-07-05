@@ -48,7 +48,7 @@ include 'Class/user.php';
                     <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                 </div>
                 <div class="col-md-4 col-12">
-                    <button type="button" id="second">50  <?php echo $countries ?></button>
+                    <button type="button" class="start med" id="second">50  <?php echo $countries ?></button>
                 </div>
                 <div class="col-md-4 col-12">
                     <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
