@@ -23,7 +23,7 @@ include "../handleLanguage/lang.php";
                 </em>
             </div>
         </div>
-        <div class="container">
+        <div class="container mb-5">
             <div class="row mt-4">
                 <div class="col-3 col-sm-2 offset-sm-1 offset-1 text-center">
                    <h2 class="white role"><?php echo $player1 ?>   
