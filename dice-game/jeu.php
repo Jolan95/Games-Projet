@@ -46,7 +46,7 @@ include "../handleLanguage/lang.php";
             </div>
         
             <div class="row">
-                <div id="current1" class="col-2 offset-1  text-center align-self-center ">
+                <div id="current1" class="col-2 offset-1 white text-center align-self-center ">
                     <div class="text-center box-current">
                         <div>
                             <?php echo $current ?>
@@ -76,7 +76,7 @@ include "../handleLanguage/lang.php";
                         </button>
                     </div>
                 </div>
-                <div id="current2" class="col-2 offset-2  just align-self-center">
+                <div id="current2" class="col-2 offset-2 white just align-self-center">
                     <div  class="text-center  box-current">
                         <div>
                             <?php echo $current ?>
