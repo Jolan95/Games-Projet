@@ -84,278 +84,219 @@ include "../handleLanguage/lang.php";
                 </div>
             </div>  
         </div>               
-    </div>               
-                
-
-                
-
- 
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script >
+
             $(document).ready(function(){  
-    let dice = document.getElementById('dice');
+                let dice = document.getElementById('dice');
+                dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-6 red de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
+                let tour = 0
+                reset()
 
+                function reset(){
+                    score1 = 0;
+                    score2 = 0;
+                    scorecurr1 = 0
+                    scorecurr2 = 0
+                    tour = 0;
+                }
+                let stay = true
+                function displayingNewScore(){
+                    $("#score1").text(score1)
+                    $("#score2").text(score2)
 
-    
-    dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-6 red de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
-    
-    let tour = 0
-    reset()
-    
-    function reset(){
-        score1 = 0;
-        score2 = 0;
-        scorecurr1 = 0
-        scorecurr2 = 0
-        tour = 0;
-    }
-    let stay = true
-    
-    
-    
-    function displayingNewScore(){
-        $("#score1").text(score1)
-        $("#score2").text(score2)
-        
-        $('#scoreCurr2').text(scorecurr2)
-        $('#scoreCurr1').text(scorecurr1)
-    }
-    let recor = document.getElementById('record').value
-    let record = parseInt(recor)
+                    $('#scoreCurr2').text(scorecurr2)
+                    $('#scoreCurr1').text(scorecurr1)
+                }
+                let recor = document.getElementById('record').value
+                let record = parseInt(recor)
 
-
-    function end() {
-        if(score1 >= 100){
-            let ecart = score1 - score2;
-
-            if(ecart > record){
-
-                $.ajax({
-                    url : 'records.php',
-                    type : 'POST',
-                    data:{
-                        new_record: ecart,
-                      },
-                    success : function(response, code_html, statut){
-                     alert (response)
-                     location.reload();
-                    },
-                    error : function(resultat, statut, erreur){
-                        alert ('<?php echo $errorRecording ?>')
+                function end() {
+                    if(score1 >= 100){
+                        let ecart = score1 - score2;
+                        if(ecart > record){
+                            $.ajax({
+                                url : 'records.php',
+                                type : 'POST',
+                                data:{
+                                    new_record: ecart,
+                                  },
+                                success : function(response, code_html, statut){
+                                 alert (response)
+                                 location.reload();
+                                },
+                                error : function(resultat, statut, erreur){
+                                    alert ('<?php echo $errorRecording ?>')
+                                }
+                            });  
+                        } else {
+                            alert (`<?php echo $win ?> : ${score1} <?php echo $resultDice ?> ${score2} `)
+                        }            
+                    } else {
+                        alert (`<?php echo $lose ?> : ${score2} <?php echo $resultDice ?> ${score1} `)
                     }
-                    });
-
-            } else {
-                alert (`<?php echo $win ?> : ${score1} <?php echo $resultDice ?> ${score2} `)
-            }
-            
-      
-       
-       
-            
-        } else {
-            alert (`<?php echo $lose ?> : ${score2} <?php echo $resultDice ?> ${score1} `)
-            
-        }
-        reset()
-        $("#score1").text(score1)
-        $("#score2").text(score2)            
-        $('#scoreCurr2').text(scorecurr2)
-            $('#scoreCurr1').text(scorecurr1)
-       
-     }
-        
-        function redrond(){
-            
-            if(tour % 2 === 0) {
-                $('#p1').show()
-                $('#p2').hide()
-            } else {
-            $('#p2').show()
-            $("#p1").hide()
-        }
-    }
-    function iaStop(limit) {
-        let random = Math.random() * (limit - 1)
-        if (random < 1.4){
-            score2 += scorecurr2 
-            stay = false
-            scorecurr2 = 0;
-            displayingNewScore()
-            tour++
-            redrond()
-            return stay
-        }
-        }
-    
-    function quit(){
-        stay = false
-        scorecurr2 = 0;
-        displayingNewScore()
-        tour++
-        redrond()
-    }
-    function lancéDéVirtuel(){
-        
-        stay = true
-        while(stay){
-            var dice = Math.floor(Math.random() * (7 - 1) + 1);
-            displayDice(dice)
-            setTimeout(displayingNewScore(), 1500)
-            if(dice === 6){
-            quit()
-            
-            } else if(scorecurr2 > 6){
-           
-                if(scorecurr2 < 6){
-                    iaStop(10);
-                } else if (scorecurr2 < 11){
-                    iaStop(7);
-                } else if (scorecurr2 < 14){
-                    iaStop(5);
-                } else if (scorecurr2 < 19){
-                    iaStop(3)
-                } else if (scorecurr2 < 21){
-                    iaStop(2)
-                } else {
-                  iaStop(1.8);
+                    reset()
+                    $("#score1").text(score1)
+                    $("#score2").text(score2)            
+                    $('#scoreCurr2').text(scorecurr2)
+                    $('#scoreCurr1').text(scorecurr1)
                 }
-                
-                if(!stay){
-                    score2 += scorecurr2
-                
-                }else {
-                 
-                    scorecurr2 += dice;
-                    redrond();
+            
+                function redrond(){
+                    if(tour % 2 === 0) {
+                        $('#p1').show()
+                        $('#p2').hide()
+                    } else {
+                        $('#p2').show()
+                        $("#p1").hide()
+                    }
                 }
 
-            }else{
-
-            scorecurr2 += dice;
-            redrond();
-                if(score2 + scorecurr2 >= 100){
-                score2 += scorecurr2
-                quit()
-                end()
+                function iaStop(limit) {
+                    let random = Math.random() * (limit - 1)
+                    if (random < 1.4){
+                        score2 += scorecurr2 
+                        stay = false
+                        scorecurr2 = 0;
+                        displayingNewScore()
+                        tour++
+                        redrond()
+                        return stay
+                    }
                 }
-            }
-        } 
-        $("#textp").text('<?php echo $player2 ?>')  
-        if(score2 >= 100){
-            end()
-        }      
-    }
-    
-    $("#roll").click(() => {
-        if(tour % 2 === 0){
-        var dice = Math.floor(Math.random() * (7 - 1) + 1);
-        displayDice(dice);
-        redrond()
-            scorecurr1 += dice;
-            if(dice === 6){
-                tour++;
-                scorecurr1 = 0;
-                scorecurr2 = 0
-                redrond()
-                $("#one").css('color','red')
-                $('#six').css('color','red')
-                $('#five').css('color','red')
-                $('#four').css('color','red')
-                $('#two').css('color','red')
-                $('#three').css('color','red')
-                $("#seven").css('color','red')
-
-                $("#textp").text('<?php echo $iaIsPlaying ?>')
-                setTimeout(lancéDéVirtuel, 1000)
-            } else{
-            $("#one").css('color','black')
-            $('#six').css('color','black')
-            $('#five').css('color','black')
-            $('#four').css('color','black')
-            $('#two').css('color','black')
-            $('#three').css('color','black')
-            $("#seven").css('color','black')
             
-            $('#scoreCurr1').text(scorecurr1)
-            $("#scoreCurr2").text(scorecurr2)
-        }
-    }
-    })
-    redrond();
+                function quit(){
+                    stay = false
+                    scorecurr2 = 0;
+                    displayingNewScore()
+                    tour++
+                    redrond()
+                }
 
-
-
-        
-
-        $("#hold").click(() => {
-            if(tour % 2 === 0){
-                
-            score1 += scorecurr1
-            score2 += scorecurr2
-            $("#score1").text(score1)
-            $("#score2").text(score2)
-            if(score1 >= 100 || score2 >= 100){
-                
-                end()
-                
-            } else {
-
-                tour++
-            }
-            redrond()
+                function lancéDéVirtuel(){
+                    stay = true
+                    while(stay){
+                        var dice = Math.floor(Math.random() * (7 - 1) + 1);
+                        displayDice(dice)
+                        setTimeout(displayingNewScore(), 1500)
+                        if(dice === 6){
+                            quit()
+                        } else if(scorecurr2 > 6){
+                            if(scorecurr2 < 6){
+                                iaStop(10);
+                            } else if (scorecurr2 < 11){
+                                iaStop(7);
+                            } else if (scorecurr2 < 14){
+                                iaStop(5);
+                            } else if (scorecurr2 < 19){
+                                iaStop(3)
+                            } else if (scorecurr2 < 21){
+                                iaStop(2)
+                            } else {
+                              iaStop(1.8);
+                            }
+                            if(!stay){
+                                score2 += scorecurr2
+                            }else {
+                                scorecurr2 += dice;
+                                redrond();
+                            }
+                        }else{
+                            scorecurr2 += dice;
+                            redrond();
+                                if(score2 + scorecurr2 >= 100){
+                                score2 += scorecurr2
+                                quit()
+                                end()
+                            }
+                        }
+                    }      
+                    $("#textp").text('<?php echo $player2 ?>')  
+                    if(score2 >= 100){
+                        end()
+                    }      
+                }
             
-            scorecurr1 = 0;
-            scorecurr2 = 0;
-           displayingNewScore()
+                $("#roll").click(() => {
+                    if(tour % 2 === 0){
+                        var dice = Math.floor(Math.random() * (7 - 1) + 1);
+                        displayDice(dice);
+                        redrond()
+                        scorecurr1 += dice;
+                        if(dice === 6){
+                            tour++;
+                            scorecurr1 = 0;
+                            scorecurr2 = 0
+                            redrond()
+                            $("#one").css('color','red')
+                            $('#six').css('color','red')
+                            $('#five').css('color','red')
+                            $('#four').css('color','red')
+                            $('#two').css('color','red')
+                            $('#three').css('color','red')
+                            $("#seven").css('color','red')
+                            $("#textp").text('<?php echo $iaIsPlaying ?>')
+                            setTimeout(lancéDéVirtuel, 1000)
+                        } else{
+                            $("#one").css('color','black')
+                            $('#six').css('color','black')
+                            $('#five').css('color','black')
+                            $('#four').css('color','black')
+                            $('#two').css('color','black')
+                            $('#three').css('color','black')
+                            $("#seven").css('color','black')
 
- 
-        }
-        $("#textp").text('<?php echo $iaIsPlaying ?>')
-        setTimeout(lancéDéVirtuel, 1000)
-            
-        })
+                            $('#scoreCurr1').text(scorecurr1)
+                            $("#scoreCurr2").text(scorecurr2)
+                        }
+                    }
+                })
+                redrond();
 
+                $("#hold").click(() => {
+                    if(tour % 2 === 0){  
+                        score1 += scorecurr1
+                        score2 += scorecurr2
+                        $("#score1").text(score1)
+                        $("#score2").text(score2)
+                        if(score1 >= 100 || score2 >= 100){
+                            end()
+                        } else {
+                            tour++
+                        }
+                        redrond()
+                        scorecurr1 = 0;
+                        scorecurr2 = 0;
+                        displayingNewScore()
+                    }
+                    $("#textp").text('<?php echo $iaIsPlaying ?>')
+                    setTimeout(lancéDéVirtuel, 1000)         
+                })
 
-    /**$("#new").click(function(){
-        reset()
-        $("#score1").text(score1)
-        $("#score2").text(score2)
-
-        
-        $('#scoreCurr2').text(scorecurr2)
-        $('#scoreCurr1').text(scorecurr1)
-        tour = 0
-    })*/
-    function displayDice(threw){
-        
-        switch(threw) {
-            case 1 : 
-            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-1 white de" viewBox="0 0 16 16"><circle cx="8" cy="8" r="1.5"/><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/></svg>'
-            break;
-            case 2 : 
-            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-2 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
-        break;
-            case 3 :
-            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-3 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
-        break;
-            case 4 : 
-            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-4 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
-         break;
-            case 5 : 
-            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-5 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
-         break;
-            case 6 : 
-            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-6 red de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
-         break; 
-}
-} 
-displayingNewScore() 
-
-
-
-})
+                function displayDice(threw){
+                    switch(threw) {
+                        case 1 : 
+                            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-1 white de" viewBox="0 0 16 16"><circle cx="8" cy="8" r="1.5"/><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/></svg>'
+                        break;
+                        case 2 : 
+                            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-2 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
+                        break;
+                        case 3 :
+                            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-3 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
+                        break;
+                        case 4 : 
+                            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-4 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
+                        break;
+                        case 5 : 
+                            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-5 white de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
+                        break;
+                        case 6 : 
+                            dice.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-dice-6 red de" viewBox="0 0 16 16"><path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/><path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>'
+                        break; 
+                    }
+                } 
+                displayingNewScore() 
+            })
         </script>
-</body>
+    </body>
 </html>
