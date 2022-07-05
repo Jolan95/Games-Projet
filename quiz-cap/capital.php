@@ -29,7 +29,7 @@ include 'Class/user.php';
             <div class="question">
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
-            <div class="boxs" hidden id="container-boxes">
+            <div class="boxs" id="container-boxes">
                 <button type="button" class="box" id="box1"></button>
                 <button type="button" class="box" id="box2"></button>
                 <button type="button" class="box" id="box3"></button>
@@ -66,6 +66,7 @@ include 'Class/user.php';
             let recordM = document.getElementById('recordM').value
             let recordH = document.getElementById('recordH').value
             let record
+            container.hidden = true;
             quiz=false;
             let choices = []
             let questionIndex = [];
