@@ -36,8 +36,7 @@ include "../handleLanguage/lang.php";
                 </h2>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row white">
+        <div class="row white">
                 <div id="score1" class="col-2 offset-1 text-center align-self-center ">
             </div>
             <div class="col-4 col-sm-2 offset-sm-2 offset-1 light full-center text-center" id='dice'>  
@@ -82,10 +81,10 @@ include "../handleLanguage/lang.php";
                             <?php echo $current ?>
                         </div>
                         <div id="scoreCurr2" class="score-current" class="white">
-                            </div>
+
                         </div>
-                    </div>  
-                </div>               
+                    </div>
+                </div>                    
             </div>
         </div>               
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
