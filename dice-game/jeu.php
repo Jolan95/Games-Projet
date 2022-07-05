@@ -232,24 +232,9 @@ include "../handleLanguage/lang.php";
                             scorecurr1 = 0;
                             scorecurr2 = 0
                             redrond()
-                            $("#one").css('color','red')
-                            $('#six').css('color','red')
-                            $('#five').css('color','red')
-                            $('#four').css('color','red')
-                            $('#two').css('color','red')
-                            $('#three').css('color','red')
-                            $("#seven").css('color','red')
                             $("#textp").text('<?php echo $iaIsPlaying ?>')
                             setTimeout(lancéDéVirtuel, 1000)
                         } else{
-                            $("#one").css('color','black')
-                            $('#six').css('color','black')
-                            $('#five').css('color','black')
-                            $('#four').css('color','black')
-                            $('#two').css('color','black')
-                            $('#three').css('color','black')
-                            $("#seven").css('color','black')
-
                             $('#scoreCurr1').text(scorecurr1)
                             $("#scoreCurr2").text(scorecurr2)
                         }
