@@ -10,7 +10,7 @@ include 'Class/user.php';
 		<title>J-Games Online - Quiz Capitales</title>
 		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,..." />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="Style/style.css">
+		<link rel="stylesheet" type="text/css" href="../Style/style.css">
         <style>
             html{
             font-size: 1vw;
@@ -170,7 +170,7 @@ include 'Class/user.php';
 	</head>
 	<body>
         <?php
-        require_once 'header.php';
+        require_once '../header.php';
         ?>
         <div class="logo">
             <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
