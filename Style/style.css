@@ -454,7 +454,7 @@ header .dropdown ul {
   .capitals .box {
     background-color: whitesmoke;
     height: 18rem;
-    width: 70vw;
+    width: 100%;
     margin-top: 3vh;
   }
 }

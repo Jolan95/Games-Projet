@@ -18,13 +18,13 @@ include 'Class/user.php';
         <?php
         require_once '../header.php';
         ?>
-        <div class="capitals">
+        <div class="capitals container">
             <div class="logo d-flex align-items-center">
                 <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
                 <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
                 <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
                 <!--<img src="R.jpg" alt="logoQuiz"></img>-->
-                <em id="record" class="recording"></em>
+                <div id="record" class="recording"></div>
             </div>
             <div class="question">
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
