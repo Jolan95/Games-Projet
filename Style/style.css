@@ -299,3 +299,6 @@ header .dropdown ul {
 .game-dice button {
   padding: 5px 10px;
 }
+.game-dice svg {
+  font-size: 20px;
+}
