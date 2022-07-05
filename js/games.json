@@ -7,7 +7,7 @@
         {"name": "Pierre Feuilles Ciseaux", "image" : "Img/pfc.jpg", "link" : "https://games-online.herokuapp.com/PFC/pfc.php", "description" : "Simulation de Pierre feuille ciseau."}
     ],
     "en" : [
-        {"name": "First one to reach 100, save at the right time !", "image" : "Img/photoDé.jpg", "link" : "https://games-online.herokuapp.com/dice-game/jeu.php", "description" : "First one to reach 100, save at the right time !"},
+        {"name": "Dice game", "image" : "Img/photoDé.jpg", "link" : "https://games-online.herokuapp.com/dice-game/jeu.php", "description" : "First one to reach 100, save at the right time !"},
         {"name": "World capitals quiz", "image" : "Img/jeuxCap.jpg", "link" : "https://games-online.herokuapp.com/quiz-cap/capital.php", "description" : "Are you expert in world capitals?"},
         {"name": "Guessing Number", "image" : "Img/guess.jpg", "link" : "https://games-online.herokuapp.com/guessing-game/jeuNumber.php", "description" : "Guess the number between 0 and 1000 ! "},
         {"name": "Flappy Bird", "image" : "Img/Flappy.jpg", "link" : "https://games-online.herokuapp.com/flappy-bird/flappy.php", "description" : "Help the bird to avoid the pipes."},
