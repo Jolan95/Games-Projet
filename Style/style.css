@@ -385,8 +385,8 @@ header .dropdown ul {
 .capitals .start {
   justify-content: center;
   border-radius: 180px;
-  height: 19rem;
-  width: 19rem;
+  height: 10rem;
+  width: 10rem;
   margin: inherit;
   transition-duration: 0.3s;
   transition-delay: 0.05s;
@@ -447,4 +447,10 @@ header .dropdown ul {
 }
 .capitals .full-center {
   height: 130px;
+}
+@media all and (min-width: 700px) {
+  .capitals .start {
+    height: 15rem;
+    width: 15rem;
+  }
 }
