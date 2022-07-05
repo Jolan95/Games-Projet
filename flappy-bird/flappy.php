@@ -17,7 +17,7 @@
         </style>
     </head>
     <body>
-        <?php include '../header.php' ?>
+        <?php include '../header.php'; ?>
         <input type="text" hidden id="record" value=<?php if(isset($_SESSION['user'])){echo $_SESSION["record_flappy"];} else {echo 0;}?> >
         <div class="text-center">
             <h1 class="white">Flappy Bird</h1>
