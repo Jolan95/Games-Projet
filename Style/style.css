@@ -296,3 +296,6 @@ header .dropdown ul {
 .game-dice .score-current {
   font-size: 3rem;
 }
+.game-dice button {
+  padding: 5px 10px;
+}
