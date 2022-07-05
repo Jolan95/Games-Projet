@@ -16,10 +16,7 @@
 .red{
     color : red;
 }
-.score{
-    font-size : 60px;
-    color : white
-}
+
 
 .one{
     position : absolute;
@@ -56,22 +53,15 @@
     top : 26%;
     left : 54%;
 }
-.sized{
-    font-size: 14vh;
-}
+
 .numCurr{
     justify-content:  center;
     color : white;
     font-size : 7vh;
     margin-top : 0.5vh
 }
-.butt{
-    font-size : 3vh;
-    
-}
-.boxcurr{
-    margin-left : 10vw
-}
+
+
 .svgw{
     color : white;  
 }
