@@ -30,8 +30,8 @@ include 'Class/user.php';
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
             <div class="row" hidden id="container-boxes">
-                <div class="p-5 col-6">
-                    <button type="button" class="box" id="box1"></button>
+                <div class="p-5 col-6 box">
+                    <button type="button"  id="box1"></button>
                 </div>
                 <div class="p-5 col-6">
                     <button type="button" class="box" id="box2"></button>
