@@ -11,7 +11,6 @@ include "../handleLanguage/lang.php";
 		<title>J-Games Online</title>
 		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,... Venez découvrir notre liste de jeux !" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" type="text/css" href="jeuDice.css"> -->
 		<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	</head>
 	<body class="game-dice">
@@ -24,7 +23,7 @@ include "../handleLanguage/lang.php";
                 </em>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-2 offset-1 text-center">
                <h2 class="white"><?php echo $player1 ?>   
                <svg id="p1" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="currentColor" class="red" class=" bi bi-circle-fill align-self-center" viewBox="0 0 16 16"  ><circle cx="8" cy="8" r="8"/></svg></h2>
