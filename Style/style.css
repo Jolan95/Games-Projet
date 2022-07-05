@@ -440,10 +440,8 @@ header .dropdown ul {
   font-size: 1.5rem;
   font-weight: 800;
 }
-@media all and (min-width: 650px) {
-  .capitals .box {
-    background-color: whitesmoke;
-    height: 18rem;
-    width: 100%;
-  }
+.capitals .box {
+  background-color: whitesmoke;
+  height: 18rem;
+  width: 100%;
 }
