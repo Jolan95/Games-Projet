@@ -355,9 +355,6 @@ header .dropdown ul {
 .capitals #question {
   justify-self: center;
 }
-.capitals .boxs {
-  height: 100%;
-}
 .capitals button {
   border: 1px black solid;
   border-radius: 6px;
@@ -452,7 +449,5 @@ header .dropdown ul {
   .capitals .box {
     background-color: whitesmoke;
     height: 18rem;
-    width: 100%;
-    margin-top: 3vh;
   }
 }
