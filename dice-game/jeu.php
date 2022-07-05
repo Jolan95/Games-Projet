@@ -49,7 +49,7 @@ include "../handleLanguage/lang.php";
             </div>
             <div class="row mt-4">
                 <div id="current1" class="col-4  white text-center align-self-center ">
-                    <div class="text-center box-current p-3">
+                    <div class="text-center box-current py-3">
                         <div class="current-text">
                             <?php echo $current ?>
                         </div>
@@ -78,7 +78,7 @@ include "../handleLanguage/lang.php";
                     </div>
                 </div>
                 <div id="current2" class="col-4 col white just align-self-center">
-                    <div class="text-center  box-current p-3">
+                    <div class="text-center  box-current py-3">
                         <div class="current-text">
                             <?php echo $current ?>
                         </div>

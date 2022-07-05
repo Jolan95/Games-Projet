@@ -300,7 +300,7 @@ header .dropdown ul {
   font-size: 1rem;
 }
 .game-dice .current-text {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 @media all and (min-width: 600px) {
   .game-dice .role {
