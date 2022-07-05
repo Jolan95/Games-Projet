@@ -43,10 +43,16 @@ include 'Class/user.php';
                     <button type="button" class="box" id="box4"></button>
                 </div>
             </div>
-            <div class="start-container">
-                <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
-                <button type="button"class="start med" id="second">50  <?php echo $countries ?></button>
-                <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
+            <div class="row">
+                <div class="col-md-4 full-center col-12">
+                    <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
+                </div>
+                <div class="col-md-4 col-12">
+                    <button type="button" id="second">50  <?php echo $countries ?></button>
+                </div>
+                <div class="col-md-4 col-12">
+                    <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
+                </div>
                 <div id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></div>
             </div>
         </div>    
