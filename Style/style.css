@@ -361,13 +361,9 @@ header .dropdown ul {
   box-shadow: 1px 1px;
   height: 2em;
   width: 35rem;
-  margin-left: 9.3rem;
   margin-top: 2rem;
   font-size: 300%;
   border: none;
-}
-.capitals .button-container {
-  display: flex;
 }
 .capitals .validation {
   height: 0.6em;
