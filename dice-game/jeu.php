@@ -37,42 +37,42 @@ include "../handleLanguage/lang.php";
             </div>
         </div>
         <div class="row white">
-                <div id="score1" class="col-4  text-center align-self-center ">
+            <div id="score1" class="col-4  text-center align-self-center ">
             </div>
             <div class="col-4 light full-center text-center" id='dice'>  
             </div>       
-            <div id="score2" class="col-4 text-center align-self-center">0</div>
+            <div id="score2" class="col-4 text-center align-self-center">
+                0
             </div>
-        
-            <div class="row mt-4">
-                <div id="current1" class="col-4  white text-center align-self-center ">
-                    <div class="text-center box-current p-3">
-                        <div>
-                            <?php echo $current ?>
-                        </div>
-                        <div id="scoreCurr1" class="score-current" class="white">
-                            </div>    
-                        </div>
-                </div>
-                <div class="col-4  text-center align-self-center">
+        </div>
+        <div class="row mt-4">
+            <div id="current1" class="col-4  white text-center align-self-center ">
+                <div class="text-center box-current p-3">
                     <div>
-                        <button id="roll" class="btn btn-success">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" class="svgw bi bi-arrow-repeat" viewBox="0 0 16 16">
-                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                            </svg>
-                            <?php echo $throwDice ?>
-                        </button>
+                        <?php echo $current ?>
                     </div>
-                    <div class="mt-2">    
-                        <button type="button" id="hold" class="btn btn-danger">
-                            <svg xmlns="http://www.w3.org/2000/svg"  width="18px" height="18px" fill="currentColor" class=" svgw bi bi-box-arrow-in-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
-                                <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                            </svg>
-                            <?php echo $hold ?>
-                        </button>
+                    <div id="scoreCurr1" class="score-current" class="white">
+                        </div>    
                     </div>
+            </div>
+            <div class="col-4  text-center align-self-center">
+                <div>
+                    <button id="roll" class="btn btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" class="svgw bi bi-arrow-repeat" viewBox="0 0 16 16">
+                            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                        </svg>
+                        <?php echo $throwDice ?>
+                    </button>
+                </div>
+                <div class="mt-2">    
+                    <button type="button" id="hold" class="btn btn-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="18px" height="18px" fill="currentColor" class=" svgw bi bi-box-arrow-in-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+                            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                        </svg>
+                        <?php echo $hold ?>
+                    </button>
                 </div>
                 <div id="current2" class="col-4 col white just align-self-center">
                     <div class="text-center  box-current p-3">
@@ -80,7 +80,6 @@ include "../handleLanguage/lang.php";
                             <?php echo $current ?>
                         </div>
                         <div id="scoreCurr2" class="score-current" class="white">
-
                         </div>
                     </div>
                 </div>                    
