@@ -37,15 +37,15 @@ include "../handleLanguage/lang.php";
             </div>
         </div>
         <div class="row white">
-                <div id="score1" class="col-2 offset-1 text-center align-self-center ">
+                <div id="score1" class="col-4  text-center align-self-center ">
             </div>
-            <div class="col-4 col-sm-2 offset-sm-2 offset-1 light full-center text-center" id='dice'>  
+            <div class="col-4 light full-center text-center" id='dice'>  
             </div>       
-            <div id="score2" class="col-sm-2 offset-sm-2 col-2 offset-1 text-center align-self-center">0</div>
+            <div id="score2" class="col-4 text-center align-self-center">0</div>
             </div>
         
             <div class="row mt-4">
-                <div id="current1" class="col-2 offset-1 white text-center align-self-center ">
+                <div id="current1" class="col-4  white text-center align-self-center ">
                     <div class="text-center box-current p-3">
                         <div>
                             <?php echo $current ?>
@@ -54,7 +54,7 @@ include "../handleLanguage/lang.php";
                             </div>    
                         </div>
                 </div>
-                <div class="col-2 offset-2  text-center align-self-center">
+                <div class="col-4  text-center align-self-center">
                     <div>
                         <button id="roll" class="btn btn-success">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" class="svgw bi bi-arrow-repeat" viewBox="0 0 16 16">
@@ -74,7 +74,7 @@ include "../handleLanguage/lang.php";
                         </button>
                     </div>
                 </div>
-                <div id="current2" class="col-2 offset-2 white just align-self-center">
+                <div id="current2" class="col-4 col white just align-self-center">
                     <div class="text-center  box-current p-3">
                         <div >
                             <?php echo $current ?>
