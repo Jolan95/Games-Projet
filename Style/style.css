@@ -335,9 +335,9 @@ header .dropdown ul {
 .capitals .logo {
   font-size: 1.3rem;
 }
-.capitals h2 {
+.capitals h1 {
   color: whitesmoke;
-  font-size: 3.4rem;
+  font-size: 1rem;
 }
 .capitals #counter {
   margin-top: 13vh;

@@ -28,7 +28,7 @@ include 'Class/user.php';
                 <div id="record" class="recording">
                 </div>
                 <div class="question mb-4 text-center">
-                    <h2 id="question"><?php echo $worldCapitals ?></h2>
+                    <h1 id="question"><?php echo $worldCapitals ?></h1>
                 </div>
                 <div class="row" hidden id="container-boxes">
                     <div class="p-5 col-md-6 col-12 wrapper-box">
