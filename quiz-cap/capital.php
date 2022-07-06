@@ -21,13 +21,14 @@ include 'Class/user.php';
         <div class="capitals">
             <div class="container">
                 <div class="logo d-flex align-items-center">
-                <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
-                <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
-                <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
+                    <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
+                    <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
+                    <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
+                </div>
                 <!--<img src="R.jpg" alt="logoQuiz"></img>-->
                 <div id="record" class="recording"></div>
             </div>
-            <div class="question mb-5">
+            <div class="question ">
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
             <div class="row" hidden id="container-boxes">
