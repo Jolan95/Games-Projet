@@ -106,7 +106,7 @@ include 'Class/user.php';
             }
 
             function hiddingCircles(){
-                // circles.forEach(element => element.classList.add("d-none") )
+
                 circlesWrapper.classList.add("d-none");
             }
 
@@ -195,6 +195,7 @@ include 'Class/user.php';
                             }
                         }
                         container.classList.add("d-none");
+                        circlesWrapper.classList.remove("d-none");
                         counter.textContent = '';
                         secondQuiz.classList.remove("d-none");
             			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'
