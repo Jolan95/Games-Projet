@@ -199,21 +199,21 @@ include 'Class/user.php';
                         counter.textContent = '';
                         secondQuiz.classList.remove("d-none");
             			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'
-            			// thirdQuiz.classList.remove("d-none");
-            			// thirdQuiz.outerHTML = '<button type="button"class="start med" id="third" onclick="redirectToMenu()">'+'<?php echo $redirectToMenu ?>'+'</button>';
+            			thirdQuiz.classList.remove("d-none");
+            			thirdQuiz.outerHTML = '<button type="button"class="start med" id="third" onclick="redirectToMenu()">'+'<?php echo $redirectToMenu ?>'+'</button>';
                         boxes.forEach(boxe => boxe.remove());
                         if (limitQuiz === point){
                             question.classList.add('class-right')
-                            question.textContent = '<?php echo $revealAllGood ?>'+" !!!";
+                            question.textContent = '<?php echo $revealAllGood ?> '+" !!!";
                         } else if(limitQuiz / point <= 2) {
                             question.classList.add('class-right')
-                            question.textContent = '<?php echo $revealScoreCap ?>'+ point +'<?php echo $revealScoreCap2 ?>' + limitQuiz + '!';
+                            question.textContent = '<?php echo $revealScoreCap ?> '+ point +' <?php echo $revealScoreCap2 ?>' + limitQuiz + '!';
 
                         } else if (point < 2){
-                            question.textContent = '<?php echo $revealScoreCap ?>'+ point + '<?php echo $revealScoreCap2 ?>'  + limitQuiz + '!';
+                            question.textContent = '<?php echo $revealScoreCap ?> '+ point + ' <?php echo $revealScoreCap2 ?>'  + limitQuiz + '!';
                             question.classList.add('class-wrong');
                         }    else {
-                            question.textContent = '<?php echo $revealScoreCap ?>'+ point + '<?php echo $revealScoreCap2 ?>' + limitQuiz + '!';
+                            question.textContent = '<?php echo $revealScoreCap ?> '+ point + '<?php echo $revealScoreCap2 ?>' + limitQuiz + '!';
                             question.classList.add('class-wrong');
                         }
                     }, 800);
