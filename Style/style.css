@@ -363,6 +363,7 @@ header .dropdown ul {
 }
 .capitals .wrong {
   background-color: rgba(250, 56, 56, 0.986);
+  border: 1px solid black;
 }
 .capitals .start {
   border-radius: 180px;
