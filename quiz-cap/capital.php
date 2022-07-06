@@ -44,7 +44,7 @@ include 'Class/user.php';
                         <button type="button" class="box" id="box4"></button>
                     </div>
                 </div>
-                <div class="row mt-4">
+                <div class="row mt-4" id="wrapper-circles">
                     <div class="col-lg-4 col-12 full-center wrapper-circle" >
                         <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                     </div>
@@ -76,6 +76,7 @@ include 'Class/user.php';
             let thirdQuiz = document.getElementById('third');
             let circles = [firstQuiz, secondQuiz, thirdQuiz];
             let container = document.getElementById('container-boxes')
+            let circlesWrapper = document.getElementById('wrapper-circles')
             let counter = document.getElementById('counter')
             let displayRecord = document.getElementById('record')
             let recordE = document.getElementById('recordE').value
@@ -105,7 +106,8 @@ include 'Class/user.php';
             }
 
             function hiddingCircles(){
-                circles.forEach(element => element.classList.add("d-none") )
+                // circles.forEach(element => element.classList.add("d-none") )
+                circlesWrapper.classList.add("d-none");
             }
 
             function shuffle(array) {
