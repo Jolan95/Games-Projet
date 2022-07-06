@@ -443,6 +443,7 @@ header .dropdown ul {
 }
 .capitals .wrapper-box {
   height: 130px;
+  font-size: 3rem;
 }
 .capitals .wrapper-circle {
   height: 250px;
