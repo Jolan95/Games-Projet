@@ -462,5 +462,6 @@ header .dropdown ul {
   .capitals .flag {
     height: 2.2rem;
     width: 4rem;
+    margin-top: -10px;
   }
 }
