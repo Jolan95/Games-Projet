@@ -382,7 +382,6 @@ header .dropdown ul {
   justify-content: center;
 }
 .capitals .start {
-  justify-content: center;
   border-radius: 180px;
   height: 14rem;
   width: 14rem;
@@ -448,11 +447,13 @@ header .dropdown ul {
   .capitals .start {
     height: 16rem;
     width: 16rem;
+    font-size: 2rem;
   }
 }
 @media all and (min-width: 600px) {
   .capitals .start {
     height: 16rem;
     width: 16rem;
+    font-size: 1.4rem;
   }
 }
