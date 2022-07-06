@@ -45,13 +45,13 @@ include 'Class/user.php';
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-4 col-12 full-center wrapper-circle" >
+                    <div class="col-lg-4 col-12 full-center wrapper-circle" >
                         <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                     </div>
-                    <div class="col-md-4 col-12 full-center wrapper-circle" >
+                    <div class="col-lg-4 col-12 full-center wrapper-circle" >
                         <button type="button" class="start med" id="second">50  <?php echo $countries ?></button>
                     </div>
-                    <div class="col-md-4 col-12 full-center wrapper-circle" >
+                    <div class="col-lg-4 col-12 full-center wrapper-circle" >
                         <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
                     </div>
                     <div id='counter'></div>
