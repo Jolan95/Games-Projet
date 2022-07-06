@@ -30,27 +30,27 @@ include 'Class/user.php';
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
             <div class="row" hidden id="container-boxes">
-                <div class="p-5 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <div class="p-5 col-md-6 col-12 ">
                     <button type="button" class="box" id="box1"></button>
                 </div>
-                <div class="p-5 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <div class="p-5 col-md-6 col-12 ">
                     <button type="button" class="box" id="box2"></button>
                 </div>
-                <div class="p-5 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <div class="p-5 col-md-6 col-12">
                     <button type="button" class="box" id="box3"></button>
                 </div>
-                <div class="p-5 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <div class="p-5 col-md-6 col-12">
                     <button type="button" class="box" id="box4"></button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12 d-flex justify-content-center align-items-center">
                     <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12 full-center">
                     <button type="button" class="start med" id="second">50  <?php echo $countries ?></button>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12 full-center">
                     <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
                 </div>
                 <div id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></div>
