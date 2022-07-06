@@ -44,8 +44,8 @@ include 'Class/user.php';
                         <button type="button" class="box" id="box4"></button>
                     </div>
                 </div>
-                <div class="row wrapper-cirlces">
-                    <div class="col-md-4 col-12 full-center">
+                <div class="row">
+                    <div class="col-md-4 col-12 full-center" style="height : 300px;">
                         <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                     </div>
                     <div class="col-md-4 col-12 full-center">
