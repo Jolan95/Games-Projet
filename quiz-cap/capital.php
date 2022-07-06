@@ -54,7 +54,7 @@ include 'Class/user.php';
                     <div class="col-md-4 col-12 full-center wrapper-circle" >
                         <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
                     </div>
-                    <!-- <div id='counter'></div> -->
+                    <div id='counter'></div>
                 </div> 
             </div>      
         </div>
