@@ -377,10 +377,6 @@ header .dropdown ul {
 .capitals .wrong {
   border: 6px solid red;
 }
-.capitals .start-container {
-  display: flex;
-  justify-content: center;
-}
 .capitals .start {
   border-radius: 180px;
   transition-duration: 0.3s;
