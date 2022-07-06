@@ -383,10 +383,14 @@ header .dropdown ul {
 }
 .capitals .start {
   border-radius: 180px;
+  transition-duration: 0.3s;
   height: 14rem;
   width: 14rem;
-  transition-duration: 0.3s;
   transition-delay: 0.05s;
+}
+.capitals .start:hover {
+  height: 15rem;
+  width: 15rem;
 }
 .capitals .easy {
   background: url("../quiz-cap/mape.jpg");
