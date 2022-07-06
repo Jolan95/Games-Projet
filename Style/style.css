@@ -445,7 +445,7 @@ header .dropdown ul {
   height: 90px;
   width: 100%;
 }
-.capitals .full-center {
+.capitals .wrapper-box {
   height: 130px;
 }
 @media all and (min-width: 700px) {
