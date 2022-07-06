@@ -441,7 +441,7 @@ header .dropdown ul {
   height: 130px;
 }
 .capitals .wrapper-circle {
-  height: 340px;
+  height: 250px;
 }
 @media all and (min-width: 1300px) {
   .capitals .start {
@@ -463,5 +463,8 @@ header .dropdown ul {
   .capitals .start:hover {
     height: 18rem;
     width: 18rem;
+  }
+  .capitals .wrapper-circle {
+    height: 340px;
   }
 }
