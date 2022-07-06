@@ -94,7 +94,7 @@ $wrongFormatMail = "The email format is invalid.";
 //JeuNumber .php
 $JNrule = "Guess the number between 0 and 1000."   ;
 $callToSuggestion = "Make a first suggestion!";
-$restart = "Replay";
+$restart = "Play Again";
 $redirectToMenu = "Redirect to menu";
 $attempts = "Attempt(s)";
 $errorRecording = "Error while saving your new record ";
