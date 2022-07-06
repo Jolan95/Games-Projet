@@ -30,7 +30,7 @@ include 'Class/user.php';
                 <div class="question mb-4 text-center">
                     <h1 id="question"><?php echo $worldCapitals ?></h1>
                 </div>
-                <div class="row" hidden id="container-boxes">
+                <div class="row d-none" hidden id="container-boxes">
                     <div class="p-2 col-md-6 col-12 wrapper-box">
                         <button type="button" class="box" id="box1"></button>
                     </div>
@@ -240,8 +240,8 @@ include 'Class/user.php';
                 hiddingCircles()
                 i=0;
                 quiz = true;
-                e.target.hidden = true;
-                container.hidden = false;
+                e.target.classList.add("d-none")
+                container.classList.remove("d-none");
                 boxes.forEach(element => element.hidden = false);
                 question.hidden = false
                 selectAnswers();
