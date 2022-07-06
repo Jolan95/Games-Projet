@@ -360,11 +360,9 @@ header .dropdown ul {
 }
 .capitals .good {
   background: #38d038;
-  color: green;
 }
 .capitals .wrong {
-  background: rgba(250, 56, 56, 0.986);
-  border: 12px solid purple;
+  background: rgba(250, 56, 56, 0.388);
 }
 .capitals .start {
   border-radius: 180px;
@@ -414,7 +412,6 @@ header .dropdown ul {
   font-size: 1rem;
 }
 .capitals .box {
-  background-color: whitesmoke;
   height: 90px;
   width: 100%;
 }
