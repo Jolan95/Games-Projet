@@ -18,8 +18,9 @@ include 'Class/user.php';
         <?php
         require_once '../header.php';
         ?>
-        <div class="capitals container">
-            <div class="logo d-flex align-items-center">
+        <div class="capital">
+            <div class="container">
+                <div class="logo d-flex align-items-center">
                 <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
                 <input type=hidden id="recordM"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Mcap'];}?>>
                 <input type=hidden id="recordH"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Hcap'];}?>>
@@ -54,8 +55,8 @@ include 'Class/user.php';
                     <button type="button"class="start hard" id="third">198  <?php echo $countries ?></button>
                 </div>
                 <div id='counter' style="position : relative;font-size : 2.4rem;text-shadow: none; font-weight : 200" ></div>
-            </div>
-        </div>    
+            </div>   
+        </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript" src="countries.js"></script>
