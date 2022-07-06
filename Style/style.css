@@ -359,11 +359,11 @@ header .dropdown ul {
   color: blue;
 }
 .capitals .good {
-  background-color: #38d038;
+  background: #38d038;
   color: green;
 }
 .capitals .wrong {
-  background-color: rgba(250, 56, 56, 0.986);
+  background: rgba(250, 56, 56, 0.986);
   border: 12px solid purple;
 }
 .capitals .start {
