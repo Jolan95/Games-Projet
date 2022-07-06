@@ -18,7 +18,7 @@ include 'Class/user.php';
         <?php
         require_once '../header.php';
         ?>
-        <div class="capitals">
+        <div class="capitals mb-4">
             <div class="container">
                 <div class="logo d-flex align-items-center">
                     <input type=hidden id="recordE"  value=<?php if(isset($_SESSION['user'])){ echo $_SESSION['record_Ecap'];}?>>
