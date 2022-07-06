@@ -335,10 +335,6 @@ header .dropdown ul {
 .capitals .logo {
   font-size: 1.3rem;
 }
-.capitals .question {
-  display: flex;
-  justify-content: center;
-}
 .capitals h2 {
   color: whitesmoke;
   font-size: 3.4rem;
