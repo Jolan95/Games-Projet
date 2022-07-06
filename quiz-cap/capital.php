@@ -105,7 +105,7 @@ include 'Class/user.php';
             }
 
             function hiddingCircles(){
-                circles.forEach(element => element.hidden = true)
+                circles.forEach(element => element.classList.add("d-none") )
             }
 
             function shuffle(array) {
