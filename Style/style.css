@@ -448,6 +448,9 @@ header .dropdown ul {
 .capitals .wrapper-box {
   height: 130px;
 }
+.capitals .wrapper-circle {
+  height: 200px;
+}
 @media all and (min-width: 700px) {
   .capitals .start {
     height: 15rem;
