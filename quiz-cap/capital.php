@@ -27,7 +27,7 @@ include 'Class/user.php';
                 <!--<img src="R.jpg" alt="logoQuiz"></img>-->
                 <div id="record" class="recording"></div>
             </div>
-            <div class="question">
+            <div class="question mb-5">
                 <h2 id="question"><?php echo $worldCapitals ?></h2>
             </div>
             <div class="row" hidden id="container-boxes">
