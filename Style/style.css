@@ -433,8 +433,7 @@ header .dropdown ul {
 .capitals .recording {
   text-shadow: none;
   color: #016101;
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1rem;
 }
 .capitals .box {
   background-color: whitesmoke;
@@ -443,7 +442,7 @@ header .dropdown ul {
 }
 .capitals .wrapper-box {
   height: 130px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .capitals .wrapper-circle {
   height: 250px;
@@ -471,5 +470,8 @@ header .dropdown ul {
   }
   .capitals .wrapper-circle {
     height: 340px;
+  }
+  .capitals .wrapper-box {
+    font-size: 2rem;
   }
 }
