@@ -193,9 +193,9 @@ include 'Class/user.php';
                             }
                         }
                         counter.textContent = '';
-                        secondQuiz.hidden = false;
+                        secondQuiz.classList.remove("d-none");
             			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'
-            			thirdQuiz.hidden = false;
+            			thirdQuiz.classList.remove("d-none");
             			thirdQuiz.outerHTML = '<button type="button"class="start med" id="third" onclick="redirectToMenu()">'+'<?php echo $redirectToMenu ?>'+'</button>';
                         boxes.forEach(boxe => boxe.remove());
                         if (limitQuiz === point){
