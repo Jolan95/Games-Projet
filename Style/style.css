@@ -441,16 +441,16 @@ header .dropdown ul {
   height: 250px;
 }
 @media all and (min-width: 1300px) {
-  .capitals .start {
+  .capitals .container .start {
     height: 16rem;
     width: 16rem;
     font-size: 2.3rem;
   }
-  .capitals .start:hover {
+  .capitals .container .start:hover {
     height: 18rem;
     width: 18rem;
   }
-  .capitals h2 {
+  .capitals .container h2 {
     font-size: 2.5rem;
   }
 }
