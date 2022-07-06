@@ -31,16 +31,16 @@ include 'Class/user.php';
                     <h1 id="question"><?php echo $worldCapitals ?></h1>
                 </div>
                 <div class="row" hidden id="container-boxes">
-                    <div class="p-5 col-md-6 col-12 wrapper-box">
+                    <div class="p-2 col-md-6 col-12 wrapper-box">
                         <button type="button" class="box" id="box1"></button>
                     </div>
-                    <div class="p-5 col-md-6 col-12 wrapper-box">
+                    <div class="p-2 col-md-6 col-12 wrapper-box">
                         <button type="button" class="box" id="box2"></button>
                     </div>
-                    <div class="p-5 col-md-6 col-12 wrapper-box">
+                    <div class="p-2 col-md-6 col-12 wrapper-box">
                         <button type="button" class="box" id="box3"></button>
                     </div>
-                    <div class="p-5 col-md-6 col-12 wrapper-box">
+                    <div class="p-2 col-md-6 col-12 wrapper-box">
                         <button type="button" class="box" id="box4"></button>
                     </div>
                 </div>
