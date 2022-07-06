@@ -385,16 +385,10 @@ header .dropdown ul {
 .capitals .start {
   justify-content: center;
   border-radius: 180px;
-  height: 10rem;
-  width: 10rem;
-  margin: inherit;
+  height: 13rem;
+  width: 13rem;
   transition-duration: 0.3s;
   transition-delay: 0.05s;
-  margin: 3rem;
-}
-.capitals .start:hover {
-  height: 20rem;
-  width: 20rem;
 }
 .capitals .easy {
   background: url("../quiz-cap/mape.jpg");
@@ -449,7 +443,7 @@ header .dropdown ul {
   height: 130px;
 }
 .capitals .wrapper-circle {
-  height: 320px;
+  height: 340px;
 }
 @media all and (min-width: 700px) {
   .capitals .start {
