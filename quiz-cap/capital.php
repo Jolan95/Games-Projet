@@ -44,7 +44,7 @@ include 'Class/user.php';
                         <button type="button" class="box" id="box4"></button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-4">
                     <div class="col-md-4 col-12 full-center wrapper-circle" >
                         <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                     </div>
