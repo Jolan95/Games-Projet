@@ -18,7 +18,7 @@ include "../handleLanguage/lang.php";
 			<div class="container-fluid">
 				<h1 class="text-center"style="color : white"><?php echo $rpc ?></h1>
 				<div class="scores d-flex justify-content-between">
-        			<div class="score2 score">
+        			<div class="score2 score full-center">
             	    	<div id="score1" class="text-center">
             	    	   0
             	    	</div>
