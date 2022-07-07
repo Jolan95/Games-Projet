@@ -2,7 +2,7 @@ $(document).ready(()=>{
     let score1 = 0
     let score2 = 0
   function win(){
-        score1++
+        score1++;
         $("h2").text(<?php  echo $won ?>+" !!!")
         $("#choix1").css('border', '1vh solid green')
         $("#choix2").css('border', '1vh solid red')
