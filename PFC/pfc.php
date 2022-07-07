@@ -24,38 +24,37 @@ include "../handleLanguage/lang.php";
             	    	</div>
             		</div>
         		</div>
-        	<div style="padding-top : 4vh" class="col-8 text-center align-self-center">
-        	    <h2 id="sentences" class="color : white"><?php echo $makeYourChoice ?> </h2>
-        	</div>
-        	<div class=" col-2 score1 score">
-        	    <div class="row justify-content-center">
-        	        <div id="score2" class="col-6 text-center">
-        	            0
-        	        </div>
-        	    </div>
-        	</div>	
-			<div class="row">
-				<div class="col ">
-				</div>
-				<div id="choix1"class="col-4 col-sm-3 choices">
+        		<div style="padding-top : 4vh" class="col-8 text-center align-self-center">
+        		    <h2 id="sentences" class="color : white"><?php echo $makeYourChoice ?> </h2>
+        		</div>
+        		<div class=" col-2 score1 score">
+        		    <div class="row justify-content-center">
+        		        <div id="score2" class="col-6 text-center">
+        		            0
+        		        </div>
+        		    </div>
+        		</div>	
+				<div class="row">
+					<div class="col ">
+					</div>
+					<div id="choix1"class="col-4 col-sm-3 choices">
+							?
+					</div>
+					<div class="col ">
+					</div>
+					<div id="choix2" class=" col-4 col-sm-3 choices">
 						?
+					</div>
+					<div class="col  ">
+					</div>
 				</div>
-				<div class="col ">
-				</div>
-				<div id="choix2" class=" col-4 col-sm-3 choices">
-					?
-				</div>
-				<div class="col  ">
-	
-				</div>
-			</div>
-			<div class="row justify-content-around">
-				<button id="pierre" type="button" class="col-3 col-sm-2 pierre" >
-				</button>
-				<button id="papier" type="button btn" class="col-3 col-sm-2 papier" >
-				</button>
-				<button id="ciseaux" type="button btn btn-success" class="col-3 col-sm-2 ciseaux" >
-				</button>
+				<div class="row justify-content-around">
+					<button id="pierre" type="button" class="col-3 col-sm-2 pierre" >
+					</button>
+					<button id="papier" type="button btn" class="col-3 col-sm-2 papier" >
+					</button>
+					<button id="ciseaux" type="button btn btn-success" class="col-3 col-sm-2 ciseaux" >
+					</button>
 				</div>
 			</div>
 		</div>
