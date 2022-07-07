@@ -32,16 +32,16 @@ include 'Class/user.php';
                 </div>
                 <div class="row d-none" id="container-boxes">
                     <div class="p-2 col-md-6 col-12 wrapper-box">
-                        <button type="button" class="box box-hover" id="box1"></button>
+                        <button type="button" class="box" id="box1"></button>
                     </div>
                     <div class="p-2 col-md-6 col-12 wrapper-box">
-                        <button type="button" class="box box-hover" id="box2"></button>
+                        <button type="button" class="box" id="box2"></button>
                     </div>
                     <div class="p-2 col-md-6 col-12 wrapper-box">
-                        <button type="button" class="box box-hover" id="box3"></button>
+                        <button type="button" class="box" id="box3"></button>
                     </div>
                     <div class="p-2 col-md-6 col-12 wrapper-box">
-                        <button type="button" class="box box-hover" id="box4"></button>
+                        <button type="button" class="box" id="box4"></button>
                     </div>
                 </div>
                 <div class="row mt-4" id="wrapper-circles">
