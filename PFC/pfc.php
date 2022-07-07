@@ -17,7 +17,7 @@ include "../handleLanguage/lang.php";
 		<div class="pfc">
 			<div class="container-fluid">
 				<h1 class="text-center"style="color : white"><?php echo $rpc ?></h1>
-				<div class="row scores d-flex justify-content-around">
+				<div class="scores d-flex justify-content-around">
         			<div class=" score2">
             	    	<div id="score1" class="text-center">
             	    	   0
