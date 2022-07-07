@@ -48,7 +48,7 @@ include 'Class/user.php';
                     <div class="col-lg-4 col-12 full-center wrapper-circle" >
                         <button type="button"class="start easy" id="first">10 <?php echo $countries ?></button>
                     </div>
-                    <div class="col-lg-4 col-12 full-center wrapper-circle" >
+                    <div class="col-lg-4 col-12 full-center wrapper-circle" id="circle-center" >
                         <button type="button" class="start med" id="second">50  <?php echo $countries ?></button>
                     </div>
                     <div class="col-lg-4 col-12 full-center wrapper-circle" >
@@ -77,6 +77,7 @@ include 'Class/user.php';
             let circles = [firstQuiz, secondQuiz, thirdQuiz];
             let container = document.getElementById('container-boxes')
             let circlesWrapper = document.getElementById('wrapper-circles')
+            let circleCenter = document.getElementById('circle-center')
             let counter = document.getElementById('counter')
             let displayRecord = document.getElementById('record')
             let recordE = document.getElementById('recordE').value
@@ -201,7 +202,8 @@ include 'Class/user.php';
             			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'
             			thirdQuiz.parentNode.classList.add("d-none");
             			firstQuiz.parentNode.classList.add("d-none");
-                        console.log(secondQuiz.parentElement);
+                        circleCenter.classList.remove("col-lg-4")
+                        console.log();
                         console.log(secondQuiz.parentNode.classList);
                         boxes.forEach(boxe => boxe.remove());
                         if (limitQuiz === point){
