@@ -452,6 +452,9 @@ header .dropdown ul {
 .pfc h2 {
   font-size: 1.6rem;
 }
+.pfc #sentences {
+  color: white;
+}
 .pfc .score {
   color: white;
   font-size: 2rem;
