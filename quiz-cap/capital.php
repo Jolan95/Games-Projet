@@ -203,8 +203,6 @@ include 'Class/user.php';
             			thirdQuiz.parentNode.classList.add("d-none");
             			firstQuiz.parentNode.classList.add("d-none");
                         circleCenter.classList.remove("col-lg-4")
-                        console.log();
-                        console.log(secondQuiz.parentNode.classList);
                         boxes.forEach(boxe => boxe.remove());
                         if (limitQuiz === point){
                             question.classList.add('class-right')
