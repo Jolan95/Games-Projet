@@ -276,7 +276,7 @@ include 'Class/user.php';
                         verifCompteur(i);
                     } 
                 } 
-                boxes.forEach(element => element.classList.remove("box-hover"));
+                
             })) 
 
         </script>
