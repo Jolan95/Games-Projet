@@ -50,11 +50,11 @@ include "../handleLanguage/lang.php";
 			</div>
     	</div>
     	<div class="row justify-content-around">
-            <button id="pierre" type="button" class="col-3 col-sm-2" style="background-image: url('./PFC/pierre.png');">
+            <button id="pierre" type="button" class="col-3 col-sm-2 pierre" >
             </button>
-            <button id="papier" type="button" class="col-3 col-sm-2" style="background-image: url(Papier.png)" >
+            <button id="papier" type="button btn" class="col-3 col-sm-2 papier" >
             </button>
-            <button id="ciseaux" type="button" class="col-3 col-sm-2" style="background-image: url('Ciseaux.png')" >
+            <button id="ciseaux" type="button btn btn-success" class="col-3 col-sm-2 ciseaux" >
             </button>
  
     	</div>
