@@ -35,10 +35,10 @@ include "../handleLanguage/lang.php";
         		    </div>
         		</div>	
 				<div class="row">
-					<div id="choix1"class="col-4 col-sm-3 offset-1 choices">
+					<div id="choix1"class="col-4 col-sm-3 offset-2 choices">
 						?
 					</div>
-					<div id="choix2" class=" col-4 col-sm-3 offset-1 choices">
+					<div id="choix2" class=" col-4 col-sm-3 offset-2 choices">
 						?
 					</div>
 				</div>
