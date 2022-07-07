@@ -409,10 +409,6 @@ header .dropdown ul {
   height: 90px;
   width: 100%;
 }
-.capitals .box-hover:hover {
-  height: 91px;
-  background-color: rgba(218, 235, 242, 0.851);
-}
 .capitals .good {
   background: rgba(56, 208, 56, 0.667);
 }
