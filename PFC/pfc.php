@@ -13,9 +13,11 @@ include "../handleLanguage/lang.php";
 		<link rel="stylesheet" type="text/css" href="../Style/style.css">
 	</head>
 	<body>
-  		<?php include_once '../header.php'; ?>
-		<h1 class="col-12 text-center"style="color : white"><?php echo $rpc ?></h1>
-    	<div class="row scores justify-content-around">
+		<?php include_once '../header.php'; ?>
+		<div class="pfc">
+
+			<h1 class="col-12 text-center"style="color : white"><?php echo $rpc ?></h1>
+			<div class="row scores justify-content-around">
         	<div class=" col-2 score score2">
             	<div class="row align-items-center justify-content-center">
                 	<div id="score1" class=" col-6 align-self-center text-center">
@@ -36,31 +38,32 @@ include "../handleLanguage/lang.php";
 		</div>
 		<div class="row">
 			<div class="col ">
-
-			</div>
-			<div id="choix1"class="col-4 col-sm-3 choices">
-				?
-			</div>
-			<div class="col ">
-			</div>
-			<div id="choix2" class=" col-4 col-sm-3 choices">
-				    ?
-			</div>
-			<div class="col  ">
-			</div>
-    	</div>
-    	<div class="row justify-content-around">
-            <button id="pierre" type="button" class="col-3 col-sm-2 pierre" >
-            </button>
-            <button id="papier" type="button btn" class="col-3 col-sm-2 papier" >
-            </button>
-            <button id="ciseaux" type="button btn btn-success" class="col-3 col-sm-2 ciseaux" >
-            </button>
- 
-    	</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script >
+				
+				</div>
+				<div id="choix1"class="col-4 col-sm-3 choices">
+					?
+				</div>
+				<div class="col ">
+					</div>
+					<div id="choix2" class=" col-4 col-sm-3 choices">
+						?
+					</div>
+					<div class="col  ">
+						</div>
+					</div>
+					<div class="row justify-content-around">
+						<button id="pierre" type="button" class="col-3 col-sm-2 pierre" >
+							</button>
+							<button id="papier" type="button btn" class="col-3 col-sm-2 papier" >
+								</button>
+								<button id="ciseaux" type="button btn btn-success" class="col-3 col-sm-2 ciseaux" >
+									</button>
+									
+								</div>
+							</div>
+						</div>
+							<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+							<script >
     $(document).ready(()=>{
   		let score1 = 0
   		let score2 = 0
@@ -94,7 +97,6 @@ include "../handleLanguage/lang.php";
 		  	return Math.floor(Math.random()* 3)
 		}
 		$('button').click(function(){
-			console.group(score1)
 			let ia = getRandom();
 			$("#choix1").removeClass('pierre')
 			$("#choix1").removeClass('ciseaux')
