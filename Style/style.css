@@ -415,7 +415,7 @@ header .dropdown ul {
   height: 90px;
   width: 100%;
 }
-.capitals .box:hover {
+.capitals .box-hover:hover {
   height: 91px;
   background-color: #DAEBF2;
 }
