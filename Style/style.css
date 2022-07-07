@@ -450,7 +450,7 @@ header .dropdown ul {
   font-size: 2rem;
 }
 .pfc h2 {
-  font-size: 4vw;
+  font-size: 1.6rem;
 }
 .pfc .scores {
   height: 100px;
@@ -462,7 +462,7 @@ header .dropdown ul {
   border-radius: 10px;
 }
 .pfc .choices {
-  height: 400px;
+  height: 200px;
   background-color: lightgray;
   border-radius: 3vh;
   border: 1vh solid orange;
@@ -473,8 +473,8 @@ header .dropdown ul {
   font-size: 2rem;
 }
 .pfc button {
-  height: 300px;
-  width: 200px;
+  height: 150px;
+  width: 100%;
   background-size: 100% 100%;
   border-radius: 10px;
   box-shadow: 10px 10px orange;
