@@ -26,7 +26,7 @@ include "../handleLanguage/lang.php";
 					<div>
 						<h2 id="sentences"><?php echo $makeYourChoice ?> </h2>
 					</div>
-       				<div class="score1 score">
+       				<div class="score1 score full-center">
         			    <div id="score2" class="text-center">
         			        0
         			    </div>
