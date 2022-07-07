@@ -42,12 +42,12 @@ include "../handleLanguage/lang.php";
 						?
 					</div>
 				</div>
-				<div class="row justify-content-around">
-					<button id="pierre" type="button" class=" pierre" >
+				<div class="row">
+					<button id="pierre" type="button" class="col-sm-3 offset-sm-1 col-4 pierre" >
 					</button>
-					<button id="papier" type="button " class=" papier" >
+					<button id="papier" type="button " class="col-sm-3 offset-sm-1 col-4 papier" >
 					</button>
-					<button id="ciseaux" type="button " class=" ciseaux" >
+					<button id="ciseaux" type="button " class="col-sm-3 offset-sm-1 col-4 ciseaux" >
 					</button>
 				</div>
 			</div>
