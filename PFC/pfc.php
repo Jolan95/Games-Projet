@@ -42,12 +42,12 @@ include "../handleLanguage/lang.php";
 						?
 					</div>
 				</div>
-				<div class="row">
-					<button id="pierre" type="button" class="col-sm-3 offset-sm-1 col-4 pierre" >
+				<div class="d-flex justify-content-between">
+					<button id="pierre" type="button" class=" pierre" >
 					</button>
-					<button id="papier" type="button " class="col-sm-3 offset-sm-1 col-4 papier" >
+					<button id="papier" type="button " class=" papier" >
 					</button>
-					<button id="ciseaux" type="button " class="col-sm-3 offset-sm-1 col-4 ciseaux" >
+					<button id="ciseaux" type="button " class=" ciseaux" >
 					</button>
 				</div>
 			</div>
