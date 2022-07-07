@@ -43,11 +43,11 @@ include "../handleLanguage/lang.php";
 					</div>
 				</div>
 				<div class="row justify-content-around">
-					<button id="pierre" type="button" class="col-3 col-sm-2 pierre" >
+					<button id="pierre" type="button" class=" pierre" >
 					</button>
-					<button id="papier" type="button btn" class="col-3 col-sm-2 papier" >
+					<button id="papier" type="button " class=" papier" >
 					</button>
-					<button id="ciseaux" type="button btn btn-success" class="col-3 col-sm-2 ciseaux" >
+					<button id="ciseaux" type="button " class=" ciseaux" >
 					</button>
 				</div>
 			</div>
