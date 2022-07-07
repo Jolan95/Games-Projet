@@ -469,8 +469,8 @@ header .dropdown ul {
   color: black;
   display: flex;
   justify-content: center;
-  align-content: center;
-  font-size: 2rem;
+  align-items: center;
+  font-size: 5rem;
 }
 .pfc button {
   height: 150px;
