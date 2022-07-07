@@ -38,7 +38,7 @@ include "../handleLanguage/lang.php";
 					<div id="choix1"class="col-4 col-sm-3 offset-1 offset-sm-2 choices">
 						?
 					</div>
-					<div id="choix2" class=" col-4 col-sm-3 offset-1 offset-sm-2 choices">
+					<div id="choix2" class=" col-4 col-sm-3 offset-2 offset-sm-2 choices">
 						?
 					</div>
 				</div>
