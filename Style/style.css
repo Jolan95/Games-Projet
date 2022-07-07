@@ -446,3 +446,58 @@ header .dropdown ul {
     margin-top: -10px;
   }
 }
+.pfc h1 {
+  font-size: 6vh;
+}
+.pfc h2 {
+  font-size: 4vw;
+}
+.pfc .scores {
+  height: 17vh;
+}
+.pfc .score {
+  color: white;
+  margin-top: 5vh;
+  color: black;
+  font-size: 8vh;
+  border-radius: 12vw;
+}
+.pfc .choices {
+  height: 28vh;
+  background-color: lightgray;
+  border-radius: 3vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 1vh solid orange;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 14vh;
+}
+.pfc button {
+  height: 26vh;
+  width: 22vw;
+  background-size: 100% 100%;
+  border-radius: 3vh;
+  box-shadow: 0.8vh 0.5vh orange;
+  color: rgba(255, 150, 0, 0.6);
+}
+.pfc .ciseaux {
+  background-image: url('Ciseaux.png');
+  background-size: 100% 100%;
+}
+.pfc .papier {
+  background-image: url('Papier.png');
+  background-size: 100% 100%;
+}
+.pfc .pierre {
+  background-image: url('pierre.png');
+  background-size: 100% 100%;
+}
+.pfc .score2 {
+  background-color: green;
+}
+.pfc .score1 {
+  background-color: red;
+}
