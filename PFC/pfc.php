@@ -15,7 +15,7 @@ include "../handleLanguage/lang.php";
 	<body>
 		<?php include_once '../header.php'; ?>
 		<div class="pfc">
-			<h1 class="col-12 text-center"style="color : white"><?php echo $rpc ?></h1>
+			<h1 class="text-center"style="color : white"><?php echo $rpc ?></h1>
 			<div class="row scores justify-content-around">
         		<div class=" col-2 score score2">
             	    <div id="score1" class=" col-6 align-self-center text-center">
