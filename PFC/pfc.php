@@ -47,7 +47,6 @@ include "../handleLanguage/lang.php";
 				    ?
 			</div>
 			<div class="col  ">
-
 			</div>
     	</div>
     	<div class="row justify-content-around">
