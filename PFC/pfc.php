@@ -35,17 +35,11 @@ include "../handleLanguage/lang.php";
         		    </div>
         		</div>	
 				<div class="row">
-					<div class="col ">
-					</div>
-					<div id="choix1"class="col-4 col-sm-3 choices">
-							?
-					</div>
-					<div class="col ">
+					<div id="choix1"class="col-4 col-sm-3 offset-1 choices">
+						?
 					</div>
 					<div id="choix2" class=" col-4 col-sm-3 choices">
 						?
-					</div>
-					<div class="col  ">
 					</div>
 				</div>
 				<div class="row justify-content-around">
