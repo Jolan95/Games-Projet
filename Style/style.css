@@ -358,12 +358,6 @@ header .dropdown ul {
   font-size: 3rem;
   color: blue;
 }
-.capitals .good {
-  background: rgba(56, 208, 56, 0.667);
-}
-.capitals .wrong {
-  background: rgba(219, 17, 17, 0.789);
-}
 .capitals .start {
   border-radius: 180px;
   transition-duration: 0.3s;
@@ -418,6 +412,12 @@ header .dropdown ul {
 .capitals .box-hover:hover {
   height: 91px;
   background-color: rgba(218, 235, 242, 0.851);
+}
+.capitals .good {
+  background: rgba(56, 208, 56, 0.667);
+}
+.capitals .wrong {
+  background: rgba(219, 17, 17, 0.789);
 }
 .capitals .wrapper-box {
   height: 130px;
