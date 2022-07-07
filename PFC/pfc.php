@@ -42,7 +42,7 @@ include "../handleLanguage/lang.php";
 						?
 					</div>
 				</div>
-				<div class="d-flex justify-content-between">
+				<div class="d-flex justify-content-around">
 					<button id="pierre" type="button" class=" pierre" >
 					</button>
 					<button id="papier" type="button " class=" papier" >
