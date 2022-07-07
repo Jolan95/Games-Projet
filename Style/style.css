@@ -457,8 +457,8 @@ header .dropdown ul {
   color: white;
   font-size: 2rem;
   border-radius: 90px;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 }
 .pfc .choices {
   height: 200px;
@@ -503,6 +503,10 @@ header .dropdown ul {
 @media all and (min-width: 600px) {
   .pfc button {
     width: 150px;
+  }
+  .pfc .score {
+    height: 80px;
+    width: 80px;
   }
 }
 @media all and (min-width: 1200px) {
