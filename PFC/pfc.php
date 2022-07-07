@@ -28,6 +28,7 @@ include "../handleLanguage/lang.php";
         		        0
         		    </div>
         		</div>
+			</div>	
 	
 				<div class="row my-3">
 					<div id="choix1"class="col-4 col-sm-3 offset-1 offset-sm-2 choices">
