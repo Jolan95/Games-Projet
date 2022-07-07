@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 session_start();
-include "handleLanguage/lang.php";    
+include "../handleLanguage/lang.php";    
 ?>
 <html lang="fr">
 	<head>
