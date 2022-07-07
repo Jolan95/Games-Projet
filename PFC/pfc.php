@@ -16,13 +16,15 @@ include "../handleLanguage/lang.php";
 		<?php include_once '../header.php'; ?>
 		<div class="pfc">
 			<h1 class="text-center"style="color : white"><?php echo $rpc ?></h1>
-			<div class="row scores justify-content-around">
+			<div class="row scores d-flex justify-content-around">
         		<div class=" col-2 score score2">
             	    <div id="score1" class=" col-6 align-self-center text-center">
             	       0
             	    </div>
 				</div>
-				<h2 id="sentences" class="color : white"><?php echo $makeYourChoice ?> </h2>
+				<div>
+					<h2 id="sentences" class="color : white"><?php echo $makeYourChoice ?> </h2>
+				</div>
        			<div class="score1 score">
         		    <div id="score2" class="col-6 text-center">
         		        0
