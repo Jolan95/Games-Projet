@@ -34,7 +34,7 @@ include "../handleLanguage/lang.php";
         		        </div>
         		    </div>
         		</div>	
-				<div class="row">
+				<div class="row my-3">
 					<div id="choix1"class="col-4 col-sm-3 offset-1 offset-sm-2 choices">
 						?
 					</div>
@@ -42,7 +42,7 @@ include "../handleLanguage/lang.php";
 						?
 					</div>
 				</div>
-				<div class="d-flex justify-content-between justify-content-sm-around">
+				<div class=" mt-4 d-flex justify-content-between justify-content-sm-around">
 					<button id="pierre" type="button" class=" pierre" >
 					</button>
 					<button id="papier" type="button " class=" papier" >
