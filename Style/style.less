@@ -525,8 +525,6 @@ header{
     }
     button {
         height : 150px;
-       width : 20vw;
-       max-width: 300px;;
         background-size : 100% 100%;
         border-radius: 10px;;
         box-shadow: 10px 10px orange;
@@ -549,5 +547,19 @@ header{
     }
     .score1{
         background-color: red;
+    }
+}
+@media all and (min-width : 600px) {
+    .pfc{
+        button{
+            width : 150px;
+        }
+    }
+}
+@media all and (min-width : 1200px) {
+    .pfc{
+        button{
+            width : 300px;
+        }
     }
 }
