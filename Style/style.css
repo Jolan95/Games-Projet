@@ -484,15 +484,15 @@ header .dropdown ul {
   color: rgba(255, 150, 0, 0.6);
 }
 .pfc .ciseaux {
-  background-image: url('Ciseaux.png');
+  background-image: url('../PFC/Ciseaux.png');
   background-size: 100% 100%;
 }
 .pfc .papier {
-  background-image: url('Papier.png');
+  background-image: url('../PFC/Papier.png');
   background-size: 100% 100%;
 }
 .pfc .pierre {
-  background-image: url('pierre.png');
+  background-image: url('../PFC/pierre.png');
   background-size: 100% 100%;
 }
 .pfc .score2 {
