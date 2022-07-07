@@ -17,7 +17,7 @@ include "../handleLanguage/lang.php";
 		<div class="pfc">
 			<h1 class="text-center"style="color : white"><?php echo $rpc ?></h1>
 			<div class="row scores d-flex justify-content-around">
-        		<div class="score score2">
+        		<div class=" score2">
             	    <div id="score1" class="text-center">
             	       0
             	    </div>
@@ -25,7 +25,7 @@ include "../handleLanguage/lang.php";
 				<div>
 					<h2 id="sentences"><?php echo $makeYourChoice ?> </h2>
 				</div>
-       			<div class="score1 score">
+       			<div class="score1">
         		    <div id="score2" class="text-center">
         		        0
         		    </div>
