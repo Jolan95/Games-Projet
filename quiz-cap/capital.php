@@ -201,7 +201,7 @@ include 'Class/user.php';
             			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'
             			thirdQuiz.parentNode.classList.add("d-none");
             			firstQuiz.parentNode.classList.add("d-none");
-            			secondQuiz.parentNode.classList.add("col-lg-12");
+            			secondQuiz.classList.add("col-lg-12");
             			secondQuiz.parentNode.classList.remove("col-lg-4");
                         boxes.forEach(boxe => boxe.remove());
                         if (limitQuiz === point){
