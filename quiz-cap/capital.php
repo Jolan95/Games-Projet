@@ -201,8 +201,8 @@ include 'Class/user.php';
             			secondQuiz.outerHTML = '<button type="button"class="start hard" id="second" onclick="restart()">'+'<?php echo $restart ?>'+'</button>'
             			thirdQuiz.parentNode.classList.add("d-none");
             			firstQuiz.parentNode.classList.add("d-none");
-            			secondQuiz.parentNode.classList.remove("col-lg-4");
-            			secondQuiz.parentNode.classList.add("col-lg-12");
+                        console.log(secondQuiz.classList);
+                        console.log(secondQuiz);
                         boxes.forEach(boxe => boxe.remove());
                         if (limitQuiz === point){
                             question.classList.add('class-right')
