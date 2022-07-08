@@ -87,9 +87,9 @@ include "../handleLanguage/lang.php";
 
                 function wrong() {
                     if(parseInt(guess.value) > number){
-                        reveal.innerHTML = "<div class='wrong' >"+'<?php echo $higherReveal?>'+"</div>"
+                        reveal.innerHTML = "<div class='red mt-4 mb-2' >"+'<?php echo $higherReveal?>'+"</div>"
                     } else {
-                        reveal.innerHTML = "<div class='wrong' >"+'<?php echo $lowerReveal?>'+"</div>"
+                        reveal.innerHTML = "<div class='red mt-4 mb-2' >"+'<?php echo $lowerReveal?>'+"</div>"
                     }
                 }
                 function right (){
