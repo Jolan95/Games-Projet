@@ -4,7 +4,7 @@ if(isset($_SESSION['id'])){
         header('Location: http://games-online.herokuapp.com/'); 
     } 
 }else{
-    if($_SERVER['PHP_SELF'] === "/profile.php" ||  $_SERVER['PHP_SELF']=== "/changePassword.php" ){
+    if($_SERVER['PHP_SELF'] === "/profile.php" ||  $_SERVER['PHP_SELF']=== "/changePassword.php" || $_SERVER["PHP_SELF"] === "/highScore.php" ){
         header('Location: http://games-online.herokuapp.com/form.php'); 
         die();
   }
