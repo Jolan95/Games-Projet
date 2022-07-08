@@ -463,8 +463,8 @@ header .dropdown ul {
 .pfc .choices {
   height: 200px;
   background-color: lightgray;
-  border-radius: 3vh;
-  border: 1vh solid orange;
+  border-radius: 10px;
+  border: 1px solid #ffe1ee;
   color: black;
   display: flex;
   justify-content: center;
