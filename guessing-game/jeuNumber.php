@@ -53,13 +53,15 @@ include "../handleLanguage/lang.php";
         ?>
         <div class="guess-number">
             <div class="container">
-                <div class="box">  
+                <div class="box mt-4 p-3">  
                     <h1 id="message" class="text-center">
                         <?php echo $JNrule;?>
                     </h1>
                     <div id="reveal" class="text-center">
                     </div>
-                    <?php echo $callToSuggestion?>
+                    <div class="text-center">
+                        <?php echo $callToSuggestion?>
+                    </div>
                     <div class="guess">
                         <input type="number"  id="guess">
                         <button id="validate" class="btn btn-primary"><?php echo $valid?></button>
