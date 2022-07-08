@@ -143,6 +143,5 @@ include "../handleLanguage/lang.php";
 		  	})
 			})
 		</script>
-    	
 	</body>
 </html>
