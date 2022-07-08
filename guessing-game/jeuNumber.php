@@ -32,7 +32,7 @@ include "../handleLanguage/lang.php";
                         <input type="number"  id="guess">
                         <button id="validate" class="btn btn-primary"><?php echo $valid?></button>
                         <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
-                        <a href="https://games-online.herokuapp.com/index.php"><button  hidden><?php echo $redirectToMenu ?></button></a>
+                        <a href="https://games-online.herokuapp.com/index.php"><button type="button" hidden><?php echo $redirectToMenu ?></button></a>
                     </div>
                     <div class='mt-3 d-flex justify-content-between'>
                         <div id="attempts" ><?php echo $attempts ?> : 0</div>
