@@ -17,7 +17,7 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div class="container high-score">
+        <div class="container games">
             <div class="row">
                 <?php 
                 $game = [
@@ -30,12 +30,17 @@ include "handleLanguage/lang.php";
                 ];
                 foreach($game as $value){
                     echo  
-                    '<div class="box-game col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-6" ><a  href='.$value["link"].'>
-                    <img src='.$value["image"].'></a>
-                    <div class="text">
-                    <h2>'.$value['name'].'</h2>
-                    <p>'.$highScore.' : '.$value["record"].'</p>
-                    </div></div>';
+                    '<div class="box-game col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-6" >
+                        <a href='.$value["link"].'>
+                            <div class="box-content">
+                                <img class="games-image" src='.$value["image"].'/>
+                                <div class="text-center">
+                                    <h2>'.$value['name'].'</h2>
+                                    <p>'.$highScore.' : '.$value["record"].'</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>';
                 }
                 ?>
             </div>
