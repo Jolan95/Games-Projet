@@ -48,7 +48,7 @@ include "handleLanguage/lang.php";
 							<p>Aidez l'oiseau à passer à travers le maximum de tuyaux<p>		
 						</div>
 						<div class="d-flex justify-content-center justify-content-xl-start">
-							<a href="https://games-online.herokuapp.com/flappy-bird/index.php">
+							<a href="https://games-online.herokuapp.com/flappy-bird/flappy.php">
 								<button class="p-2">
 									Lancer le Jeu
 								</button>
