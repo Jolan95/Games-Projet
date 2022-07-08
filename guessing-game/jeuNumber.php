@@ -12,40 +12,6 @@ include "../handleLanguage/lang.php";
 		<meta name="description" content="Jeux d'arcades, quiz, jeux de dés,..." />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../Style/style.css">   
-        <style>
-            .cell{
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                height : 50vh;
-                border-radius : 12px;
-                background-color: white;
-                margin-top: 16vh;  
-            }
-            #message{
-                display : flex;        
-                justify-content: center;
-                margin-bottom: 4vh;
-            }
-            #guess{
-                height : 38px;    
-                border : 2px solid black  ;
-                width : 100px; 
-                margin-right: 10px;;
-
-            }
-            .guess{
-                
-                display : flex;        
-                justify-content: center;
-            }
-            #reveal{
-                display : flex;        
-                justify-content: center;
-                font-size : 1.3rem;
-            }.wrong{
-                color : red;
-                font-weight : 700;
-            }
-        </style>
 	</head>
 	<body>
         <?php
