@@ -479,6 +479,7 @@ header .dropdown ul {
 }
 .pfc button:hover {
   background-color: rgba(243, 243, 243, 0.815);
+  box-shadow: #282c34;
 }
 .pfc .ciseaux {
   background-image: url('../PFC/Ciseaux.png');
