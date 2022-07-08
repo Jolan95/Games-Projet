@@ -23,6 +23,6 @@ include "handleLanguage/lang.php";
             </div>    
         </div>
         
-        <script type="text/javascript" src="./js/pfc.js"></script>    
+        <script type="text/javascript" src="./js/games.js"></script>    
     </body>
 </html>
