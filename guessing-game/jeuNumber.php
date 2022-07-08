@@ -20,7 +20,7 @@ include "../handleLanguage/lang.php";
         <div class="guess-number">
             <div class="container d-flex justify-content-center">
                 <div class="box mt-4 p-4">  
-                    <h1 id="message" class="text-center my-4">
+                    <h1 id="message" class="text-center mt-1 mb-3">
                         <?php echo $JNrule;?>
                     </h1>
                     <div id="reveal" class="text-center mt-4 mb-2">
