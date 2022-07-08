@@ -25,7 +25,7 @@ include "../handleLanguage/lang.php";
                     </h1>
                     <div id="reveal" class="text-center mt-3">
                     </div>
-                    <div class="text-center mt-4 mb-2">
+                    <div id="suggest" class="text-center mt-4 mb-2">
                         <?php echo $callToSuggestion?>
                     </div>
                     <div class="guess d-flex justify-content-center my-2">
@@ -47,6 +47,7 @@ include "../handleLanguage/lang.php";
                 let reveal = document.getElementById('reveal')
                 let guess = document.getElementById('guess');
                 let valid = document.getElementById('validate')
+                let suggest = document.getElementById('suggest')
                 let restart = document.getElementById('restart')
                 let menu = document.getElementById('menu')
                 let attempts = document.getElementById('attempts')
@@ -103,6 +104,7 @@ include "../handleLanguage/lang.php";
                     if(guess.value.length > 0){
                         i++
                         attempts.innerText = "<?php echo $attempts ?> : "+i;
+                        suggest.hidden= true;
                         if(parseInt(guess.value) === number){
                             right()
                             if(record !== false){
