@@ -514,3 +514,6 @@ header .dropdown ul {
   }
 }
 /****guessing-game****/
+.guess-number .box {
+  background-color: white;
+}

@@ -54,11 +54,11 @@ include "../handleLanguage/lang.php";
         <div class="guess-number">
             <div class="container">
                 <div class="box">  
-                    <h1 id="message">
+                    <h1 id="message" class="text-center">
                         <?php echo $JNrule;?>
                     </h1>
-                    <div id="reveal">
-                    <div>
+                    <div id="reveal" class="text-center">
+                    </div>
                     <?php echo $callToSuggestion?>
                     <div class="guess">
                         <input type="number"  id="guess">
