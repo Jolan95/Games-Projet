@@ -17,8 +17,8 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div class="container-fluid">
-            <div>
+        <div class="container games">
+            <div class="row">
                 <?php 
                 $game = [
                     ["name" => $diceGame, "image" => "Img/photoDé.jpg", "link" => "https://games-online.herokuapp.com/DiceGame/jeu.php", "record" => $_SESSION['record_dice']],
@@ -30,10 +30,10 @@ include "handleLanguage/lang.php";
                 ];
                 foreach($game as $value){
                     echo  
-                    '<div class="col-10 col-sm-5 box item" ><a  href='.$value["link"].'>
-                    <img class="games-card" src='.$value["image"].' alt="5 Terre" style="width:100%"></a>
+                    '<div class="col-10 col-sm-6 box-white" ><a  href='.$value["link"].'>
+                    <img src='.$value["image"].'></a>
                     <div class="text">
-                    <h3>'.$value['name'].'</h3>
+                    <h2>'.$value['name'].'</h2>
                     <p>'.$highScore.' : '.$value["record"].'</p>
                     </div></div>';
                 }
