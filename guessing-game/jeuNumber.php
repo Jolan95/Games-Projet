@@ -51,7 +51,6 @@ include "../handleLanguage/lang.php";
                 let valid = document.getElementById('validate')
                 let suggest = document.getElementById('suggest')
                 let restart = document.getElementById('restart')
-                let menu = document.getElementById('menu')
                 let attempts = document.getElementById('attempts')
                 let recordDisplay = document.getElementById('record')
                 let links = document.getElementById('links')
@@ -99,9 +98,9 @@ include "../handleLanguage/lang.php";
                     reveal.innerHTML = '<?php echo $numberFound ?>'+ number+'<?php echo $numberFound2 ?>'+i+'<?php echo $numberFound3 ?>';
                     validate.hidden = true;
                     guess.hidden = true; 
-                    menu.hidden = false;
                     links.classList.remove("d-none")
                 }
+                console.log(number);
         
                 valid.addEventListener('click', () =>{
                     if(guess.value.length > 0){
