@@ -31,8 +31,10 @@ include "../handleLanguage/lang.php";
                     <div class="d-flex justify-content-center my-3">
                         <input type="number"  id="guess">
                         <button id="validate" class="btn btn-primary"><?php echo $valid?></button>
-                        <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
-                        <a href="https://games-online.herokuapp.com/index.php"><button type="button" hidden><?php echo $redirectToMenu ?></button></a>
+                        <div id="links" class="d-none">
+                            <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" ><?php echo $restart ?></button></a>
+                            <a href="https://games-online.herokuapp.com/index.php"><button type="button"><?php echo $redirectToMenu ?></button></a>
+                        </div>
                     </div>
                     <div class='mt-3 d-flex justify-content-between'>
                         <div id="attempts" ><?php echo $attempts ?> : 0</div>
@@ -52,6 +54,7 @@ include "../handleLanguage/lang.php";
                 let menu = document.getElementById('menu')
                 let attempts = document.getElementById('attempts')
                 let recordDisplay = document.getElementById('record')
+                let links = document.getElementById('links')
                 let i= 0;
                 
                 <?php
@@ -97,7 +100,7 @@ include "../handleLanguage/lang.php";
                     validate.hidden = true;
                     guess.hidden = true; 
                     menu.hidden = false;
-                    restart.hidden = false;
+                    links.classList.remove("d-none")
                 }
         
                 valid.addEventListener('click', () =>{
