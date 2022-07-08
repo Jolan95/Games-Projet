@@ -33,7 +33,7 @@ include "handleLanguage/lang.php";
                     '<div class="box-game col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-6" >
                         <a href='.$value["link"].'>
                             <div class="box-content">
-                                <img class="games-image" src='.$value["image"].'/>
+                                <img class="games-image" src='.$value["image"].'>
                                 <div class="text-center">
                                     <h2>'.$value['name'].'</h2>
                                     <p>'.$highScore.' : '.$value["record"].'</p>
