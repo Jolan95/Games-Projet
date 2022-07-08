@@ -17,20 +17,20 @@ include "handleLanguage/lang.php";
 	</head>
 	<body>
 		<?php require_once 'header.php'; ?>
-        <div class="container games">
+        <div class="container high-score">
             <div class="row">
                 <?php 
                 $game = [
-                    ["name" => $diceGame, "image" => "Img/photoDé.jpg", "link" => "https://games-online.herokuapp.com/DiceGame/jeu.php", "record" => $_SESSION['record_dice']],
-                    ["name" => $capitalesQuiz." (10)", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Ecap']."/10"],
-                    ["name" => $capitalesQuiz." (50)", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Mcap']."/50"],
-                    ["name" => $capitalesQuiz." (".$full.")", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/QuizCap/capital.php", "record" => $_SESSION['record_Hcap']."/197"],
-                    ["name" => "Guessing Number", "image" => "Img/guess.jpg", "link" => "https://games-online.herokuapp.com/GuessingGame/jeuNumber.php", "record" => $_SESSION['record_guess']],
-                    ["name" => "Flappy Bird", "image" => "Img/Flappy.jpg", "link" => "https://games-online.herokuapp.com/FlappyBird", "record" => $_SESSION['record_flappy']],
+                    ["name" => $diceGame, "image" => "Img/photoDé.jpg", "link" => "https://games-online.herokuapp.com/dice-game/jeu.php", "record" => $_SESSION['record_dice']],
+                    ["name" => $capitalesQuiz." (10)", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/quiz-cap/capital.php", "record" => $_SESSION['record_Ecap']."/10"],
+                    ["name" => $capitalesQuiz." (50)", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/quiz-cap/capital.php", "record" => $_SESSION['record_Mcap']."/50"],
+                    ["name" => $capitalesQuiz." (".$full.")", "image" => "Img/jeuxCap.jpg", "link" => "https://games-online.herokuapp.com/quiz-cap/capital.php", "record" => $_SESSION['record_Hcap']."/197"],
+                    ["name" => "Guessing Number", "image" => "Img/guess.jpg", "link" => "https://games-online.herokuapp.com/guessing-game/jeuNumber.php", "record" => $_SESSION['record_guess']],
+                    ["name" => "Flappy Bird", "image" => "Img/Flappy.jpg", "link" => "https://games-online.herokuapp.com/flappy-bird/flappy.php", "record" => $_SESSION['record_flappy']],
                 ];
                 foreach($game as $value){
                     echo  
-                    '<div class="col-10 col-sm-6 box-white" ><a  href='.$value["link"].'>
+                    '<div class="box-game col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-6" ><a  href='.$value["link"].'>
                     <img src='.$value["image"].'></a>
                     <div class="text">
                     <h2>'.$value['name'].'</h2>
