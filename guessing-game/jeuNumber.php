@@ -20,15 +20,15 @@ include "../handleLanguage/lang.php";
         <div class="guess-number">
             <div class="container d-flex justify-content-center">
                 <div class="box mt-4 p-4">  
-                    <h1 id="message" class="text-center mt-1 mb-3">
+                    <h1 id="message" class="text-center mt-1 mb-4">
                         <?php echo $JNrule;?>
                     </h1>
-                    <div id="reveal" class="text-center mt-4 mb-2">
+                    <div id="reveal" class="text-center mt-4 mb-3">
                     </div>
-                    <div id="suggest" class="text-center mt-4 mb-2">
+                    <div id="suggest" class="text-center mt-4 mb-3">
                         <?php echo $callToSuggestion?>
                     </div>
-                    <div class="d-flex justify-content-center my-2">
+                    <div class="d-flex justify-content-center my-3">
                         <input type="number"  id="guess">
                         <button id="validate" class="btn btn-primary"><?php echo $valid?></button>
                         <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
