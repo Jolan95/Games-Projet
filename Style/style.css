@@ -516,9 +516,10 @@ header .dropdown ul {
 }
 /****guessing-game****/
 .guess-number h1 {
-  background-color: white;
+  color: white;
 }
 .guess-number .box {
+  background-color: white;
   max-width: 700px;
   border-radius: 10px;
   color: black;
