@@ -475,11 +475,11 @@ header .dropdown ul {
   width: 85px;
   background-size: 100% 100%;
   border-radius: 10px;
-  box-shadow: 10px 10px #fff8ec;
+  box-shadow: 6px 6px #fff8ec;
 }
 .pfc button:hover {
   background-color: rgba(243, 243, 243, 0.815);
-  box-shadow: #282c34;
+  box-shadow: 4px 4px rgba(243, 243, 243, 0.815);
 }
 .pfc .ciseaux {
   background-image: url('../PFC/Ciseaux.png');
