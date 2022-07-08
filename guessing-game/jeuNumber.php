@@ -28,7 +28,7 @@ include "../handleLanguage/lang.php";
                     <div id="suggest" class="text-center mt-4 mb-2">
                         <?php echo $callToSuggestion?>
                     </div>
-                    <div class="guess d-flex justify-content-center my-2">
+                    <div class="d-flex justify-content-center my-2">
                         <input type="number"  id="guess">
                         <button id="validate" class="btn btn-primary"><?php echo $valid?></button>
                         <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
