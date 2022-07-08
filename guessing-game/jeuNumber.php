@@ -23,12 +23,12 @@ include "../handleLanguage/lang.php";
                     <h1 id="message" class="text-center">
                         <?php echo $JNrule;?>
                     </h1>
-                    <div id="reveal" class="text-center">
+                    <div id="reveal" class="text-center mt-2">
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mt-3 mb-2">
                         <?php echo $callToSuggestion?>
                     </div>
-                    <div class="guess d-flex justify-content-center">
+                    <div class="guess d-flex justify-content-center my-2">
                         <input type="number"  id="guess">
                         <button id="validate" class="btn btn-primary"><?php echo $valid?></button>
                         <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
