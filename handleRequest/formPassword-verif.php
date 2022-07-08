@@ -21,7 +21,7 @@ if (isset($_POST['mail'])){
             $statement2->bindValue(':token', $bytes);
             if($statement2->execute()){
                 $sendTo = $mail;
-                $content = "<div style='margin : 10%'>Cliquez sur le lien ci dessous afin de réinitaliser votre mot de passe : <p><a href='https://games-online.herokuapp.com/passwordReset.php/?token=".$bytes."'>Réinitialiser mon mot de passe</a>.</p>";
+                $content = "<div>Cliquez sur le lien ci dessous afin de réinitaliser votre mot de passe : <p><a href='https://games-online.herokuapp.com/passwordReset.php/?token=".$bytes."'>Réinitialiser mon mot de passe</a>.</p>";
                 $email = new Mail();
                 $email->setFrom("JGames-Online@hotmail.com");
                 $email->setSubject("Réinitialisation mot de passe");

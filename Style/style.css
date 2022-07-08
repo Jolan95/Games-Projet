@@ -448,6 +448,7 @@ header .dropdown ul {
 }
 .pfc h1 {
   font-size: 2rem;
+  color: white;
 }
 .pfc h2 {
   font-size: 1.6rem;
@@ -518,4 +519,5 @@ header .dropdown ul {
   background-color: white;
   max-width: 700px;
   border-radius: 10px;
+  color: black;
 }

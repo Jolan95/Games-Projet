@@ -49,7 +49,7 @@ if(!empty($_POST) ){
                             if($adding->execute()){
                                 $success = 1;
                                 $sendTo = $email;
-                                $content = "<div style='margin : 10%'>Bienvenue ".$firstname." ".$name.", votre compte a été créé avec succès ! Nous sommes heureux de vous compter parmi la communauté JGames-Online.<p>Vous pouvez désormais consulter vos records et comparer vos records avec les autres membres des JGames-Online.</p><div style='margin-top : 30px, font-size : 5px'><a href='https://games-online.herokuapp.com/'>Website</a></div></div>";
+                                $content = "<div>Bienvenue ".$firstname." ".$name.", votre compte a été créé avec succès ! Nous sommes heureux de vous compter parmi la communauté JGames-Online.<p>Vous pouvez désormais consulter vos records et comparer vos records avec les autres membres des JGames-Online.</p><div'><a href='https://games-online.herokuapp.com/'>Website</a></div></div>";
                                 $email = new Mail();
                                 $email->setFrom("JGames-Online@hotmail.com");
                                 $email->setSubject("Création compte JGames-online");

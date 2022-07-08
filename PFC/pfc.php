@@ -16,7 +16,7 @@ include "../handleLanguage/lang.php";
 		<?php include_once '../header.php'; ?>
 		<div class="pfc">
 			<div class="container-fluid">
-				<h1 class="text-center"style="color : white"><?php echo $rpc ?></h1>
+				<h1 class="text-center"><?php echo $rpc ?></h1>
 				<div class="scores d-flex justify-content-between">
         			<div class="score2 score full-center">
             	    	<div id="score1" class="text-center">
