@@ -33,7 +33,7 @@ include "../handleLanguage/lang.php";
                         <button id="validate" class="btn btn-success"><?php echo $valid?></button>
                         <div id="links" class="d-none">
                             <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" ><?php echo $restart ?></button></a>
-                            <a href="https://games-online.herokuapp.com/index.php"><button type="button" class="btn btn-danger"><?php echo $redirectToMenu ?></button></a>
+                            <a href="https://games-online.herokuapp.com/index.php"><button type="button" class="btn btn-warning"><?php echo $redirectToMenu ?></button></a>
                         </div>
                     </div>
                     <div class='mt-3 d-flex justify-content-between'>
