@@ -464,7 +464,6 @@ header .dropdown ul {
   height: 200px;
   background-color: lightgray;
   border-radius: 10px;
-  border: 1px solid #ffe1ee;
   color: black;
   display: flex;
   justify-content: center;
@@ -476,8 +475,7 @@ header .dropdown ul {
   width: 85px;
   background-size: 100% 100%;
   border-radius: 10px;
-  box-shadow: 10px 10px orange;
-  color: rgba(255, 150, 0, 0.6);
+  box-shadow: 10px 10px #fff8ec;
 }
 .pfc button:hover {
   background-color: rgba(243, 243, 243, 0.815);
