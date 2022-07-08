@@ -19,11 +19,11 @@ include "../handleLanguage/lang.php";
         ?>
         <div class="guess-number">
             <div class="container d-flex justify-content-center">
-                <div class="box mt-4 p-3">  
-                    <h1 id="message" class="text-center">
+                <div class="box mt-4 p-4">  
+                    <h1 id="message" class="text-center my-4">
                         <?php echo $JNrule;?>
                     </h1>
-                    <div id="reveal" class="text-center mt-3">
+                    <div id="reveal" class="text-center mt-4 mb-2">
                     </div>
                     <div id="suggest" class="text-center mt-4 mb-2">
                         <?php echo $callToSuggestion?>
