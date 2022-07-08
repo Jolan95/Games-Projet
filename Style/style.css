@@ -517,6 +517,7 @@ header .dropdown ul {
 /****guessing-game****/
 .guess-number h1 {
   color: black;
+  font-size: 1.8rem;
 }
 .guess-number .box {
   background-color: white;

@@ -23,9 +23,9 @@ include "../handleLanguage/lang.php";
                     <h1 id="message" class="text-center">
                         <?php echo $JNrule;?>
                     </h1>
-                    <div id="reveal" class="text-center mt-2">
+                    <div id="reveal" class="text-center mt-3">
                     </div>
-                    <div class="text-center mt-3 mb-2">
+                    <div class="text-center mt-4 mb-2">
                         <?php echo $callToSuggestion?>
                     </div>
                     <div class="guess d-flex justify-content-center my-2">
@@ -34,7 +34,7 @@ include "../handleLanguage/lang.php";
                         <a href="https://games-online.herokuapp.com/GuessingGame/jeuNumber.php"><button id="restart" class="btn btn-primary" hidden><?php echo $restart ?></button></a>
                         <a href="https://games-online.herokuapp.com/index.php"><button  hidden><?php echo $redirectToMenu ?></button></a>
                     </div>
-                    <div>
+                    <div class='mt-3'>
                         <div id="attempts" ><?php echo $attempts ?> : 0</div>
                         <div id="record"></div>
                     </div>
