@@ -18,7 +18,7 @@ include "../handleLanguage/lang.php";
         require_once '../header.php';
         ?>
         <div class="guess-number">
-            <div class="container">
+            <div class="container d-flex justify-content-center">
                 <div class="box mt-4 p-3">  
                     <h1 id="message" class="text-center">
                         <?php echo $JNrule;?>
