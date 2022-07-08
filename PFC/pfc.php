@@ -59,20 +59,20 @@ include "../handleLanguage/lang.php";
 		  		function win(){
 		  		      score1++;
 		  		      $("h2").text(<?php  echo $won ?>+" !!!")
-		  		      $("#choix1").css('border', '2px solid green')
-		  		      $("#choix2").css('border', '2px solid red')
+		  		      $("#choix1").css('border', '5px solid green')
+		  		      $("#choix2").css('border', '5px solid red')
 		  		      $('h2').css('color', 'green')
 		  		}
 		  	function tied(){
 		  	      $("h2").text(<?php echo $tied ?>+" !")
-		  	      $("#choix1").css('border', '2px solid yellow')
-		  	      $("#choix2").css('border', '2px solid yellow')
+		  	      $("#choix1").css('border', '5px solid yellow')
+		  	      $("#choix2").css('border', '5px solid yellow')
 		  	      $('h2').css('color', 'darkyellow')
 		  	}
 		  	function lose(){
 		  	      score2++
-		  	      $("#choix1").css('border', '2px solid red')
-		  	      $("#choix2").css('border', '2px solid green')
+		  	      $("#choix1").css('border', '5px solid red')
+		  	      $("#choix2").css('border', '5px solid green')
 		  	      $("h2").text(<?php echo $lost ?>+" !")
 		  	      $('h2').css('color', 'red')
 		  	} 
