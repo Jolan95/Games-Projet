@@ -393,6 +393,9 @@ header .dropdown ul {
 .capitals .box {
   height: 90px;
   width: 100%;
+  background-color: #282c34;
+  border: white;
+  color: white;
 }
 .capitals .good {
   background: rgba(56, 208, 56, 0.667);
@@ -424,9 +427,9 @@ header .dropdown ul {
     height: 2.5rem;
   }
   .capitals .container .box {
-    background-color: #282c34;
-    border: white;
-    color: white;
+    background-color: aliceblue;
+    border: aliceblue;
+    color: black;
   }
 }
 @media all and (min-width: 991px) {
