@@ -17,10 +17,12 @@ include "../handleLanguage/lang.php";
         <?php require_once '../header.php'; ?>
         <h1 hidden>Jeux Dé</h1>
         <input type=hidden id="record" value=<?php if(isset($_SESSION['record_dice'])){ echo $_SESSION['record_dice']; }?>>
-        <div class="row justify-content-center">
-            <div class="col-2 justify-self-center"> 
-                <em><?php if(isset($_SESSION['record_dice'])){ echo $highScoreWin.' : +'.$_SESSION['record_dice']; }?>
-                </em>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-2 justify-self-center"> 
+                    <em><?php if(isset($_SESSION['record_dice'])){ echo $highScoreWin.' : +'.$_SESSION['record_dice']; }?>
+                    </em>
+                </div>
             </div>
         </div>
         <div class="container mb-5">
