@@ -296,7 +296,7 @@ header .dropdown ul {
 .game-dice .score-current {
   font-size: 3rem;
 }
-.game-dice em {
+.game-dice .record {
   color: #058f05;
 }
 .game-dice .role {
