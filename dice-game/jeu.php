@@ -17,7 +17,7 @@ include "../handleLanguage/lang.php";
         <?php require_once '../header.php'; ?>
         <h1 hidden>Jeux Dé</h1>
         <input type=hidden id="record" value=<?php if(isset($_SESSION['record_dice'])){ echo $_SESSION['record_dice']; }?>>
-        <em class="p-3"><?php if(isset($_SESSION['record_dice'])){ echo $highScoreWin.' : +'.$_SESSION['record_dice']; }?></em>
+        <em class="p-3 mt-3"><?php if(isset($_SESSION['record_dice'])){ echo $highScoreWin.' : +'.$_SESSION['record_dice']; }?></em>
         <div class="container mb-5">
             <div class="row mt-4">
                 <div class="col-4 text-center">
