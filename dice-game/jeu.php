@@ -79,7 +79,7 @@ include "../handleLanguage/lang.php";
                         <div class="current-text">
                             <?php echo $current ?>
                         </div>
-                        <div id="scoreCurr2" class="score-current" class="white">
+                        <div id="scoreCurr2" class="score-current white">
                         </div>
                     </div>
                 </div>                     

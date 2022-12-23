@@ -60,6 +60,7 @@ include 'Class/user.php';
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- file with datas about countries and their capitals-->
         <script type="text/javascript" src="countries.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
@@ -87,17 +88,13 @@ include 'Class/user.php';
             quiz=false;
             let choices = []
             let questionIndex = [];
-
-            for (let u = 0; u <= (countries.length - 1); u++){
-                questionIndex.push(u);
-            }
-
+            
             let setted = true;
             let point = 0
             let limitQuiz = countries.length;
             let picked
             let i=0;
-
+            
             /**Function redirection */
             function redirectToMenu(){
             	window.location.replace("https://games-online.herokuapp.com/index.php");
@@ -107,10 +104,16 @@ include 'Class/user.php';
             }
 
             function hiddingCircles(){
-
+                
                 circlesWrapper.classList.add("d-none");
             }
 
+            // push  the number of every index available in the array countries 
+            for (let u = 0; u <= (countries.length - 1); u++){
+                questionIndex.push(u);
+            }
+
+            // shuffle an array
             function shuffle(array) {
                 for (let i = array.length - 1; i > 0; i--) {
                   const j = Math.floor(Math.random() * (i + 1));
@@ -118,20 +121,23 @@ include 'Class/user.php';
                 }
             }
 
+            //shuffle the indexes
             shuffle(questionIndex);
 
+            //handle the selection of the question 
             function selectAnswers(){
+              //pick the first index in the array and remove it
               picked = questionIndex[0];
               choices.push(picked);
               questionIndex.shift();
-            
+                // select three others potential answers
                 for(let lim = 0; choices.length <= 3; lim++){
                 let number = Math.floor(Math.random() * ([countries.length] - 1));
-                
                     if (!choices.includes(number)){
                         choices.push(number);
                     } 
                 }
+                // shuffle the four answers and display it
                 shuffle(choices)
                    question.innerHTML = '<?php echo $questionCapitale ?>' + countries[picked]["name"] + ' <img class="flag" src='+countries[picked]['flag']+'>' + "?";
                     for (let x = 0; x <= 3; x++) {
@@ -139,6 +145,8 @@ include 'Class/user.php';
                     }
                 counter.textContent = i + '/' + limitQuiz
             }
+
+
 
             function removeClasses() {
                 boxes.forEach(element => element.classList.remove("good"));
@@ -254,30 +262,33 @@ include 'Class/user.php';
                 })
             )
 
+
+            // function to handle the user answer
             boxes.forEach(element => element.addEventListener('click', (e)=>{ 
                 if(setted){    
+                    /* if good answer */
                     if(e.target.textContent === countries[picked]["capital"]) {
-                        /*Si bonne réponse sélectionnée. */
                         e.target.classList.add("good")
                         setted= false; 
                         point++; 
                         i++;
                         verifCompteur(i) 
+                    /* if bad answer*/            
                     } else {
-                        /*Si Mauvaise réponse séléctionnée */            
                         e.target.classList.add('wrong')
+
                         for(let o = 0; o<= 3; o++){
+                            // add class "good" on the good answer
                             if(boxes[o].textContent === countries[picked]['capital']){
                                 boxes[o].classList.add('good');   
                             }
                         }
+                        // start a new question and remove the style around the boxes
                         setted=false;
                         i++;
                         verifCompteur(i);
                     } 
                 } 
-                
-                
             })) 
 
         </script>
